@@ -354,6 +354,11 @@
   </tr>
 </table>
 
+## Figure 2. Qualitative results for DPS (1000 Steps)
+
+![dps_1](figures/comp_dps_1.png)
+![dps_2](figures/comp_dps_2.png)
+
 ## Parameter Settings of DPS
 ```yaml
 Global diffusion setting:
