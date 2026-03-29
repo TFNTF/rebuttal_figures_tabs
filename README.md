@@ -1,6 +1,6 @@
 # Rebuttal_figures_tabs
 
-** Table 1. Quantitative Results for High-pass Operator
+** Table 1. Quantitative Results for High-pass Operator (Motion_deblurring)
 <table>
   <tr>
     <th rowspan="2" style="text-align: center;">Operator</th>
@@ -39,7 +39,7 @@
   </tr>
 </table>
 
-** Table 2. Ablation Studiew for Different Wavelets
+** Table 2. Ablation Studiew for Different Wavelets (Motion_deblurring)
 <table>
   <tr>
     <th rowspan="2" style="text-align: center;">Wavelet</th>
