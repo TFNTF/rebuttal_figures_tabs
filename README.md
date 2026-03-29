@@ -116,6 +116,7 @@
   </tr>
 </table>
 
+## Table 4. Computational Cost for Compared Methods (Motion_deblurring)
 <table>
   <tr>
     <th rowspan="2" style="text-align: center; white-space: nowrap;">Method</th>
@@ -220,37 +221,36 @@
 </table>
 
 ## Parameter Settings of DPS
-
-**Global diffusion setting**
-- Sampler: `ddpm`
-- Steps: `1000`
-- Noise schedule: `linear`
-- Model mean type: `epsilon`
-- Model var type: `learned_range`
-- Dynamic threshold: `False`
-- Clip denoised: `True`
-- Rescale timesteps: `False`
-- Timestep respacing: `1000`
-
-
-
-1. **Super-resolution (4x)**
 ```yaml
-conditioning:
-  method: ps
-  params:
-    scale: 0.3
+Global diffusion setting:
+  - Sampler: `ddpm`
+  - Steps: `1000`
+  - Noise schedule: `linear`
+  - Model mean type: `epsilon`
+  - Model var type: `learned_range`
+  - Dynamic threshold: `False`
+  - Clip denoised: `True`
+  - Rescale timesteps: `False`
+  - Timestep respacing: `1000`
 
-data:
-  name: ffhq
-  root: ./data/samples/
+1. Super-resolution (4x):
+  - scale: 0.3
 
 measurement:
-  operator:
-    name: super_resolution
-    in_shape: [1, 3, 256, 256]
-    scale_factor: 4
+  - in_shape: [1, 3, 256, 256]
+  - scale_factor: 4
 
 noise:
-  name: gaussian
-  sigma: 0.05
+  - name: gaussian
+  - sigma: 0.05
+
+2. Motion_blur 
+  - scale: 0.3
+
+measurement:
+  - kernel_size: 61
+  - intensity: 0.5
+
+noise:
+  - name: gaussian
+  - sigma: 0.05
