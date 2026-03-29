@@ -359,6 +359,51 @@
 ![dps_1](figures/comp_dps_1.png)
 ![dps_2](figures/comp_dps_2.png)
 
+## Table 6. Noise and Diffusion Scheduler Config of Our Method
+<table>
+  <tr>
+    <th style="text-align: center;">Parameter</th>
+    <th style="text-align: center; white-space: nowrap;">Default</th>
+    <th style="text-align: center;">Description</th>
+  </tr>
+  <tr>
+    <td style="text-align: center;">N</td>
+    <td style="text-align: center;">200</td>
+    <td style="text-align: center;">Num_steps, which determines the total number of diffusion iterations of line 2 in Alg.1</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">$\sigma_{\max}$</td>
+    <td style="text-align: center;">100</td>
+    <td style="text-align: center;">Initial noise level of $\sigma$ shown in Alg.1 </td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">$\sigma_{\min}$</td>
+    <td style="text-align: center;">0.1</td>
+    <td style="text-align: center;">Final noise level pf $\sigma$ shown in Alg.1</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">timestep</td>
+    <td style="text-align: center;">poly-7</td>
+    <td style="text-align: center;">Time-step discretization scheme, polynomial with $\rho = 7$ </td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">T</td>
+    <td style="text-align: center;">200</td>
+    <td style="text-align: center;">Inner loop of optimization steps shown in line 8 of Alg.1</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">n</td>
+    <td style="text-align: center;">5</td>
+    <td style="text-align: center;">Denoising step of the PF-ODE in line 3 of Alg.1</td>
+  </tr>
+</table>
+
+**Discretization Formula (EDM Scheduler):**
+
+$\[
+\sigma_i = \left( \sigma_{\max}^{1/\rho} + \frac{i}{N-1}\left(\sigma_{\min}^{1/\rho} - \sigma_{\max}^{1/\rho}\right) \right)^{\rho}
+\]$
+
 ## Parameter Settings of DPS
 ```yaml
 Global diffusion setting:
