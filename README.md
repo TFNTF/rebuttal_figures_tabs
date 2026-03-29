@@ -3,7 +3,7 @@
 ** Table 1. Quantitative Results for High-pass Operator
 <table>
   <tr>
-    <th rowspan="2" style="text-align: center;">Wavelet</th>
+    <th rowspan="2" style="text-align: center;">Operator</th>
     <th colspan="3" style="text-align: center; white-space: nowrap;">FFHQ</th>
     <th colspan="3" style="text-align: center; white-space: nowrap;">ImageNet</th>
     <th rowspan="2" style="text-align: center; white-space: nowrap;">Efficiency</th>
@@ -17,7 +17,7 @@
     <th style="text-align: center; white-space: nowrap;">LPIPS ↓</th>
   </tr>
   <tr>
-    <td style="text-align: center;">Daubechies-2</td>
+    <td style="text-align: center;">High-pass</td>
     <td style="text-align: center;">26.82</td>
     <td style="text-align: center;">0.890</td>
     <td style="text-align: center;">0.119</td>
@@ -26,18 +26,9 @@
     <td style="text-align: center;">0.142</td>
     <td style="text-align: center;"></td>
   </tr>
+
   <tr>
-    <td style="text-align: center;">Biorthogonal 4.4</td>
-    <td style="text-align: center;"></td>
-    <td style="text-align: center;"></td>
-    <td style="text-align: center;"></td>
-    <td style="text-align: center;"></td>
-    <td style="text-align: center;"></td>
-    <td style="text-align: center;"></td>
-    <td style="text-align: center;"></td>
-  </tr>
-  <tr>
-    <td style="text-align: center;">Ours</td>
+    <td style="text-align: center;">Ours (used)</td>
     <td style="text-align: center;"></td>
     <td style="text-align: center;"></td>
     <td style="text-align: center;"></td>
