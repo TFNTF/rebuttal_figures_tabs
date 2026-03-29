@@ -65,9 +65,9 @@
     <td style="text-align: center;">30.59</td>
     <td style="text-align: center;">0.876</td>
     <td style="text-align: center;">0.151</td>
-    <td style="text-align: center;"></td>
-    <td style="text-align: center;"></td>
-    <td style="text-align: center;"></td>
+    <td style="text-align: center;">27.64</td>
+    <td style="text-align: center;">0.811</td>
+    <td style="text-align: center;">0.186</td>
   </tr>
   <tr>
     <td style="text-align: center;">Ours (used)</td>
@@ -80,9 +80,11 @@
   </tr>
 </table>
 
+## Figure 1. Qualitative results for Different Wavelets (Motion_deblurring)
+
 ![wave_1](figures/wave_1.png)
 ![wave_2](figures/wave_2.png)
-## Figure 1. Qualitative results for Different Wavelets (Motion_deblurring)
+
 ## Table 3. Quantitative Results of Box-inpainting
 <table>
   <tr>
