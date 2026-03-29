@@ -3,10 +3,9 @@
 ## Table 1. Quantitative Results for High-pass Operator (Motion_deblurring)
 <table>
   <tr>
-    <th rowspan="2" style="text-align: center;">Operator</th>https://github.com/TFNTF/rebuttal_figures_tabs/blob/main/README.md
+    <th rowspan="2" style="text-align: center;">Operator</th>
     <th colspan="3" style="text-align: center; white-space: nowrap;">FFHQ</th>
     <th colspan="3" style="text-align: center; white-space: nowrap;">ImageNet</th>
-    <th rowspan="2" style="text-align: center; white-space: nowrap;">Efficiency</th>
   </tr>
   <tr>
     <th style="text-align: center; white-space: nowrap;">PSNR ↑</th>
@@ -18,34 +17,31 @@
   </tr>
   <tr>
     <td style="text-align: center;">High-pass</td>
-    <td style="text-align: center;">26.82</td>
-    <td style="text-align: center;">0.890</td>
-    <td style="text-align: center;">0.119</td>
+    <td style="text-align: center;">10.82</td>
+    <td style="text-align: center;">0.533</td>
+    <td style="text-align: center;">0.492</td>
     <td style="text-align: center;">24.26</td>
     <td style="text-align: center;">0.856</td>
     <td style="text-align: center;">0.142</td>
-    <td style="text-align: center;"></td>
   </tr>
 
   <tr>
     <td style="text-align: center;">Ours (used)</td>
-    <td style="text-align: center;"></td>
-    <td style="text-align: center;"></td>
-    <td style="text-align: center;"></td>
-    <td style="text-align: center;"></td>
-    <td style="text-align: center;"></td>
-    <td style="text-align: center;"></td>
-    <td style="text-align: center;">~90s</td>
+    <td style="text-align: center;">36.69</td>
+    <td style="text-align: center;">0.940</td>
+    <td style="text-align: center;">0.054</td>
+    <td style="text-align: center;">34.70</td>
+    <td style="text-align: center;">0.935</td>
+    <td style="text-align: center;">0.155</td>
   </tr>
 </table>
 
-## Table 2. Ablation Studiew for Different Wavelets (Motion_deblurring)
+## Table 2. Ablation Studies for Different Wavelets (Motion_deblurring)
 <table>
   <tr>
     <th rowspan="2" style="text-align: center;">Wavelet</th>
     <th colspan="3" style="text-align: center; white-space: nowrap;">FFHQ</th>
     <th colspan="3" style="text-align: center; white-space: nowrap;">ImageNet</th>
-    <th rowspan="2" style="text-align: center; white-space: nowrap;">Efficiency</th>
   </tr>
   <tr>
     <th style="text-align: center; white-space: nowrap;">PSNR ↑</th>
@@ -63,14 +59,12 @@
     <td style="text-align: center;">24.26</td>
     <td style="text-align: center;">0.856</td>
     <td style="text-align: center;">0.142</td>
-    <td style="text-align: center;"></td>
   </tr>
   <tr>
     <td style="text-align: center;">Biorthogonal 4.4</td>
-    <td style="text-align: center;"></td>
-    <td style="text-align: center;"></td>
-    <td style="text-align: center;"></td>
-    <td style="text-align: center;"></td>
+    <td style="text-align: center;">30.59</td>
+    <td style="text-align: center;">0.876</td>
+    <td style="text-align: center;">0.151</td>
     <td style="text-align: center;"></td>
     <td style="text-align: center;"></td>
     <td style="text-align: center;"></td>
@@ -83,12 +77,11 @@
     <td style="text-align: center;">34.70</td>
     <td style="text-align: center;">0.935</td>
     <td style="text-align: center;">0.155</td>
-    <td style="text-align: center;">~90s</td>
   </tr>
 </table>
 
 
-## Table 3. Quantitative Results of Box-inpainting **
+## Table 3. Quantitative Results of Box-inpainting
 <table>
   <tr>
     <th rowspan="2" style="text-align: center;">Dataset</th>
@@ -212,10 +205,10 @@
   </tr>
   <tr>
     <td style="text-align: center;">Ours</td>
-    <td style="text-align: center;"></td>
-    <td style="text-align: center;"></td>
-    <td style="text-align: center;"></td>
-    <td style="text-align: center;"></td>
+    <td style="text-align: center;">~130</td>
+    <td style="text-align: center;">2.23</td>
+    <td style="text-align: center;">~200</td>
+    <td style="text-align: center;">4.56</td>
     <td style="text-align: center;">1000</td>
   </tr>
 </table>
