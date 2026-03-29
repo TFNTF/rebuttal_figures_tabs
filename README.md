@@ -76,7 +76,7 @@
     <td style="text-align: center;"></td>
   </tr>
   <tr>
-    <td style="text-align: center;">Ours</td>
+    <td style="text-align: center;">Ours (used)</td>
     <td style="text-align: center;">36.69</td>
     <td style="text-align: center;">0.940</td>
     <td style="text-align: center;">0.054</td>
@@ -106,12 +106,12 @@
   </tr>
   <tr>
     <td style="text-align: center;">Ours</td>
-    <td style="text-align: center;"></td>
-    <td style="text-align: center;"></td>
-    <td style="text-align: center;"></td>
-    <td style="text-align: center;"></td>
-    <td style="text-align: center;"></td>
-    <td style="text-align: center;"></td>
+    <td style="text-align: center;">24.57</td>
+    <td style="text-align: center;">0.838</td>
+    <td style="text-align: center;">0.126</td>
+    <td style="text-align: center;">21.58</td>
+    <td style="text-align: center;">0.739</td>
+    <td style="text-align: center;">0.207</td>
     <td style="text-align: center;">~90s</td>
   </tr>
 </table>
