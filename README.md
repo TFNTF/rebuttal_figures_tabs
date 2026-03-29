@@ -77,12 +77,12 @@
   </tr>
   <tr>
     <td style="text-align: center;">Ours</td>
-    <td style="text-align: center;"></td>
-    <td style="text-align: center;"></td>
-    <td style="text-align: center;"></td>
-    <td style="text-align: center;"></td>
-    <td style="text-align: center;"></td>
-    <td style="text-align: center;"></td>
+    <td style="text-align: center;">36.69</td>
+    <td style="text-align: center;">0.940</td>
+    <td style="text-align: center;">0.054</td>
+    <td style="text-align: center;">34.70</td>
+    <td style="text-align: center;">0.935</td>
+    <td style="text-align: center;">0.155</td>
     <td style="text-align: center;">~90s</td>
   </tr>
 </table>
