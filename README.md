@@ -80,7 +80,8 @@
   </tr>
 </table>
 
-
+![wave_1](figures/wave_1.png)
+## Figure 1. Qualitative results for Different Wavelets (Motion_deblurring)
 ## Table 3. Quantitative Results of Box-inpainting
 <table>
   <tr>
