@@ -3,7 +3,7 @@
 ## Table 1. Quantitative Results for High-pass Operator (Motion_deblurring)
 <table>
   <tr>
-    <th rowspan="2" style="text-align: center;">Operator</th>
+    <th rowspan="2" style="text-align: center;">Operator</th>https://github.com/TFNTF/rebuttal_figures_tabs/blob/main/README.md
     <th colspan="3" style="text-align: center; white-space: nowrap;">FFHQ</th>
     <th colspan="3" style="text-align: center; white-space: nowrap;">ImageNet</th>
     <th rowspan="2" style="text-align: center; white-space: nowrap;">Efficiency</th>
@@ -216,41 +216,64 @@
     <td style="text-align: center;"></td>
     <td style="text-align: center;"></td>
     <td style="text-align: center;"></td>
-    <td style="text-align: center;"></td>
+    <td style="text-align: center;">1000</td>
   </tr>
 </table>
 
 ## Parameter Settings of DPS
 ```yaml
 Global diffusion setting:
-  - Sampler: `ddpm`
-  - Steps: `1000`
-  - Noise schedule: `linear`
-  - Model mean type: `epsilon`
-  - Model var type: `learned_range`
-  - Dynamic threshold: `False`
-  - Clip denoised: `True`
-  - Rescale timesteps: `False`
-  - Timestep respacing: `1000`
+   Sampler: `ddpm`
+   Steps: `1000`
+   Noise schedule: `linear`
+   Model mean type: `epsilon`
+   Model var type: `learned_range`
+   Dynamic threshold: `False`
+   Clip denoised: `True`
+   Rescale timesteps: `False`
+   Timestep respacing: `1000`
 
 1. Super-resolution (4x):
-  - scale: 0.3
+   scale: 0.3
 
-measurement:
-  - in_shape: [1, 3, 256, 256]
-  - scale_factor: 4
-
-noise:
-  - name: gaussian
-  - sigma: 0.05
+  measurement:
+     in_shape: [1, 3, 256, 256]
+     scale_factor: 4
+  
+  noise:
+     name: gaussian
+     sigma: 0.05
 
 2. Motion_blur 
-  - scale: 0.3
+   scale: 0.3
 
-measurement:
-  - kernel_size: 61
-  - intensity: 0.5
+  measurement:
+     kernel_size: 61
+     intensity: 0.5
 
-noise:
-  - name: gaussian
-  - sigma: 0.05
+  noise:
+     name: gaussian
+     sigma: 0.05
+
+3. Gaussian_blur
+   scale: 0.3
+
+  measurement:
+    kernel_size: 61
+    intensity: 3.0
+
+  noise:
+    name: gaussian
+    sigma: 0.05
+
+4. Inpainting
+    scale: 0.5
+
+  measurement:
+    operator:
+      mask_prob_range: [0.3, 0.7] 
+      image_size: 256
+
+  noise:
+    name: gaussian
+    sigma: 0.05
