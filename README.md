@@ -358,98 +358,52 @@
   <tr>
     <td style="text-align: center;">N</td>
     <td style="text-align: center;">200</td>
-    <td style="text-align: center;">Num_steps, which determines the total number of diffusion iterations of line 2 in Alg.1</td>
+    <td style="text-align: center;">Num_steps, which determines the total number of diffusion iterations of line 2 in Alg.1.</td>
   </tr>
   <tr>
     <td style="text-align: center;">$\sigma_{\max}$</td>
     <td style="text-align: center;">100</td>
-    <td style="text-align: center;">Initial noise level of $\sigma$ shown in Alg.1</td>
+    <td style="text-align: center;">Initial noise level of $\sigma$ shown in Alg.1.</td>
   </tr>
   <tr>
     <td style="text-align: center;">$\sigma_{\min}$</td>
     <td style="text-align: center;">0.1</td>
-    <td style="text-align: center;">Final noise level of $\sigma$ shown in Alg.1</td>
+    <td style="text-align: center;">Final noise level of $\sigma$ shown in Alg.1.</td>
   </tr>
   <tr>
     <td style="text-align: center;">timestep</td>
     <td style="text-align: center;">poly-7</td>
-    <td style="text-align: center;">Time-step discretization scheme, polynomial with $\rho = 7$</td>
+    <td style="text-align: center;">Time-step discretization scheme, polynomial with $\rho = 7$.</td>
   </tr>
   <tr>
     <td style="text-align: center;">T</td>
     <td style="text-align: center;">200</td>
-    <td style="text-align: center;">Inner loop of optimization steps shown in line 8 of Alg.1</td>
+    <td style="text-align: center;">Inner loop of optimization steps shown in line 8 of Alg.1.</td>
   </tr>
   <tr>
     <td style="text-align: center;">n</td>
     <td style="text-align: center;">5</td>
-    <td style="text-align: center;">Denoising step of the PF-ODE in line 3 of Alg.1</td>
+    <td style="text-align: center;">Denoising step of the PF-ODE in line 3 of Alg.1.</td>
   </tr>
   <tr>
     <td style="text-align: center;">Cutoff-frequency schedule</td>
     <td style="text-align: center;">linear</td>
-    <td style="text-align: center;">Copled to noise level, start and end bound are 0.4 and 1.0 respective</td>
+    <td style="text-align: center;">Coupled to the noise level, the start and end bounds are set to 0.4 and 1.0, respectively.</td>
   </tr>
   <tr>
-    <td style="text-align: center;"><start_bound</td>
-    <td style="text-align: center;">0.40</td>
-    <td style="text-align: center;">. </td>
+    <td style="text-align: center;">$\lambda_k$ shown in Eq.17 </td>
+    <td style="text-align: center;">Cosine schedule</td>
+    <td style="text-align: center;">Stats at 0.35 and decays to 0. </td>
   </tr>
   <tr>
-    <td style="text-align: center;">end_bound</td>
+    <td style="text-align: center;">$w_{k,L}$ show in Eq.(16)</td>
     <td style="text-align: center;">1.0</td>
-    <td style="text-align: center;">Final cutoff frequency</td>
+    <td style="text-align: center;">Weight for the low-frequency approximation subband, where a value of 1.0 means the refinement result is fully adopted.</td>
   </tr>
   <tr>
-    <td style="text-align: center;">$\lambda_k$ (shown in Eq.17) schedule</td>
-    <td style="text-align: center;"><code>cosine</code></td>
-    <td style="text-align: center;">Stats at 0.35 and decays to 0 </td>
-  </tr>
-  <tr>
-    <td style="text-align: center;"><code>lambda_start</code></td>
-    <td style="text-align: center;">0.6</td>
-    <td style="text-align: center;">Initial frequency-domain loss weight $\lambda_0$</td>
-  </tr>
-  <tr>
-    <td style="text-align: center;"><code>lambda_end</code></td>
-    <td style="text-align: center;">0.0</td>
-    <td style="text-align: center;">Final frequency-domain loss weight</td>
-  </tr>
-  <tr>
-    <td style="text-align: center;"><code>cache_measurement</code></td>
-    <td style="text-align: center;">true</td>
-    <td style="text-align: center;">Cache the filtered measurement $y$ for acceleration</td>
-  </tr>
-  <tr>
-    <td style="text-align: center;"><code>w_LL</code></td>
-    <td style="text-align: center;">1.0</td>
-    <td style="text-align: center;">LL (low-frequency approximation) subband weight; 1.0 means fully adopting the refinement result</td>
-  </tr>
-  <tr>
-    <td style="text-align: center;"><code>w_LH</code></td>
-    <td style="text-align: center;">0 (default) / 1.0 (orig)</td>
-    <td style="text-align: center;">Base weight for the LH subband</td>
-  </tr>
-  <tr>
-    <td style="text-align: center;"><code>w_HL</code></td>
-    <td style="text-align: center;">0 (default) / 0.22–0.3</td>
-    <td style="text-align: center;">Base weight for the HL subband</td>
-  </tr>
-  <tr>
-    <td style="text-align: center;"><code>w_HH</code></td>
-    <td style="text-align: center;">0 (default) / 0.18–0.22</td>
-    <td style="text-align: center;">Base weight for the HH subband</td>
-  </tr>
-  <tr>
-    <td style="text-align: center;"><code>gate_LH</code></td>
-    <td style="text-align: center;">false</td>
-    <td style="text-align: center;">Whether to gate the LH subband using <code>trust_refined</code></td>
-  </tr>
-  <tr>
-    <td style="text-align: center;"><code>detail_start</code></td>
-    <td style="text-align: center;">0.0</td>
-    <td style="text-align: center;">Starting ratio for detail unlocking</td>
-  </tr>
+    <td style="text-align: center;">$w_{k,H}$ show in Eq.(16)</td>
+    <td style="text-align: center;">0.2</td>
+    <td style="text-align: center;">Base weight for the high-frequency subband.</td>
 </table>
 
 
