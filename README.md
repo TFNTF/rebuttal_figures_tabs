@@ -405,22 +405,22 @@
   </tr>
   <tr>
     <td style="text-align: center;">0.0</td>
-    <td style="text-align: center;"></td>
-    <td style="text-align: center;"></td>
-    <td style="text-align: center;"></td>
+    <td style="text-align: center;">38.53</td>
+    <td style="text-align: center;">0.971</td>
+    <td style="text-align: center;">0.034</td>
   </tr>
   <tr>
-    <td style="text-align: center;">0.3</td>
-    <td style="text-align: center;"></td>
-    <td style="text-align: center;"></td>
-    <td style="text-align: center;"></td>
+    <td style="text-align: center;">0.03</td>
+    <td style="text-align: center;">37.49</td>
+    <td style="text-align: center;">0.963</td>
+    <td style="text-align: center;">0.042</td>
   </tr>
 
   <tr>
-    <td style="text-align: center;">0.7</td>
-    <td style="text-align: center;"></td>
-    <td style="text-align: center;"></td>
-    <td style="text-align: center;"></td>
+    <td style="text-align: center;">0.07</td>
+    <td style="text-align: center;">34.95</td>
+    <td style="text-align: center;">0.935</td>
+    <td style="text-align: center;">0.082</td>
   </tr>
 
   <tr>
