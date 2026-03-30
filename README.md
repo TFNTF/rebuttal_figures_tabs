@@ -299,48 +299,39 @@
 </table>
 * indicates that this experiment was conducted on a single RTX Pro 6000 Blackwell because it exceeded the memory capacity of a single NVIDIA A6000. The RTX Pro 6000 Blackwell also delivers substantially higher computational speed, approximately 2.5× that of the NVIDIA A6000.
 
-## Table 5. Ablation Studies of Optimization Steps (Motion_deblurring)
+## Table 5. Ablation Studies of Noise Schedule (N) (Motion_deblurring On FFHQ)
 <table>
   <tr>
     <th rowspan="2" style="text-align: center;">Steps</th>
     <th colspan="3" style="text-align: center; white-space: nowrap;">FFHQ</th>
-    <th colspan="3" style="text-align: center; white-space: nowrap;">ImageNet</th>
+    <th rowspan="2" style="text-align: center; white-space: nowrap;">Efficiency (/s)</th>
   </tr>
   <tr>
-    <th style="text-align: center; white-space: nowrap;">PSNR ↑</th>
-    <th style="text-align: center; white-space: nowrap;">SSIM ↑</th>
-    <th style="text-align: center; white-space: nowrap;">LPIPS ↓</th>
     <th style="text-align: center; white-space: nowrap;">PSNR ↑</th>
     <th style="text-align: center; white-space: nowrap;">SSIM ↑</th>
     <th style="text-align: center; white-space: nowrap;">LPIPS ↓</th>
   </tr>
   <tr>
     <td style="text-align: center;">50</td>
-    <td style="text-align: center;">14.97</td>
-    <td style="text-align: center;">0.5</td>
-    <td style="text-align: center;">0.492</td>
-    <td style="text-align: center;">24.26</td>
-    <td style="text-align: center;">0.856</td>
-    <td style="text-align: center;">0.142</td>
+    <td style="text-align: center;">35.82</td>
+    <td style="text-align: center;">0.924</td>
+    <td style="text-align: center;">0.069</td>
+    <td style="text-align: center;">~35</td>
   </tr>
   <tr>
     <td style="text-align: center;">100</td>
-    <td style="text-align: center;">10.82</td>
-    <td style="text-align: center;">0.533</td>
-    <td style="text-align: center;">0.492</td>
-    <td style="text-align: center;">24.26</td>
-    <td style="text-align: center;">0.856</td>
-    <td style="text-align: center;">0.142</td>
+    <td style="text-align: center;">36.18</td>
+    <td style="text-align: center;">0.923</td>
+    <td style="text-align: center;">0.061</td>
+    <td style="text-align: center;">~65</td>
   </tr>
 
   <tr>
     <td style="text-align: center;">300</td>
-    <td style="text-align: center;">10.82</td>
-    <td style="text-align: center;">0.533</td>
-    <td style="text-align: center;">0.492</td>
-    <td style="text-align: center;">24.26</td>
-    <td style="text-align: center;">0.856</td>
-    <td style="text-align: center;">0.142</td>
+    <td style="text-align: center;">37.08</td>
+    <td style="text-align: center;">0.953</td>
+    <td style="text-align: center;">0.039</td>
+    <td style="text-align: center;">~195</td>
   </tr>
 
   <tr>
@@ -348,9 +339,7 @@
     <td style="text-align: center;">36.69</td>
     <td style="text-align: center;">0.940</td>
     <td style="text-align: center;">0.054</td>
-    <td style="text-align: center;">34.70</td>
-    <td style="text-align: center;">0.935</td>
-    <td style="text-align: center;">0.155</td>
+    <td style="text-align: center;">~130</td>
   </tr>
 </table>
 
