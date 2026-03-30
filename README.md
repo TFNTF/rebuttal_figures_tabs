@@ -404,6 +404,17 @@
     <td style="text-align: center;">$w_{k,H}$ show in Eq.(16)</td>
     <td style="text-align: center;">0.2</td>
     <td style="text-align: center;">Base weight for the high-frequency subband.</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">$d_s$ show in Eq.(16)</td>
+    <td style="text-align: center;">0.2</td>
+    <td style="text-align: center;">Base weight for the high-frequency subband.</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">$d_e$ show in Eq.(16)</td>
+    <td style="text-align: center;">0.2</td>
+    <td style="text-align: center;">Base weight for the high-frequency subband.</td>
+  </tr>
 </table>
 
 
