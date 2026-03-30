@@ -362,24 +362,24 @@
   </tr>
   <tr>
     <td style="text-align: center;">50</td>
-    <td style="text-align: center;">35.82</td>
-    <td style="text-align: center;">0.924</td>
-    <td style="text-align: center;">0.069</td>
+    <td style="text-align: center;">35.81</td>
+    <td style="text-align: center;">0.943</td>
+    <td style="text-align: center;">0.047</td>
     <td style="text-align: center;">~35</td>
   </tr>
   <tr>
     <td style="text-align: center;">100</td>
-    <td style="text-align: center;">36.28</td>
-    <td style="text-align: center;">0.935</td>
-    <td style="text-align: center;">0.055</td>
+    <td style="text-align: center;">36.95</td>
+    <td style="text-align: center;">0.950</td>
+    <td style="text-align: center;">0.041</td>
     <td style="text-align: center;">~65</td>
   </tr>
 
   <tr>
     <td style="text-align: center;">300</td>
-    <td style="text-align: center;">37.08</td>
-    <td style="text-align: center;">0.953</td>
-    <td style="text-align: center;">0.039</td>
+    <td style="text-align: center;">36.86</td>
+    <td style="text-align: center;">0.945</td>
+    <td style="text-align: center;">0.050</td>
     <td style="text-align: center;">~195</td>
   </tr>
 
