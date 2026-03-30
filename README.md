@@ -397,7 +397,6 @@
   <tr>
     <th rowspan="2" style="text-align: center;">$\sigma$</th>
     <th colspan="3" style="text-align: center; white-space: nowrap;">FFHQ</th>
-    <th rowspan="2" style="text-align: center; white-space: nowrap;">Efficiency (/s)</th>
   </tr>
   <tr>
     <th style="text-align: center; white-space: nowrap;">PSNR ↑</th>
@@ -406,25 +405,22 @@
   </tr>
   <tr>
     <td style="text-align: center;">0.0</td>
-    <td style="text-align: center;">35.81</td>
-    <td style="text-align: center;">0.943</td>
-    <td style="text-align: center;">0.047</td>
-    <td style="text-align: center;">~35</td>
+    <td style="text-align: center;"></td>
+    <td style="text-align: center;"></td>
+    <td style="text-align: center;"></td>
   </tr>
   <tr>
     <td style="text-align: center;">0.3</td>
-    <td style="text-align: center;">36.95</td>
-    <td style="text-align: center;">0.950</td>
-    <td style="text-align: center;">0.041</td>
-    <td style="text-align: center;">~65</td>
+    <td style="text-align: center;"></td>
+    <td style="text-align: center;"></td>
+    <td style="text-align: center;"></td>
   </tr>
 
   <tr>
     <td style="text-align: center;">0.7</td>
-    <td style="text-align: center;">36.86</td>
-    <td style="text-align: center;">0.945</td>
-    <td style="text-align: center;">0.050</td>
-    <td style="text-align: center;">~195</td>
+    <td style="text-align: center;"></td>
+    <td style="text-align: center;"></td>
+    <td style="text-align: center;"></td>
   </tr>
 
   <tr>
@@ -432,7 +428,6 @@
     <td style="text-align: center;">36.69</td>
     <td style="text-align: center;">0.940</td>
     <td style="text-align: center;">0.054</td>
-    <td style="text-align: center;">~130</td>
   </tr>
 </table>
 
