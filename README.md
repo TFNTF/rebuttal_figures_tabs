@@ -348,12 +348,57 @@
   </tr>
 </table>
 
-## Figure 2. Qualitative results for DPS (1000 Steps)
+## Table 6. Ablation Studies of Optimization Steps (T) (Motion_deblurring On FFHQ)
+<table>
+  <tr>
+    <th rowspan="2" style="text-align: center;">T (Optimization Steps in Line 8 of Alg.1)</th>
+    <th colspan="3" style="text-align: center; white-space: nowrap;">FFHQ</th>
+    <th rowspan="2" style="text-align: center; white-space: nowrap;">Efficiency (/s)</th>
+  </tr>
+  <tr>
+    <th style="text-align: center; white-space: nowrap;">PSNR ↑</th>
+    <th style="text-align: center; white-space: nowrap;">SSIM ↑</th>
+    <th style="text-align: center; white-space: nowrap;">LPIPS ↓</th>
+  </tr>
+  <tr>
+    <td style="text-align: center;">50</td>
+    <td style="text-align: center;">35.82</td>
+    <td style="text-align: center;">0.924</td>
+    <td style="text-align: center;">0.069</td>
+    <td style="text-align: center;">~35</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">100</td>
+    <td style="text-align: center;">36.28</td>
+    <td style="text-align: center;">0.935</td>
+    <td style="text-align: center;">0.055</td>
+    <td style="text-align: center;">~65</td>
+  </tr>
+
+  <tr>
+    <td style="text-align: center;">300</td>
+    <td style="text-align: center;">37.08</td>
+    <td style="text-align: center;">0.953</td>
+    <td style="text-align: center;">0.039</td>
+    <td style="text-align: center;">~195</td>
+  </tr>
+
+  <tr>
+    <td style="text-align: center;">Ours (used)</td>
+    <td style="text-align: center;">36.69</td>
+    <td style="text-align: center;">0.940</td>
+    <td style="text-align: center;">0.054</td>
+    <td style="text-align: center;">~130</td>
+  </tr>
+</table>
+
+
+## Figure 3. Qualitative results for DPS (1000 Steps)
 
 ![dps_1](figures/comp_dps_1.png)
 ![dps_2](figures/comp_dps_2.png)
 
-## Table 6. Parameters Config of Our Method
+## Table 7. Parameters Config of Our Method
 <table>
   <tr>
     <th style="text-align: center;">Parameter</th>
