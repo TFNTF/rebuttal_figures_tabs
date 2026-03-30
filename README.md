@@ -386,39 +386,24 @@
     <td style="text-align: center;">Denoising step of the PF-ODE in line 3 of Alg.1</td>
   </tr>
   <tr>
-    <td style="text-align: center;"><code>enabled</code></td>
-    <td style="text-align: center;">true</td>
-    <td style="text-align: center;">Whether to enable frequency-domain guidance / wavelet fusion</td>
+    <td style="text-align: center;">Cutoff-frequency schedule</td>
+    <td style="text-align: center;">linear</td>
+    <td style="text-align: center;">Copled to noise level, start and end bound are 0.4 and 1.0 respective</td>
   </tr>
   <tr>
-    <td style="text-align: center;"><code>schedule</code></td>
-    <td style="text-align: center;"><code>linear</code></td>
-    <td style="text-align: center;">Cutoff-frequency schedule: <code>linear</code> / <code>exponential</code></td>
+    <td style="text-align: center;"><start_bound</td>
+    <td style="text-align: center;">0.40</td>
+    <td style="text-align: center;">. </td>
   </tr>
   <tr>
-    <td style="text-align: center;"><code>start_bound</code></td>
-    <td style="text-align: center;">0.25</td>
-    <td style="text-align: center;">Initial cutoff frequency (when ≤ 1, interpreted as a ratio of the maximum frequency radius)</td>
-  </tr>
-  <tr>
-    <td style="text-align: center;"><code>end_bound</code></td>
+    <td style="text-align: center;">end_bound</td>
     <td style="text-align: center;">1.0</td>
     <td style="text-align: center;">Final cutoff frequency</td>
   </tr>
   <tr>
-    <td style="text-align: center;"><code>exp_gamma</code></td>
-    <td style="text-align: center;">5.0</td>
-    <td style="text-align: center;">Decay coefficient for the <code>exponential</code> schedule</td>
-  </tr>
-  <tr>
-    <td style="text-align: center;"><code>blend_with_pixel</code></td>
-    <td style="text-align: center;">true</td>
-    <td style="text-align: center;">Whether to blend the frequency-domain loss with the original pixel-space loss</td>
-  </tr>
-  <tr>
-    <td style="text-align: center;"><code>lambda_schedule</code></td>
+    <td style="text-align: center;">$\lambda_k$ (shown in Eq.17) schedule</td>
     <td style="text-align: center;"><code>cosine</code></td>
-    <td style="text-align: center;">$\lambda$ schedule: <code>linear</code> / <code>cosine</code> / <code>power</code></td>
+    <td style="text-align: center;">Stats at 0.35 and decays to 0 </td>
   </tr>
   <tr>
     <td style="text-align: center;"><code>lambda_start</code></td>
