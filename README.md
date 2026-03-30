@@ -407,13 +407,13 @@
   </tr>
   <tr>
     <td style="text-align: center;">$d_s$ show in Eq.(16)</td>
-    <td style="text-align: center;">0.2</td>
-    <td style="text-align: center;">Base weight for the high-frequency subband.</td>
+    <td style="text-align: center;">0.05</td>
+    <td style="text-align: center;">Initial value for detail unlocking.</td>
   </tr>
   <tr>
     <td style="text-align: center;">$d_e$ show in Eq.(16)</td>
-    <td style="text-align: center;">0.2</td>
-    <td style="text-align: center;">Base weight for the high-frequency subband.</td>
+    <td style="text-align: center;">1.0</td>
+    <td style="text-align: center;">Final value for detail unlocking.</td>
   </tr>
 </table>
 
