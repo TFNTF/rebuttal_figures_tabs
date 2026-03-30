@@ -320,9 +320,9 @@
   </tr>
   <tr>
     <td style="text-align: center;">100</td>
-    <td style="text-align: center;">36.18</td>
-    <td style="text-align: center;">0.923</td>
-    <td style="text-align: center;">0.061</td>
+    <td style="text-align: center;">36.28</td>
+    <td style="text-align: center;">0.935</td>
+    <td style="text-align: center;">0.055</td>
     <td style="text-align: center;">~65</td>
   </tr>
 
