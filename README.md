@@ -194,7 +194,7 @@
   </tr>
 </table>
 
-## Figure 1. Qualitative results for Box-inpainting
+## Figure 2. Qualitative results for Box-inpainting
 
 ![box_1](figures/box_1.png)
 ![box_2](figures/box_2.png)
