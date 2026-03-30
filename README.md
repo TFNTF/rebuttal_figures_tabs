@@ -102,7 +102,7 @@
   </tr>
 
   <tr>
-    <td style="text-align: center;">DAPS(ours)</td>
+    <td style="text-align: center;">DAPS</td>
     <td style="text-align: center;">24.07</td>
     <td style="text-align: center;">0.814</td>
     <td style="text-align: center;">0.133</td>
@@ -193,6 +193,11 @@
     <td style="text-align: center;">0.207</td>
   </tr>
 </table>
+
+## Figure 1. Qualitative results for Box-inpainting
+
+![box_1](figures/box_1.png)
+![box_2](figures/box_2.png)
 
 ## Table 4. Computational Cost for Compared Methods (Motion_deblurring)
 <table>
