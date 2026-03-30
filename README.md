@@ -438,6 +438,10 @@
 ![dps_1](figures/comp_dps_1.png)
 ![dps_2](figures/comp_dps_2.png)
 
+## Figure 4. Qualitative results for DPS (1000 Steps)
+
+![silo](figures/silo.png)
+
 ## Table 8. Parameters Config of Our Method
 <table>
   <tr>
