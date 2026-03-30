@@ -299,10 +299,49 @@
 </table>
 * indicates that this experiment was conducted on a single RTX Pro 6000 Blackwell because it exceeded the memory capacity of a single NVIDIA A6000. The RTX Pro 6000 Blackwell also delivers substantially higher computational speed, approximately 2.5× that of the NVIDIA A6000.
 
-## Table 5. Ablation Studies of Noise Schedule (N) (Motion_deblurring On FFHQ)
+## Table 5. Noise and Diffusion Scheduler Config of Our Method
 <table>
   <tr>
-    <th rowspan="2" style="text-align: center;">Steps</th>
+    <th style="text-align: center;">Parameter</th>
+    <th style="text-align: center; white-space: nowrap;">Default</th>
+    <th style="text-align: center;">Description</th>
+  </tr>
+  <tr>
+    <td style="text-align: center;">N</td>
+    <td style="text-align: center;">200</td>
+    <td style="text-align: center;">Num_steps, which determines the total number of diffusion iterations of line 2 in Alg.1</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">$\sigma_{\max}$</td>
+    <td style="text-align: center;">100</td>
+    <td style="text-align: center;">Initial noise level of $\sigma$ shown in Alg.1 </td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">$\sigma_{\min}$</td>
+    <td style="text-align: center;">0.1</td>
+    <td style="text-align: center;">Final noise level pf $\sigma$ shown in Alg.1</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">timestep</td>
+    <td style="text-align: center;">poly-7</td>
+    <td style="text-align: center;">Time-step discretization scheme, polynomial with $\rho = 7$ </td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">T</td>
+    <td style="text-align: center;">200</td>
+    <td style="text-align: center;">Inner loop of optimization steps shown in line 8 of Alg.1</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">n</td>
+    <td style="text-align: center;">5</td>
+    <td style="text-align: center;">Denoising step of the PF-ODE in line 3 of Alg.1</td>
+  </tr>
+</table>
+
+## Table 6. Ablation Studies of Noise Schedule (N) (Motion_deblurring On FFHQ)
+<table>
+  <tr>
+    <th rowspan="2" style="text-align: center;">N (Diffusion Steps)</th>
     <th colspan="3" style="text-align: center; white-space: nowrap;">FFHQ</th>
     <th rowspan="2" style="text-align: center; white-space: nowrap;">Efficiency (/s)</th>
   </tr>
@@ -348,44 +387,7 @@
 ![dps_1](figures/comp_dps_1.png)
 ![dps_2](figures/comp_dps_2.png)
 
-## Table 6. Noise and Diffusion Scheduler Config of Our Method
-<table>
-  <tr>
-    <th style="text-align: center;">Parameter</th>
-    <th style="text-align: center; white-space: nowrap;">Default</th>
-    <th style="text-align: center;">Description</th>
-  </tr>
-  <tr>
-    <td style="text-align: center;">N</td>
-    <td style="text-align: center;">200</td>
-    <td style="text-align: center;">Num_steps, which determines the total number of diffusion iterations of line 2 in Alg.1</td>
-  </tr>
-  <tr>
-    <td style="text-align: center;">$\sigma_{\max}$</td>
-    <td style="text-align: center;">100</td>
-    <td style="text-align: center;">Initial noise level of $\sigma$ shown in Alg.1 </td>
-  </tr>
-  <tr>
-    <td style="text-align: center;">$\sigma_{\min}$</td>
-    <td style="text-align: center;">0.1</td>
-    <td style="text-align: center;">Final noise level pf $\sigma$ shown in Alg.1</td>
-  </tr>
-  <tr>
-    <td style="text-align: center;">timestep</td>
-    <td style="text-align: center;">poly-7</td>
-    <td style="text-align: center;">Time-step discretization scheme, polynomial with $\rho = 7$ </td>
-  </tr>
-  <tr>
-    <td style="text-align: center;">T</td>
-    <td style="text-align: center;">200</td>
-    <td style="text-align: center;">Inner loop of optimization steps shown in line 8 of Alg.1</td>
-  </tr>
-  <tr>
-    <td style="text-align: center;">n</td>
-    <td style="text-align: center;">5</td>
-    <td style="text-align: center;">Denoising step of the PF-ODE in line 3 of Alg.1</td>
-  </tr>
-</table>
+
 
 **Discretization Formula (EDM Scheduler):**
 
