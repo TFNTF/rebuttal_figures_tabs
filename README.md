@@ -431,6 +431,44 @@
   </tr>
 </table>
 
+## Table 8. Ablation Studies of Other Parameters (Motion_deblurring On FFHQ)
+<table>
+  <tr>
+    <th rowspan="2" style="text-align: center;">Parameters</th>
+    <th colspan="3" style="text-align: center; white-space: nowrap;">FFHQ</th>
+  </tr>
+  <tr>
+    <th style="text-align: center; white-space: nowrap;">PSNR ↑</th>
+    <th style="text-align: center; white-space: nowrap;">SSIM ↑</th>
+    <th style="text-align: center; white-space: nowrap;">LPIPS ↓</th>
+  </tr>
+  <tr>
+    <td style="text-align: center;">$w_{k,L}=0.8$</td>
+    <td style="text-align: center;">35.21</td>
+    <td style="text-align: center;">0.942</td>
+    <td style="text-align: center;">0.045</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">$\lambda_k$ starts at 0.30 and decays to 0.</td>
+    <td style="text-align: center;">35.33</td>
+    <td style="text-align: center;">0.943</td>
+    <td style="text-align: center;">0.045</td>
+  </tr>
+
+  <tr>
+    <td style="text-align: center;">$d_s=0.3$</td>
+    <td style="text-align: center;">30.78</td>
+    <td style="text-align: center;">0.813</td>
+    <td style="text-align: center;">0.187</td>
+  </tr>
+
+  <tr>
+    <td style="text-align: center;">Ours (used)</td>
+    <td style="text-align: center;">36.69</td>
+    <td style="text-align: center;">0.940</td>
+    <td style="text-align: center;">0.054</td>
+  </tr>
+</table>
 
 
 ## Figure 3. Qualitative comparison Between DPS (1000 Steps) and Ours
@@ -492,7 +530,7 @@
   <tr>
     <td style="text-align: center;">$\lambda_k$ shown in Eq.17 </td>
     <td style="text-align: center;">Cosine schedule</td>
-    <td style="text-align: center;">Stats at 0.35 and decays to 0. </td>
+    <td style="text-align: center;">Starts at 0.35 and decays to 0. </td>
   </tr>
   <tr>
     <td style="text-align: center;">$w_{k,L}$ show in Eq.(16)</td>
