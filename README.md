@@ -369,17 +369,17 @@
   </tr>
   <tr>
     <td style="text-align: center;">100</td>
-    <td style="text-align: center;">36.95</td>
-    <td style="text-align: center;">0.950</td>
-    <td style="text-align: center;">0.041</td>
+    <td style="text-align: center;">36.86</td>
+    <td style="text-align: center;">0.945</td>
+    <td style="text-align: center;">0.050</td>
     <td style="text-align: center;">~110</td>
   </tr>
 
   <tr>
     <td style="text-align: center;">300</td>
-    <td style="text-align: center;">36.86</td>
-    <td style="text-align: center;">0.945</td>
-    <td style="text-align: center;">0.050</td>
+    <td style="text-align: center;">36.95</td>
+    <td style="text-align: center;">0.950</td>
+    <td style="text-align: center;">0.041</td>
     <td style="text-align: center;">~160</td>
   </tr>
 
