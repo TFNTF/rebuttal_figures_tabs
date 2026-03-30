@@ -433,12 +433,12 @@
 
 
 
-## Figure 3. Qualitative results for DPS (1000 Steps)
+## Figure 3. Qualitative comparison Between DPS (1000 Steps) and Ours
 
 ![dps_1](figures/comp_dps_1.png)
 ![dps_2](figures/comp_dps_2.png)
 
-## Figure 4. Qualitative results for DPS (1000 Steps)
+## Figure 4. Qualitative Comparison Between SILO and Ours
 
 ![silo](figures/silo.png)
 
