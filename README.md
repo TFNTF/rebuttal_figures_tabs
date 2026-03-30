@@ -421,6 +421,11 @@
     <td style="text-align: center;">Final noise level of $\sigma$ shown in Alg.1.</td>
   </tr>
   <tr>
+    <td style="text-align: center;">$sigma$ show in Eq.(5)</td>
+    <td style="text-align: center;">0.05</td>
+    <td style="text-align: center;">Noise level for measearment.</td>
+  </tr>
+  <tr>
     <td style="text-align: center;">timestep</td>
     <td style="text-align: center;">poly-7</td>
     <td style="text-align: center;">Time-step discretization scheme, polynomial with $\rho = 7$.</td>
