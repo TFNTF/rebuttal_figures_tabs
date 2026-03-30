@@ -365,10 +365,54 @@
     <td style="text-align: center;">35.81</td>
     <td style="text-align: center;">0.943</td>
     <td style="text-align: center;">0.047</td>
-    <td style="text-align: center;">~35</td>
+    <td style="text-align: center;">~70</td>
   </tr>
   <tr>
     <td style="text-align: center;">100</td>
+    <td style="text-align: center;">36.95</td>
+    <td style="text-align: center;">0.950</td>
+    <td style="text-align: center;">0.041</td>
+    <td style="text-align: center;">~110</td>
+  </tr>
+
+  <tr>
+    <td style="text-align: center;">300</td>
+    <td style="text-align: center;">36.86</td>
+    <td style="text-align: center;">0.945</td>
+    <td style="text-align: center;">0.050</td>
+    <td style="text-align: center;">~160</td>
+  </tr>
+
+  <tr>
+    <td style="text-align: center;">Ours (used)</td>
+    <td style="text-align: center;">36.69</td>
+    <td style="text-align: center;">0.940</td>
+    <td style="text-align: center;">0.054</td>
+    <td style="text-align: center;">~130</td>
+  </tr>
+</table>
+
+## Table 7. Ablation Studies of $\sigma$ of Eq.(5) (Motion_deblurring On FFHQ)
+<table>
+  <tr>
+    <th rowspan="2" style="text-align: center;">$\sigma$</th>
+    <th colspan="3" style="text-align: center; white-space: nowrap;">FFHQ</th>
+    <th rowspan="2" style="text-align: center; white-space: nowrap;">Efficiency (/s)</th>
+  </tr>
+  <tr>
+    <th style="text-align: center; white-space: nowrap;">PSNR ↑</th>
+    <th style="text-align: center; white-space: nowrap;">SSIM ↑</th>
+    <th style="text-align: center; white-space: nowrap;">LPIPS ↓</th>
+  </tr>
+  <tr>
+    <td style="text-align: center;">0.0</td>
+    <td style="text-align: center;">35.81</td>
+    <td style="text-align: center;">0.943</td>
+    <td style="text-align: center;">0.047</td>
+    <td style="text-align: center;">~35</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">0.3</td>
     <td style="text-align: center;">36.95</td>
     <td style="text-align: center;">0.950</td>
     <td style="text-align: center;">0.041</td>
@@ -376,7 +420,7 @@
   </tr>
 
   <tr>
-    <td style="text-align: center;">300</td>
+    <td style="text-align: center;">0.7</td>
     <td style="text-align: center;">36.86</td>
     <td style="text-align: center;">0.945</td>
     <td style="text-align: center;">0.050</td>
@@ -393,12 +437,13 @@
 </table>
 
 
+
 ## Figure 3. Qualitative results for DPS (1000 Steps)
 
 ![dps_1](figures/comp_dps_1.png)
 ![dps_2](figures/comp_dps_2.png)
 
-## Table 7. Parameters Config of Our Method
+## Table 8. Parameters Config of Our Method
 <table>
   <tr>
     <th style="text-align: center;">Parameter</th>
@@ -421,7 +466,7 @@
     <td style="text-align: center;">Final noise level of $\sigma$ shown in Alg.1.</td>
   </tr>
   <tr>
-    <td style="text-align: center;">$sigma$ show in Eq.(5)</td>
+    <td style="text-align: center;">$\sigma$ shown in Eq.(5)</td>
     <td style="text-align: center;">0.05</td>
     <td style="text-align: center;">Noise level for measearment.</td>
   </tr>
