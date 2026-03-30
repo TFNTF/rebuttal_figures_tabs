@@ -299,49 +299,10 @@
 </table>
 * indicates that this experiment was conducted on a single RTX Pro 6000 Blackwell because it exceeded the memory capacity of a single NVIDIA A6000. The RTX Pro 6000 Blackwell also delivers substantially higher computational speed, approximately 2.5× that of the NVIDIA A6000.
 
-## Table 5. Noise and Diffusion Scheduler Config of Our Method
+## Table 5. Ablation Studies of Noise Schedule (N) (Motion_deblurring On FFHQ)
 <table>
   <tr>
-    <th style="text-align: center;">Parameter</th>
-    <th style="text-align: center; white-space: nowrap;">Default</th>
-    <th style="text-align: center;">Description</th>
-  </tr>
-  <tr>
-    <td style="text-align: center;">N</td>
-    <td style="text-align: center;">200</td>
-    <td style="text-align: center;">Num_steps, which determines the total number of diffusion iterations of line 2 in Alg.1</td>
-  </tr>
-  <tr>
-    <td style="text-align: center;">$\sigma_{\max}$</td>
-    <td style="text-align: center;">100</td>
-    <td style="text-align: center;">Initial noise level of $\sigma$ shown in Alg.1 </td>
-  </tr>
-  <tr>
-    <td style="text-align: center;">$\sigma_{\min}$</td>
-    <td style="text-align: center;">0.1</td>
-    <td style="text-align: center;">Final noise level pf $\sigma$ shown in Alg.1</td>
-  </tr>
-  <tr>
-    <td style="text-align: center;">timestep</td>
-    <td style="text-align: center;">poly-7</td>
-    <td style="text-align: center;">Time-step discretization scheme, polynomial with $\rho = 7$ </td>
-  </tr>
-  <tr>
-    <td style="text-align: center;">T</td>
-    <td style="text-align: center;">200</td>
-    <td style="text-align: center;">Inner loop of optimization steps shown in line 8 of Alg.1</td>
-  </tr>
-  <tr>
-    <td style="text-align: center;">n</td>
-    <td style="text-align: center;">5</td>
-    <td style="text-align: center;">Denoising step of the PF-ODE in line 3 of Alg.1</td>
-  </tr>
-</table>
-
-## Table 6. Ablation Studies of Noise Schedule (N) (Motion_deblurring On FFHQ)
-<table>
-  <tr>
-    <th rowspan="2" style="text-align: center;">N (Diffusion Steps)</th>
+    <th rowspan="2" style="text-align: center;">N (Diffusion Steps in Line 2 of Alg.1)</th>
     <th colspan="3" style="text-align: center; white-space: nowrap;">FFHQ</th>
     <th rowspan="2" style="text-align: center; white-space: nowrap;">Efficiency (/s)</th>
   </tr>
@@ -387,6 +348,124 @@
 ![dps_1](figures/comp_dps_1.png)
 ![dps_2](figures/comp_dps_2.png)
 
+## Table 6. Parameters Config of Our Method
+<table>
+  <tr>
+    <th style="text-align: center;">Parameter</th>
+    <th style="text-align: center; white-space: nowrap;">Default</th>
+    <th style="text-align: center;">Description</th>
+  </tr>
+  <tr>
+    <td style="text-align: center;">N</td>
+    <td style="text-align: center;">200</td>
+    <td style="text-align: center;">Num_steps, which determines the total number of diffusion iterations of line 2 in Alg.1</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">$\sigma_{\max}$</td>
+    <td style="text-align: center;">100</td>
+    <td style="text-align: center;">Initial noise level of $\sigma$ shown in Alg.1</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">$\sigma_{\min}$</td>
+    <td style="text-align: center;">0.1</td>
+    <td style="text-align: center;">Final noise level of $\sigma$ shown in Alg.1</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">timestep</td>
+    <td style="text-align: center;">poly-7</td>
+    <td style="text-align: center;">Time-step discretization scheme, polynomial with $\rho = 7$</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">T</td>
+    <td style="text-align: center;">200</td>
+    <td style="text-align: center;">Inner loop of optimization steps shown in line 8 of Alg.1</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">n</td>
+    <td style="text-align: center;">5</td>
+    <td style="text-align: center;">Denoising step of the PF-ODE in line 3 of Alg.1</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;"><code>enabled</code></td>
+    <td style="text-align: center;">true</td>
+    <td style="text-align: center;">Whether to enable frequency-domain guidance / wavelet fusion</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;"><code>schedule</code></td>
+    <td style="text-align: center;"><code>linear</code></td>
+    <td style="text-align: center;">Cutoff-frequency schedule: <code>linear</code> / <code>exponential</code></td>
+  </tr>
+  <tr>
+    <td style="text-align: center;"><code>start_bound</code></td>
+    <td style="text-align: center;">0.25</td>
+    <td style="text-align: center;">Initial cutoff frequency (when ≤ 1, interpreted as a ratio of the maximum frequency radius)</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;"><code>end_bound</code></td>
+    <td style="text-align: center;">1.0</td>
+    <td style="text-align: center;">Final cutoff frequency</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;"><code>exp_gamma</code></td>
+    <td style="text-align: center;">5.0</td>
+    <td style="text-align: center;">Decay coefficient for the <code>exponential</code> schedule</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;"><code>blend_with_pixel</code></td>
+    <td style="text-align: center;">true</td>
+    <td style="text-align: center;">Whether to blend the frequency-domain loss with the original pixel-space loss</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;"><code>lambda_schedule</code></td>
+    <td style="text-align: center;"><code>cosine</code></td>
+    <td style="text-align: center;">$\lambda$ schedule: <code>linear</code> / <code>cosine</code> / <code>power</code></td>
+  </tr>
+  <tr>
+    <td style="text-align: center;"><code>lambda_start</code></td>
+    <td style="text-align: center;">0.6</td>
+    <td style="text-align: center;">Initial frequency-domain loss weight $\lambda_0$</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;"><code>lambda_end</code></td>
+    <td style="text-align: center;">0.0</td>
+    <td style="text-align: center;">Final frequency-domain loss weight</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;"><code>cache_measurement</code></td>
+    <td style="text-align: center;">true</td>
+    <td style="text-align: center;">Cache the filtered measurement $y$ for acceleration</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;"><code>w_LL</code></td>
+    <td style="text-align: center;">1.0</td>
+    <td style="text-align: center;">LL (low-frequency approximation) subband weight; 1.0 means fully adopting the refinement result</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;"><code>w_LH</code></td>
+    <td style="text-align: center;">0 (default) / 1.0 (orig)</td>
+    <td style="text-align: center;">Base weight for the LH subband</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;"><code>w_HL</code></td>
+    <td style="text-align: center;">0 (default) / 0.22–0.3</td>
+    <td style="text-align: center;">Base weight for the HL subband</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;"><code>w_HH</code></td>
+    <td style="text-align: center;">0 (default) / 0.18–0.22</td>
+    <td style="text-align: center;">Base weight for the HH subband</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;"><code>gate_LH</code></td>
+    <td style="text-align: center;">false</td>
+    <td style="text-align: center;">Whether to gate the LH subband using <code>trust_refined</code></td>
+  </tr>
+  <tr>
+    <td style="text-align: center;"><code>detail_start</code></td>
+    <td style="text-align: center;">0.0</td>
+    <td style="text-align: center;">Starting ratio for detail unlocking</td>
+  </tr>
+</table>
 
 
 **Discretization Formula (EDM Scheduler):**
