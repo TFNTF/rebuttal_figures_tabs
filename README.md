@@ -375,7 +375,7 @@
   </tr>
 </table>
 
-## Table 7. Ablation Studies of Measurement-consistency Updates with Different Strengths Across Frequency Components
+## Table 7. Ablation Studies of Measurement-consistency Updates with Different Strengths Across Frequency Components (Motion_deblurring)
 <table>
   <tr>
     <th rowspan="2" style="text-align: center;">Method</th>
