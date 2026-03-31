@@ -323,7 +323,7 @@
     <td style="text-align: center;">22.16</td>
     <td style="text-align: center;">0.655</td>
     <td style="text-align: center;">0.424</td>
-    <td style="text-align: center;">~2</td>
+    <td style="text-align: center;">~4</td>
   <tr>
   <tr>
     <td style="text-align: center;">DCDP</td>
