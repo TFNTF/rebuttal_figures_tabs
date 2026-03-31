@@ -303,6 +303,7 @@
   </tr>
 </table>
 * indicates that this experiment was conducted on a single RTX Pro 6000 Blackwell because it exceeded the memory capacity of a single NVIDIA A6000. The RTX Pro 6000 Blackwell also delivers substantially higher computational speed, approximately 2.5× that of the NVIDIA A6000.
+
 † indicates that the reported efficiency partly benefits from using a foundation model trained with Flow Matching, whereas the checkpoints for the other methods are based on DDPM training.
 
 ## Table 5. Ablation Studies of Noise Schedule (N) (Motion_deblurring On FFHQ)
