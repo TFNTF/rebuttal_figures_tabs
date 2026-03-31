@@ -319,6 +319,13 @@
     <th style="text-align: center; white-space: nowrap;">LPIPS ↓</th>
   </tr>
   <tr>
+    <td style="text-align: center;">FlowDPS</td>
+    <td style="text-align: center;">22.16</td>
+    <td style="text-align: center;">0.655</td>
+    <td style="text-align: center;">0.424</td>
+    <td style="text-align: center;">~2</td>
+  <tr>
+  <tr>
     <td style="text-align: center;">DCDP</td>
     <td style="text-align: center;">25.08</td>
     <td style="text-align: center;">0.512</td>
@@ -332,7 +339,7 @@
     <td style="text-align: center;">~2</td>
   </tr>
 </table>
-* indicates that this experiment only compares against methods with better efficiency and with publicly available official code supporting this task.
+* indicates that, for this experiment, we compare only with methods that are more efficient and provide publicly available official code for this task. We further set $N=9$ and $T=90$ to ensure a matched time budget.
 
 ## Table 6. Ablation Studies of Noise Schedule (N) (Motion_deblurring On FFHQ)
 <table>
