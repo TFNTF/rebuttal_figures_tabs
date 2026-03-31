@@ -375,7 +375,7 @@
   </tr>
 </table>
 
-## Table 7. Quantitative Results of Box-inpainting
+## Table 7. Ablation Studies of Measurement-consistency Updates with Different Strengths Across Frequency Components
 <table>
   <tr>
     <th rowspan="2" style="text-align: center;">Method</th>
@@ -390,105 +390,19 @@
     <th style="text-align: center; white-space: nowrap;">SSIM ↑</th>
     <th style="text-align: center; white-space: nowrap;">LPIPS ↓</th>
   </tr>
-
-  <tr>
-    <td style="text-align: center;">DAPS</td>
-    <td style="text-align: center;">24.07</td>
-    <td style="text-align: center;">0.814</td>
-    <td style="text-align: center;">0.133</td>
-    <td style="text-align: center;">21.43</td>
-    <td style="text-align: center;">0.725</td>
-    <td style="text-align: center;">0.214</td>
-  </tr>
-  <tr>
-    <td style="text-align: center;">DPS</td>
-    <td style="text-align: center;">22.51</td>
-    <td style="text-align: center;">0.792</td>
-    <td style="text-align: center;">0.209</td>
-    <td style="text-align: center;">18.94</td>
-    <td style="text-align: center;">0.722</td>
-    <td style="text-align: center;">0.257</td>
-  </tr>
-  <tr>
-    <td style="text-align: center;">DDRM</td>
-    <td style="text-align: center;">22.26</td>
-    <td style="text-align: center;">0.801</td>
-    <td style="text-align: center;">0.207</td>
-    <td style="text-align: center;">18.63</td>
-    <td style="text-align: center;">0.733</td>
-    <td style="text-align: center;">0.254</td>
-  </tr>
-  <tr>
-    <td style="text-align: center;">DDNM</td>
-    <td style="text-align: center;">24.47</td>
-    <td style="text-align: center;">0.837</td>
-    <td style="text-align: center;">0.235</td>
-    <td style="text-align: center;">21.64</td>
-    <td style="text-align: center;">0.748</td>
-    <td style="text-align: center;">0.319</td>
-  </tr>
-  <tr>
-    <td style="text-align: center;">DCDP</td>
-    <td style="text-align: center;">23.89</td>
-    <td style="text-align: center;">0.760</td>
-    <td style="text-align: center;">0.163</td>
-    <td style="text-align: center;">-</td>
-    <td style="text-align: center;">-</td>
-    <td style="text-align: center;">-</td>
-  </tr>
-  <tr>
-    <td style="text-align: center;">FPS-SMC</td>
-    <td style="text-align: center;">24.86</td>
-    <td style="text-align: center;">0.823</td>
-    <td style="text-align: center;">0.146</td>
-    <td style="text-align: center;">22.16</td>
-    <td style="text-align: center;">0.726</td>
-    <td style="text-align: center;">0.208</td>
-  </tr>
-
-  <tr>
-    <td style="text-align: center;">LatentDAPS(ours)</td>
-    <td style="text-align: center;">23.99</td>
-    <td style="text-align: center;">0.802</td>
-    <td style="text-align: center;">0.194</td>
-    <td style="text-align: center;">17.19</td>
-    <td style="text-align: center;">0.624</td>
-    <td style="text-align: center;">0.340</td>
-  </tr>
-  <tr>
-    <td style="text-align: center;">PSLD</td>
-    <td style="text-align: center;">24.22</td>
-    <td style="text-align: center;">0.813</td>
-    <td style="text-align: center;">0.158</td>
-    <td style="text-align: center;">20.10</td>
-    <td style="text-align: center;">0.694</td>
-    <td style="text-align: center;">0.465</td>
-  </tr>
-  <tr>
-    <td style="text-align: center;">ReSample</td>
-    <td style="text-align: center;">20.06</td>
-    <td style="text-align: center;">0.749</td>
-    <td style="text-align: center;">0.184</td>
-    <td style="text-align: center;">18.29</td>
-    <td style="text-align: center;">0.631</td>
-    <td style="text-align: center;">0.262</td>
-  </tr>
   <tr>
     <td style="text-align: center;">Ours</td>
-    <td style="text-align: center;">24.57</td>
-    <td style="text-align: center;">0.838</td>
-    <td style="text-align: center;">0.126</td>
-    <td style="text-align: center;">21.58</td>
-    <td style="text-align: center;">0.739</td>
-    <td style="text-align: center;">0.207</td>
+    <td style="text-align: center;">14.88</td>
+    <td style="text-align: center;">0.179</td>
+    <td style="text-align: center;">0.583</td>
+    <td style="text-align: center;">15.02</td>
+    <td style="text-align: center;">0.244</td>
+    <td style="text-align: center;">0.482</td>
   </tr>
 </table>
 
 
-
-
-
-## Table 6. Ablation Studies of Noise Schedule (N) (Motion_deblurring On FFHQ)
+## Table 8. Ablation Studies of Noise Schedule (N) (Motion_deblurring On FFHQ)
 <table>
   <tr>
     <th rowspan="2" style="text-align: center;">N (Diffusion Steps in Line 2 of Alg.1)</th>
@@ -532,7 +446,7 @@
   </tr>
 </table>
 
-## Table 7. Ablation Studies of Optimization Steps (T) (Motion_deblurring On FFHQ)
+## Table 9. Ablation Studies of Optimization Steps (T) (Motion_deblurring On FFHQ)
 <table>
   <tr>
     <th rowspan="2" style="text-align: center;">T (Optimization Steps in Line 8 of Alg.1)</th>
@@ -576,7 +490,7 @@
   </tr>
 </table>
 
-## Table 8. Ablation Studies of $\sigma$ of Eq.(5) (Motion_deblurring On FFHQ)
+## Table 10. Ablation Studies of $\sigma$ of Eq.(5) (Motion_deblurring On FFHQ)
 <table>
   <tr>
     <th rowspan="2" style="text-align: center;">$\sigma$</th>
@@ -615,7 +529,7 @@
   </tr>
 </table>
 
-## Table 9. Ablation Studies of Other Parameters (Motion_deblurring On FFHQ)
+## Table 11. Ablation Studies of Other Parameters (Motion_deblurring On FFHQ)
 <table>
   <tr>
     <th rowspan="2" style="text-align: center;">Parameters</th>
@@ -664,7 +578,7 @@
 
 ![silo](figures/silo.png)
 
-## Table 10. Quantitative Comparison Between SILO and Ours on FFHQ*
+## Table 12. Quantitative Comparison Between SILO and Ours on FFHQ*
 <table>
   <tr>
     <th rowspan="2" style="text-align: center;">Methods</th>
@@ -701,7 +615,7 @@
 
 * indicates that, based on the publicly available SILO codebase, only Gaussian deblurring and super-resolution on the FFHQ dataset are supported. 
 
-## Table 11. Parameters Config of Our Method
+## Table 13. Parameters Config of Our Method
 <table>
   <tr>
     <th style="text-align: center;">Parameter</th>
