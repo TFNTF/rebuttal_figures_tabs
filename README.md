@@ -20,9 +20,9 @@
     <td style="text-align: center;">11.20</td>
     <td style="text-align: center;">0.556</td>
     <td style="text-align: center;">0.430</td>
-    <td style="text-align: center;"></td>
-    <td style="text-align: center;"></td>
-    <td style="text-align: center;"></td>
+    <td style="text-align: center;">11.63</td>
+    <td style="text-align: center;">0.590</td>
+    <td style="text-align: center;">0.547</td>
   </tr>
 
   <tr>
@@ -314,7 +314,43 @@
   </tr>
 </table>
 
-## Table 7. Quantitative Results of Box-inpainting
+## Table 7. Abaltion Studies of Full-band Strategy (FFHQ)
+<table>
+  <tr>
+    <th rowspan="2" style="text-align: center;">Strategy</th>
+    <th colspan="3" style="text-align: center; white-space: nowrap;">Super-resolution</th>
+    <th colspan="3" style="text-align: center; white-space: nowrap;">Motion Deblurring</th>
+  </tr>
+  <tr>
+    <th style="text-align: center; white-space: nowrap;">PSNR ↑</th>
+    <th style="text-align: center; white-space: nowrap;">SSIM ↑</th>
+    <th style="text-align: center; white-space: nowrap;">LPIPS ↓</th>
+    <th style="text-align: center; white-space: nowrap;">PSNR ↑</th>
+    <th style="text-align: center; white-space: nowrap;">SSIM ↑</th>
+    <th style="text-align: center; white-space: nowrap;">LPIPS ↓</th>
+  </tr>
+
+  <tr>
+    <td style="text-align: center;">Ours (Full-band)</td>
+    <td style="text-align: center;">29.08</td>
+    <td style="text-align: center;">0.818</td>
+    <td style="text-align: center;">0.173</td>
+    <td style="text-align: center;">29.25</td>
+    <td style="text-align: center;">0.839</td>
+    <td style="text-align: center;">0.163</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">Ours (used)</td>
+    <td style="text-align: center;">31.88</td>
+    <td style="text-align: center;">0.890</td>
+    <td style="text-align: center;">0.090</td>
+    <td style="text-align: center;">36.69</td>
+    <td style="text-align: center;">0.940</td>
+    <td style="text-align: center;">0.054</td>
+  </tr>
+</table>
+
+## Table 8. Quantitative Results of Box-inpainting
 <table>
   <tr>
     <th rowspan="2" style="text-align: center;">Method</th>
@@ -428,7 +464,7 @@
 ![box_1](figures/box_1.png)
 ![box_2](figures/box_2.png)
 
-## Table 8. Ablation Studies of Measurement-consistency Updates with Different Strengths Across Frequency Components (Motion_deblurring)
+## Table 9. Ablation Studies of Measurement-consistency Updates with Different Strengths Across Frequency Components (Motion_deblurring)
 <table>
   <tr>
     <th rowspan="2" style="text-align: center;">Method</th>
@@ -455,7 +491,7 @@
 </table>
 
 
-## Table 9. Ablation Studies of Noise Schedule (N) (Motion_deblurring On FFHQ)
+## Table 10. Ablation Studies of Noise Schedule (N) (Motion_deblurring On FFHQ)
 <table>
   <tr>
     <th rowspan="2" style="text-align: center;">N (Diffusion Steps in Line 2 of Alg.1)</th>
@@ -499,7 +535,7 @@
   </tr>
 </table>
 
-## Table 10. Ablation Studies of Optimization Steps (T) (Motion_deblurring On FFHQ)
+## Table 11. Ablation Studies of Optimization Steps (T) (Motion_deblurring On FFHQ)
 <table>
   <tr>
     <th rowspan="2" style="text-align: center;">T (Optimization Steps in Line 8 of Alg.1)</th>
@@ -543,7 +579,7 @@
   </tr>
 </table>
 
-## Table 11. Ablation Studies of $\sigma$ of Eq.(5) (Motion_deblurring On FFHQ)
+## Table 12. Ablation Studies of $\sigma$ of Eq.(5) (Motion_deblurring On FFHQ)
 <table>
   <tr>
     <th rowspan="2" style="text-align: center;">$\sigma$</th>
@@ -582,7 +618,7 @@
   </tr>
 </table>
 
-## Table 12. Ablation Studies of Other Parameters (Motion_deblurring On FFHQ)
+## Table 13. Ablation Studies of Other Parameters (Motion_deblurring On FFHQ)
 <table>
   <tr>
     <th rowspan="2" style="text-align: center;">Parameters</th>
@@ -631,7 +667,7 @@
 
 ![silo](figures/silo.png)
 
-## Table 13. Quantitative Comparison Between SILO and Ours on FFHQ*
+## Table 14. Quantitative Comparison Between SILO and Ours on FFHQ*
 <table>
   <tr>
     <th rowspan="2" style="text-align: center;">Methods</th>
@@ -668,7 +704,7 @@
 
 * indicates that, based on the publicly available SILO codebase, only Gaussian deblurring and super-resolution on the FFHQ dataset are supported. 
 
-## Table 14. Parameters Config of Our Method
+## Table 15. Parameters Config of Our Method
 <table>
   <tr>
     <th style="text-align: center;">Parameter</th>
