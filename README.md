@@ -227,6 +227,50 @@
 </table>
 * indicates that, for this experiment, we compare only with methods that are more efficient and provide publicly available official code for this task. We further set N=9 and T=90 to ensure a matched time budget.
 
+
+
+## Figure 2. Qualitative results for Real-world Blur According to BlindDPS (Motion_deblurring)
+
+![real_1](figures/real_1.png)
+![real_2](figures/real_2.png)
+
+## Table 7. Qualitative results for Real-world Blur According to BlindDPS (Motion_deblurring)
+<table>
+  <tr>
+    <th rowspan="2" style="text-align: center;">Method</th>
+    <th colspan="3" style="text-align: center; white-space: nowrap;">FFHQ</th>
+    <th colspan="3" style="text-align: center; white-space: nowrap;">ImageNet</th>
+  </tr>
+  <tr>
+    <th style="text-align: center; white-space: nowrap;">PSNR ↑</th>
+    <th style="text-align: center; white-space: nowrap;">SSIM ↑</th>
+    <th style="text-align: center; white-space: nowrap;">LPIPS ↓</th>
+    <th style="text-align: center; white-space: nowrap;">PSNR ↑</th>
+    <th style="text-align: center; white-space: nowrap;">SSIM ↑</th>
+    <th style="text-align: center; white-space: nowrap;">LPIPS ↓</th>
+  </tr>
+
+  <tr>
+    <td style="text-align: center;">BlindDPS</td>
+    <td style="text-align: center;">23.58</td>
+    <td style="text-align: center;">0.646</td>
+    <td style="text-align: center;">0.231</td>
+    <td style="text-align: center;">22.17</td>
+    <td style="text-align: center;">0.579</td>
+    <td style="text-align: center;">0.352</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">Ours</td>
+    <td style="text-align: center;">29.62</td>
+    <td style="text-align: center;">0.785</td>
+    <td style="text-align: center;">0.156</td>
+    <td style="text-align: center;">26.09</td>
+    <td style="text-align: center;">0.704</td>
+    <td style="text-align: center;">0.215</td>
+  </tr>
+</table>
+
+
 ## Table 6. Quantitative Results for Operator Mismatch (Motion_deblurring On FFHQ)
 <table>
   <tr>
@@ -379,7 +423,7 @@
   </tr>
 </table>
 
-## Figure 2. Qualitative results for Box-inpainting
+## Figure 3. Qualitative results for Box-inpainting
 
 ![box_1](figures/box_1.png)
 ![box_2](figures/box_2.png)
@@ -578,12 +622,12 @@
 </table>
 
 
-## Figure 3. Qualitative comparison Between DPS (1000 Steps) and Ours
+## Figure 4. Qualitative comparison Between DPS (1000 Steps) and Ours
 
 ![dps_1](figures/comp_dps_1.png)
 ![dps_2](figures/comp_dps_2.png)
 
-## Figure 4. Qualitative Comparison Between SILO and Ours
+## Figure 5. Qualitative Comparison Between SILO and Ours
 
 ![silo](figures/silo.png)
 
