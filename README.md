@@ -463,7 +463,7 @@
   </tr>
 </table>
 
-## Figure 4. Qualitative results for Box-inpainting
+## Figure 4. Qualitative Results for Box-inpainting
 
 ![box_1](figures/box_1.png)
 ![box_2](figures/box_2.png)
@@ -662,7 +662,7 @@
 </table>
 
 
-## Figure 5. Qualitative comparison Between DPS (1000 Steps) and Ours
+## Figure 5. Qualitative Comparison Between DPS (1000 Steps) and Ours
 
 ![dps_1](figures/comp_dps_1.png)
 ![dps_2](figures/comp_dps_2.png)
