@@ -20,9 +20,9 @@
     <td style="text-align: center;">11.20</td>
     <td style="text-align: center;">0.556</td>
     <td style="text-align: center;">0.430</td>
-    <td style="text-align: center;">11.63</td>
-    <td style="text-align: center;">0.590</td>
-    <td style="text-align: center;">0.547</td>
+    <td style="text-align: center;">11.68</td>
+    <td style="text-align: center;">0.659</td>
+    <td style="text-align: center;">0.513</td>
   </tr>
 
   <tr>
