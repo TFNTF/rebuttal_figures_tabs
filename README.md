@@ -667,7 +667,7 @@
 ![dps_1](figures/comp_dps_1.png)
 ![dps_2](figures/comp_dps_2.png)
 
-## Figure 5. Qualitative Comparison Between SILO and Ours
+## Figure 6. Qualitative Comparison Between SILO and Ours
 
 ![silo](figures/silo.png)
 
