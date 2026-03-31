@@ -339,7 +339,7 @@
     <td style="text-align: center;">~2</td>
   </tr>
 </table>
-* indicates that, for this experiment, we compare only with methods that are more efficient and provide publicly available official code for this task. We further set $N=9$ and $T=90$ to ensure a matched time budget.
+* indicates that, for this experiment, we compare only with methods that are more efficient and provide publicly available official code for this task. We further set N=9 and T=90 to ensure a matched time budget.
 
 ## Table 6. Ablation Studies of Noise Schedule (N) (Motion_deblurring On FFHQ)
 <table>
