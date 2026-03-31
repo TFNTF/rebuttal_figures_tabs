@@ -229,7 +229,7 @@
 
 
 
-## Figure 2. Qualitative results for Real-world Blur According to BlindDPS (Motion_deblurring)
+## Figure 2. Qualitative Results for Real-world Blur According to BlindDPS (Motion_deblurring)
 
 ![real_1](figures/real_1.png)
 ![real_2](figures/real_2.png)
