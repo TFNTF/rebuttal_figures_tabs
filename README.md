@@ -331,11 +331,11 @@
   </tr>
 
   <tr>
-    <td style="text-align: center;">Ours (Full-band)</td>
-    <td style="text-align: center;">29.08</td>
+    <td style="text-align: center;">Ours (w/o. Freq. & Haar)</td>
+    <td style="text-align: center;">29.79</td>
     <td style="text-align: center;">0.818</td>
     <td style="text-align: center;">0.173</td>
-    <td style="text-align: center;">29.25</td>
+    <td style="text-align: center;">29.67</td>
     <td style="text-align: center;">0.839</td>
     <td style="text-align: center;">0.163</td>
   </tr>
