@@ -227,40 +227,6 @@
 </table>
 * indicates that, for this experiment, we compare only with methods that are more efficient and provide publicly available official code for this task. We further set N=9 and T=90 to ensure a matched time budget.
 
-## Table 5. Quantitative Results Under The Same Computational Budget* (Motion_deblurring On FFHQ)
-<table>
-  <tr>
-    <th rowspan="2" style="text-align: center;">Method</th>
-    <th colspan="3" style="text-align: center; white-space: nowrap;">FFHQ</th>
-    <th rowspan="2" style="text-align: center; white-space: nowrap;">Runtime (s/img)</th>
-  </tr>
-  <tr>
-    <th style="text-align: center; white-space: nowrap;">PSNR ↑</th>
-    <th style="text-align: center; white-space: nowrap;">SSIM ↑</th>
-    <th style="text-align: center; white-space: nowrap;">LPIPS ↓</th>
-  </tr>
-  <tr>
-    <td style="text-align: center;">FlowDPS</td>
-    <td style="text-align: center;">22.16</td>
-    <td style="text-align: center;">0.655</td>
-    <td style="text-align: center;">0.424</td>
-    <td style="text-align: center;">~4</td>
-  <tr>
-  <tr>
-    <td style="text-align: center;">DCDP</td>
-    <td style="text-align: center;">25.08</td>
-    <td style="text-align: center;">0.512</td>
-    <td style="text-align: center;">0.364</td>
-    <td style="text-align: center;">~2</td>
-  <tr>
-    <td style="text-align: center;">Ours</td>
-    <td style="text-align: center;">27.31</td>
-    <td style="text-align: center;">0.603</td>
-    <td style="text-align: center;">0.264</td>
-    <td style="text-align: center;">~2</td>
-  </tr>
-</table>
-
 ## Table 6. Quantitative Results for Operator Mismatch (Motion_deblurring On FFHQ)
 <table>
   <tr>
