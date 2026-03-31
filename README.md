@@ -141,9 +141,9 @@
   </tr>
   <tr>
     <td style="text-align: center;">FPS</td>
-    <td style="text-align: center;"><strong>~100</strong></td>
+    <td style="text-align: center;">~100</td>
     <td style="text-align: center;">21.56</td>
-    <td style="text-align: center;"><strong>~150*</strong></td>
+    <td style="text-align: center;">~150*</td>
     <td style="text-align: center;">57.66</td>
     <td style="text-align: center;">1000</td>
   </tr>
@@ -342,7 +342,7 @@
   </tr>
 
   <tr>
-    <td style="text-align: center;">LatentDAPS(ours)</td>
+    <td style="text-align: center;">LatentDAPS</td>
     <td style="text-align: center;">23.99</td>
     <td style="text-align: center;">0.802</td>
     <td style="text-align: center;">0.194</td>
