@@ -234,7 +234,7 @@
 ![real_1](figures/real_1.png)
 ![real_2](figures/real_2.png)
 
-## Table 7. Qualitative results for Real-world Blur According to BlindDPS (Motion_deblurring)
+## Table 5. Qualitative results for Real-world Blur According to BlindDPS (Motion_deblurring)
 <table>
   <tr>
     <th rowspan="2" style="text-align: center;">Method</th>
