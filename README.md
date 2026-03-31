@@ -350,7 +350,7 @@
   </tr>
 </table>
 
-## Figure 3. Qualitative results for Real-world Blur According to BlindDPS (Motion_deblurring)
+## Figure 3. Qualitative results for Ablation Studies
 
 ![abl_1](figures/ablation.png)
 
