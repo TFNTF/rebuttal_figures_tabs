@@ -306,7 +306,35 @@
 
 † indicates that the reported efficiency partly benefits from using a foundation model trained with Flow Matching, whereas the checkpoints for the other methods are based on DDPM training.
 
-## Table 5. Ablation Studies of Noise Schedule (N) (Motion_deblurring On FFHQ)
+## Table 5. Quantitative Results Under The Same Computational Budget* (Motion_deblurring On FFHQ)
+<table>
+  <tr>
+    <th rowspan="2" style="text-align: center;">Method</th>
+    <th colspan="3" style="text-align: center; white-space: nowrap;">FFHQ</th>
+    <th rowspan="2" style="text-align: center; white-space: nowrap;">Runtime (s/img)</th>
+  </tr>
+  <tr>
+    <th style="text-align: center; white-space: nowrap;">PSNR ↑</th>
+    <th style="text-align: center; white-space: nowrap;">SSIM ↑</th>
+    <th style="text-align: center; white-space: nowrap;">LPIPS ↓</th>
+  </tr>
+  <tr>
+    <td style="text-align: center;">DCDP</td>
+    <td style="text-align: center;">25.08</td>
+    <td style="text-align: center;">0.512</td>
+    <td style="text-align: center;">0.364</td>
+    <td style="text-align: center;">~2</td>
+  <tr>
+    <td style="text-align: center;">Ours</td>
+    <td style="text-align: center;">27.31</td>
+    <td style="text-align: center;">0.603</td>
+    <td style="text-align: center;">0.264</td>
+    <td style="text-align: center;">~2</td>
+  </tr>
+</table>
+* indicates that this experiment only compares against methods with better efficiency and with publicly available official code supporting this task.
+
+## Table 6. Ablation Studies of Noise Schedule (N) (Motion_deblurring On FFHQ)
 <table>
   <tr>
     <th rowspan="2" style="text-align: center;">N (Diffusion Steps in Line 2 of Alg.1)</th>
@@ -350,7 +378,7 @@
   </tr>
 </table>
 
-## Table 6. Ablation Studies of Optimization Steps (T) (Motion_deblurring On FFHQ)
+## Table 7. Ablation Studies of Optimization Steps (T) (Motion_deblurring On FFHQ)
 <table>
   <tr>
     <th rowspan="2" style="text-align: center;">T (Optimization Steps in Line 8 of Alg.1)</th>
@@ -394,7 +422,7 @@
   </tr>
 </table>
 
-## Table 7. Ablation Studies of $\sigma$ of Eq.(5) (Motion_deblurring On FFHQ)
+## Table 8. Ablation Studies of $\sigma$ of Eq.(5) (Motion_deblurring On FFHQ)
 <table>
   <tr>
     <th rowspan="2" style="text-align: center;">$\sigma$</th>
@@ -433,7 +461,7 @@
   </tr>
 </table>
 
-## Table 8. Ablation Studies of Other Parameters (Motion_deblurring On FFHQ)
+## Table 9. Ablation Studies of Other Parameters (Motion_deblurring On FFHQ)
 <table>
   <tr>
     <th rowspan="2" style="text-align: center;">Parameters</th>
@@ -482,7 +510,7 @@
 
 ![silo](figures/silo.png)
 
-## Table 9. Quantitative Comparison Between SILO and Ours on FFHQ
+## Table 10. Quantitative Comparison Between SILO and Ours on FFHQ
 <table>
   <tr>
     <th rowspan="2" style="text-align: center;">Methods</th>
@@ -517,7 +545,7 @@
   </tr>
 </table>
 
-## Table 10. Parameters Config of Our Method
+## Table 11. Parameters Config of Our Method
 <table>
   <tr>
     <th style="text-align: center;">Parameter</th>
