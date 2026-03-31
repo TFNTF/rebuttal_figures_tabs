@@ -262,7 +262,7 @@
     <td style="text-align: center;">1000</td>
   </tr>
   <tr>
-    <td style="text-align: center;">FlowDPS$\dagger$</td>
+    <td style="text-align: center;">FlowDPS†</td>
     <td style="text-align: center;">~4</td>
     <td style="text-align: center;">12.96</td>
     <td style="text-align: center;">~4</td>
@@ -303,7 +303,7 @@
   </tr>
 </table>
 * indicates that this experiment was conducted on a single RTX Pro 6000 Blackwell because it exceeded the memory capacity of a single NVIDIA A6000. The RTX Pro 6000 Blackwell also delivers substantially higher computational speed, approximately 2.5× that of the NVIDIA A6000.
-$\dagger$ indicates that the reported efficiency partly benefits from using a foundation model trained with Flow Matching, whereas the checkpoints for the other methods are based on DDPM training.
+† indicates that the reported efficiency partly benefits from using a foundation model trained with Flow Matching, whereas the checkpoints for the other methods are based on DDPM training.
 
 ## Table 5. Ablation Studies of Noise Schedule (N) (Motion_deblurring On FFHQ)
 <table>
