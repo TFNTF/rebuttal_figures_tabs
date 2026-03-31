@@ -531,7 +531,7 @@
   </tr>
 
   <tr>
-    <td style="text-align: center;">Ours (used)</td>
+    <td style="text-align: center;">Ours (200)</td>
     <td style="text-align: center;">36.69</td>
     <td style="text-align: center;">0.940</td>
     <td style="text-align: center;">0.054</td>
@@ -575,7 +575,7 @@
   </tr>
 
   <tr>
-    <td style="text-align: center;">Ours (used)</td>
+    <td style="text-align: center;">Ours (200)</td>
     <td style="text-align: center;">36.69</td>
     <td style="text-align: center;">0.940</td>
     <td style="text-align: center;">0.054</td>
@@ -615,7 +615,7 @@
   </tr>
 
   <tr>
-    <td style="text-align: center;">Ours (used)</td>
+    <td style="text-align: center;">Ours (0.05)</td>
     <td style="text-align: center;">36.69</td>
     <td style="text-align: center;">0.940</td>
     <td style="text-align: center;">0.054</td>
