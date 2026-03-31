@@ -85,7 +85,226 @@
 ![wave_1](figures/wave_1.png)
 ![wave_2](figures/wave_2.png)
 
-## Table 3. Quantitative Results of Box-inpainting
+## Table 3. Computational Cost for Compared Methods (Motion_deblurring)
+<table>
+  <tr>
+    <th rowspan="2" style="text-align: center; white-space: nowrap;">Method</th>
+    <th colspan="2" style="text-align: center; white-space: nowrap;">FFHQ</th>
+    <th colspan="2" style="text-align: center; white-space: nowrap;">ImageNet</th>
+    <th rowspan="2" style="text-align: center; white-space: nowrap;">Diffusion NFE</th>
+  </tr>
+  <tr>
+    <th style="text-align: center; white-space: nowrap;">Runtime (s/img)</th>
+    <th style="text-align: center; white-space: nowrap;">Peak Mem (GB)</th>
+    <th style="text-align: center; white-space: nowrap;">Runtime (s/img)</th>
+    <th style="text-align: center; white-space: nowrap;">Peak Mem (GB)</th>
+  </tr>
+  <tr>
+    <td style="text-align: center;">DPS</td>
+    <td style="text-align: center;">~65</td>
+    <td style="text-align: center;">9.44</td>
+    <td style="text-align: center;">~200</td>
+    <td style="text-align: center;">9.44</td>
+    <td style="text-align: center;">1000</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">DDRM</td>
+    <td style="text-align: center;">~5</td>
+    <td style="text-align: center;">4.77</td>
+    <td style="text-align: center;">~5</td>
+    <td style="text-align: center;">6.44</td>
+    <td style="text-align: center;">20</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">DDNM</td>
+    <td style="text-align: center;">~5</td>
+    <td style="text-align: center;">4.70</td>
+    <td style="text-align: center;">~15</td>
+    <td style="text-align: center;">6.37</td>
+    <td style="text-align: center;">100</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">DAPS</td>
+    <td style="text-align: center;">~80</td>
+    <td style="text-align: center;">2.28</td>
+    <td style="text-align: center;">~160</td>
+    <td style="text-align: center;">4.68</td>
+    <td style="text-align: center;">1000</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">FGPS</td>
+    <td style="text-align: center;">~110</td>
+    <td style="text-align: center;">4.65</td>
+    <td style="text-align: center;">~375</td>
+    <td style="text-align: center;">11.08</td>
+    <td style="text-align: center;">1000</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">FPS</td>
+    <td style="text-align: center;"><strong>~100</strong></td>
+    <td style="text-align: center;">21.56</td>
+    <td style="text-align: center;"><strong>~150*</strong></td>
+    <td style="text-align: center;">57.66</td>
+    <td style="text-align: center;">1000</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">FlowDPS†</td>
+    <td style="text-align: center;">~4</td>
+    <td style="text-align: center;">12.96</td>
+    <td style="text-align: center;">~4</td>
+    <td style="text-align: center;">12.96</td>
+    <td style="text-align: center;">28</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">DCDP</td>
+    <td style="text-align: center;">~2</td>
+    <td style="text-align: center;">4.93</td>
+    <td style="text-align: center;">~5</td>
+    <td style="text-align: center;">12.55</td>
+    <td style="text-align: center;">181</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">ReSample</td>
+    <td style="text-align: center;">~780</td>
+    <td style="text-align: center;">6.77</td>
+    <td style="text-align: center;">~780</td>
+    <td style="text-align: center;">6.77</td>
+    <td style="text-align: center;">500</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">PSLD*</td>
+    <td style="text-align: center;">~790</td>
+    <td style="text-align: center;">21.32</td>
+    <td style="text-align: center;">~790</td>
+    <td style="text-align: center;">21.32</td>
+    <td style="text-align: center;">1000</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">Ours</td>
+    <td style="text-align: center;">~130</td>
+    <td style="text-align: center;">2.23</td>
+    <td style="text-align: center;">~200</td>
+    <td style="text-align: center;">4.56</td>
+    <td style="text-align: center;">1000</td>
+  </tr>
+</table>
+* indicates that this experiment was conducted on a single RTX Pro 6000 Blackwell because it exceeded the memory capacity of a single NVIDIA A6000. The RTX Pro 6000 Blackwell also delivers substantially higher computational speed, approximately 2.5× that of the NVIDIA A6000.
+
+† indicates that the reported efficiency partly benefits from using a foundation model trained with Flow Matching, whereas the checkpoints for the other methods are based on DDPM training.
+
+## Table 4. Quantitative Results Under The Same Computational Budget* (Motion_deblurring On FFHQ)
+<table>
+  <tr>
+    <th rowspan="2" style="text-align: center;">Method</th>
+    <th colspan="3" style="text-align: center; white-space: nowrap;">FFHQ</th>
+    <th rowspan="2" style="text-align: center; white-space: nowrap;">Runtime (s/img)</th>
+  </tr>
+  <tr>
+    <th style="text-align: center; white-space: nowrap;">PSNR ↑</th>
+    <th style="text-align: center; white-space: nowrap;">SSIM ↑</th>
+    <th style="text-align: center; white-space: nowrap;">LPIPS ↓</th>
+  </tr>
+  <tr>
+    <td style="text-align: center;">FlowDPS</td>
+    <td style="text-align: center;">22.16</td>
+    <td style="text-align: center;">0.655</td>
+    <td style="text-align: center;">0.424</td>
+    <td style="text-align: center;">~4</td>
+  <tr>
+  <tr>
+    <td style="text-align: center;">DCDP</td>
+    <td style="text-align: center;">25.08</td>
+    <td style="text-align: center;">0.512</td>
+    <td style="text-align: center;">0.364</td>
+    <td style="text-align: center;">~2</td>
+  <tr>
+    <td style="text-align: center;">Ours</td>
+    <td style="text-align: center;">27.31</td>
+    <td style="text-align: center;">0.603</td>
+    <td style="text-align: center;">0.264</td>
+    <td style="text-align: center;">~2</td>
+  </tr>
+</table>
+* indicates that, for this experiment, we compare only with methods that are more efficient and provide publicly available official code for this task. We further set N=9 and T=90 to ensure a matched time budget.
+
+## Table 5. Quantitative Results Under The Same Computational Budget* (Motion_deblurring On FFHQ)
+<table>
+  <tr>
+    <th rowspan="2" style="text-align: center;">Method</th>
+    <th colspan="3" style="text-align: center; white-space: nowrap;">FFHQ</th>
+    <th rowspan="2" style="text-align: center; white-space: nowrap;">Runtime (s/img)</th>
+  </tr>
+  <tr>
+    <th style="text-align: center; white-space: nowrap;">PSNR ↑</th>
+    <th style="text-align: center; white-space: nowrap;">SSIM ↑</th>
+    <th style="text-align: center; white-space: nowrap;">LPIPS ↓</th>
+  </tr>
+  <tr>
+    <td style="text-align: center;">FlowDPS</td>
+    <td style="text-align: center;">22.16</td>
+    <td style="text-align: center;">0.655</td>
+    <td style="text-align: center;">0.424</td>
+    <td style="text-align: center;">~4</td>
+  <tr>
+  <tr>
+    <td style="text-align: center;">DCDP</td>
+    <td style="text-align: center;">25.08</td>
+    <td style="text-align: center;">0.512</td>
+    <td style="text-align: center;">0.364</td>
+    <td style="text-align: center;">~2</td>
+  <tr>
+    <td style="text-align: center;">Ours</td>
+    <td style="text-align: center;">27.31</td>
+    <td style="text-align: center;">0.603</td>
+    <td style="text-align: center;">0.264</td>
+    <td style="text-align: center;">~2</td>
+  </tr>
+</table>
+
+## Table 6. Quantitative Results for Operator Mismatch (Motion_deblurring On FFHQ)
+<table>
+  <tr>
+    <th rowspan="2" style="text-align: center;">Description</th>
+    <th colspan="3" style="text-align: center; white-space: nowrap;">FFHQ</th>
+  </tr>
+  <tr>
+    <th style="text-align: center; white-space: nowrap;">PSNR ↑</th>
+    <th style="text-align: center; white-space: nowrap;">SSIM ↑</th>
+    <th style="text-align: center; white-space: nowrap;">LPIPS ↓</th>
+  </tr>
+  <tr>
+    <td style="text-align: center;">kernel size 51 & intensity 0.05 </td>
+    <td style="text-align: center;">19.36</td>
+    <td style="text-align: center;">0.477</td>
+    <td style="text-align: center;">0.416</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">kernel size 71 & intensity 0.05</td>
+    <td style="text-align: center;">15.203</td>
+    <td style="text-align: center;">0.286</td>
+    <td style="text-align: center;">0.526</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">kernel size 61 & intensity 0.65</td>
+    <td style="text-align: center;">9.69</td>
+    <td style="text-align: center;">0.155</td>
+    <td style="text-align: center;">0.689</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">kernel size 61 & intensity 0.08</td>
+    <td style="text-align: center;">10.03</td>
+    <td style="text-align: center;">0.150</td>
+    <td style="text-align: center;">0.672</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">Ours</td>
+    <td style="text-align: center;">27.31</td>
+    <td style="text-align: center;">0.603</td>
+    <td style="text-align: center;">0.264</td>
+  </tr>
+</table>
+
+## Table 7. Quantitative Results of Box-inpainting
 <table>
   <tr>
     <th rowspan="2" style="text-align: center;">Method</th>
@@ -199,183 +418,7 @@
 ![box_1](figures/box_1.png)
 ![box_2](figures/box_2.png)
 
-## Table 4. Computational Cost for Compared Methods (Motion_deblurring)
-<table>
-  <tr>
-    <th rowspan="2" style="text-align: center; white-space: nowrap;">Method</th>
-    <th colspan="2" style="text-align: center; white-space: nowrap;">FFHQ</th>
-    <th colspan="2" style="text-align: center; white-space: nowrap;">ImageNet</th>
-    <th rowspan="2" style="text-align: center; white-space: nowrap;">Diffusion NFE</th>
-  </tr>
-  <tr>
-    <th style="text-align: center; white-space: nowrap;">Runtime (s/img)</th>
-    <th style="text-align: center; white-space: nowrap;">Peak Mem (GB)</th>
-    <th style="text-align: center; white-space: nowrap;">Runtime (s/img)</th>
-    <th style="text-align: center; white-space: nowrap;">Peak Mem (GB)</th>
-  </tr>
-  <tr>
-    <td style="text-align: center;">DPS</td>
-    <td style="text-align: center;">~65</td>
-    <td style="text-align: center;">9.44</td>
-    <td style="text-align: center;">~200</td>
-    <td style="text-align: center;">9.44</td>
-    <td style="text-align: center;">1000</td>
-  </tr>
-  <tr>
-    <td style="text-align: center;">DDRM</td>
-    <td style="text-align: center;">~5</td>
-    <td style="text-align: center;">4.77</td>
-    <td style="text-align: center;">~5</td>
-    <td style="text-align: center;">6.44</td>
-    <td style="text-align: center;">20</td>
-  </tr>
-  <tr>
-    <td style="text-align: center;">DDNM</td>
-    <td style="text-align: center;">~5</td>
-    <td style="text-align: center;">4.70</td>
-    <td style="text-align: center;">~15</td>
-    <td style="text-align: center;">6.37</td>
-    <td style="text-align: center;">100</td>
-  </tr>
-  <tr>
-    <td style="text-align: center;">DAPS</td>
-    <td style="text-align: center;">~80</td>
-    <td style="text-align: center;">2.28</td>
-    <td style="text-align: center;">~160</td>
-    <td style="text-align: center;">4.68</td>
-    <td style="text-align: center;">1000</td>
-  </tr>
-  <tr>
-    <td style="text-align: center;">FGPS</td>
-    <td style="text-align: center;">~110</td>
-    <td style="text-align: center;">4.65</td>
-    <td style="text-align: center;">~375</td>
-    <td style="text-align: center;">11.08</td>
-    <td style="text-align: center;">1000</td>
-  </tr>
-  <tr>
-    <td style="text-align: center;">FPS</td>
-    <td style="text-align: center;"><strong>~100</strong></td>
-    <td style="text-align: center;">21.56</td>
-    <td style="text-align: center;"><strong>~150*</strong></td>
-    <td style="text-align: center;">57.66</td>
-    <td style="text-align: center;">1000</td>
-  </tr>
-  <tr>
-    <td style="text-align: center;">FlowDPS†</td>
-    <td style="text-align: center;">~4</td>
-    <td style="text-align: center;">12.96</td>
-    <td style="text-align: center;">~4</td>
-    <td style="text-align: center;">12.96</td>
-    <td style="text-align: center;">28</td>
-  </tr>
-  <tr>
-    <td style="text-align: center;">DCDP</td>
-    <td style="text-align: center;">~2</td>
-    <td style="text-align: center;">4.93</td>
-    <td style="text-align: center;">~5</td>
-    <td style="text-align: center;">12.55</td>
-    <td style="text-align: center;">181</td>
-  </tr>
-  <tr>
-    <td style="text-align: center;">ReSample</td>
-    <td style="text-align: center;">~780</td>
-    <td style="text-align: center;">6.77</td>
-    <td style="text-align: center;">~780</td>
-    <td style="text-align: center;">6.77</td>
-    <td style="text-align: center;">500</td>
-  </tr>
-  <tr>
-    <td style="text-align: center;">PSLD*</td>
-    <td style="text-align: center;">~790</td>
-    <td style="text-align: center;">21.32</td>
-    <td style="text-align: center;">~790</td>
-    <td style="text-align: center;">21.32</td>
-    <td style="text-align: center;">1000</td>
-  </tr>
-  <tr>
-    <td style="text-align: center;">Ours</td>
-    <td style="text-align: center;">~130</td>
-    <td style="text-align: center;">2.23</td>
-    <td style="text-align: center;">~200</td>
-    <td style="text-align: center;">4.56</td>
-    <td style="text-align: center;">1000</td>
-  </tr>
-</table>
-* indicates that this experiment was conducted on a single RTX Pro 6000 Blackwell because it exceeded the memory capacity of a single NVIDIA A6000. The RTX Pro 6000 Blackwell also delivers substantially higher computational speed, approximately 2.5× that of the NVIDIA A6000.
-
-† indicates that the reported efficiency partly benefits from using a foundation model trained with Flow Matching, whereas the checkpoints for the other methods are based on DDPM training.
-
-## Table 5. Quantitative Results Under The Same Computational Budget* (Motion_deblurring On FFHQ)
-<table>
-  <tr>
-    <th rowspan="2" style="text-align: center;">Method</th>
-    <th colspan="3" style="text-align: center; white-space: nowrap;">FFHQ</th>
-    <th rowspan="2" style="text-align: center; white-space: nowrap;">Runtime (s/img)</th>
-  </tr>
-  <tr>
-    <th style="text-align: center; white-space: nowrap;">PSNR ↑</th>
-    <th style="text-align: center; white-space: nowrap;">SSIM ↑</th>
-    <th style="text-align: center; white-space: nowrap;">LPIPS ↓</th>
-  </tr>
-  <tr>
-    <td style="text-align: center;">FlowDPS</td>
-    <td style="text-align: center;">22.16</td>
-    <td style="text-align: center;">0.655</td>
-    <td style="text-align: center;">0.424</td>
-    <td style="text-align: center;">~4</td>
-  <tr>
-  <tr>
-    <td style="text-align: center;">DCDP</td>
-    <td style="text-align: center;">25.08</td>
-    <td style="text-align: center;">0.512</td>
-    <td style="text-align: center;">0.364</td>
-    <td style="text-align: center;">~2</td>
-  <tr>
-    <td style="text-align: center;">Ours</td>
-    <td style="text-align: center;">27.31</td>
-    <td style="text-align: center;">0.603</td>
-    <td style="text-align: center;">0.264</td>
-    <td style="text-align: center;">~2</td>
-  </tr>
-</table>
-* indicates that, for this experiment, we compare only with methods that are more efficient and provide publicly available official code for this task. We further set N=9 and T=90 to ensure a matched time budget.
-
-## Table 6. Quantitative Results Under The Same Computational Budget* (Motion_deblurring On FFHQ)
-<table>
-  <tr>
-    <th rowspan="2" style="text-align: center;">Method</th>
-    <th colspan="3" style="text-align: center; white-space: nowrap;">FFHQ</th>
-    <th rowspan="2" style="text-align: center; white-space: nowrap;">Runtime (s/img)</th>
-  </tr>
-  <tr>
-    <th style="text-align: center; white-space: nowrap;">PSNR ↑</th>
-    <th style="text-align: center; white-space: nowrap;">SSIM ↑</th>
-    <th style="text-align: center; white-space: nowrap;">LPIPS ↓</th>
-  </tr>
-  <tr>
-    <td style="text-align: center;">FlowDPS</td>
-    <td style="text-align: center;">22.16</td>
-    <td style="text-align: center;">0.655</td>
-    <td style="text-align: center;">0.424</td>
-    <td style="text-align: center;">~4</td>
-  <tr>
-  <tr>
-    <td style="text-align: center;">DCDP</td>
-    <td style="text-align: center;">25.08</td>
-    <td style="text-align: center;">0.512</td>
-    <td style="text-align: center;">0.364</td>
-    <td style="text-align: center;">~2</td>
-  <tr>
-    <td style="text-align: center;">Ours</td>
-    <td style="text-align: center;">27.31</td>
-    <td style="text-align: center;">0.603</td>
-    <td style="text-align: center;">0.264</td>
-    <td style="text-align: center;">~2</td>
-  </tr>
-</table>
-
-## Table 7. Ablation Studies of Measurement-consistency Updates with Different Strengths Across Frequency Components (Motion_deblurring)
+## Table 8. Ablation Studies of Measurement-consistency Updates with Different Strengths Across Frequency Components (Motion_deblurring)
 <table>
   <tr>
     <th rowspan="2" style="text-align: center;">Method</th>
@@ -402,7 +445,7 @@
 </table>
 
 
-## Table 8. Ablation Studies of Noise Schedule (N) (Motion_deblurring On FFHQ)
+## Table 9. Ablation Studies of Noise Schedule (N) (Motion_deblurring On FFHQ)
 <table>
   <tr>
     <th rowspan="2" style="text-align: center;">N (Diffusion Steps in Line 2 of Alg.1)</th>
@@ -446,7 +489,7 @@
   </tr>
 </table>
 
-## Table 9. Ablation Studies of Optimization Steps (T) (Motion_deblurring On FFHQ)
+## Table 10. Ablation Studies of Optimization Steps (T) (Motion_deblurring On FFHQ)
 <table>
   <tr>
     <th rowspan="2" style="text-align: center;">T (Optimization Steps in Line 8 of Alg.1)</th>
@@ -490,7 +533,7 @@
   </tr>
 </table>
 
-## Table 10. Ablation Studies of $\sigma$ of Eq.(5) (Motion_deblurring On FFHQ)
+## Table 11. Ablation Studies of $\sigma$ of Eq.(5) (Motion_deblurring On FFHQ)
 <table>
   <tr>
     <th rowspan="2" style="text-align: center;">$\sigma$</th>
@@ -529,7 +572,7 @@
   </tr>
 </table>
 
-## Table 11. Ablation Studies of Other Parameters (Motion_deblurring On FFHQ)
+## Table 12. Ablation Studies of Other Parameters (Motion_deblurring On FFHQ)
 <table>
   <tr>
     <th rowspan="2" style="text-align: center;">Parameters</th>
@@ -578,7 +621,7 @@
 
 ![silo](figures/silo.png)
 
-## Table 12. Quantitative Comparison Between SILO and Ours on FFHQ*
+## Table 13. Quantitative Comparison Between SILO and Ours on FFHQ*
 <table>
   <tr>
     <th rowspan="2" style="text-align: center;">Methods</th>
@@ -615,7 +658,7 @@
 
 * indicates that, based on the publicly available SILO codebase, only Gaussian deblurring and super-resolution on the FFHQ dataset are supported. 
 
-## Table 13. Parameters Config of Our Method
+## Table 14. Parameters Config of Our Method
 <table>
   <tr>
     <th style="text-align: center;">Parameter</th>
