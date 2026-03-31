@@ -172,7 +172,7 @@
     <td style="text-align: center;">500</td>
   </tr>
   <tr>
-    <td style="text-align: center;">PSLD*</td>
+    <td style="text-align: center;">PSLD</td>
     <td style="text-align: center;">~790</td>
     <td style="text-align: center;">21.32</td>
     <td style="text-align: center;">~790</td>
