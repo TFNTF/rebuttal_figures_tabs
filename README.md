@@ -350,7 +350,7 @@
   </tr>
 </table>
 
-## Figure 3. Qualitative results for Ablation Studies
+## Figure 3. Qualitative Results for Ablation Studies
 
 ![abl_1](figures/ablation.png)
 
