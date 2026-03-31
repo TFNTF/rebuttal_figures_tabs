@@ -262,7 +262,7 @@
     <td style="text-align: center;">1000</td>
   </tr>
   <tr>
-    <td style="text-align: center;">FlowDPS</td>
+    <td style="text-align: center;">FlowDPS$\dagger$</td>
     <td style="text-align: center;">~4</td>
     <td style="text-align: center;">12.96</td>
     <td style="text-align: center;">~4</td>
@@ -303,6 +303,7 @@
   </tr>
 </table>
 * indicates that this experiment was conducted on a single RTX Pro 6000 Blackwell because it exceeded the memory capacity of a single NVIDIA A6000. The RTX Pro 6000 Blackwell also delivers substantially higher computational speed, approximately 2.5× that of the NVIDIA A6000.
+$\dagger$ indicates that the reported efficiency partly benefits from using a foundation model trained with Flow Matching, whereas the checkpoints for the other methods are based on DDPM training.
 
 ## Table 5. Ablation Studies of Noise Schedule (N) (Motion_deblurring On FFHQ)
 <table>
@@ -480,7 +481,42 @@
 
 ![silo](figures/silo.png)
 
-## Table 8. Parameters Config of Our Method
+## Table 9. Quantitative Comparison Between SILO and Ours on FFHQ
+<table>
+  <tr>
+    <th rowspan="2" style="text-align: center;">Methods</th>
+    <th colspan="3" style="text-align: center; white-space: nowrap;">Gaussian Deblurring</th>
+    <th colspan="3" style="text-align: center; white-space: nowrap;">Super-resolution</th>
+  </tr>
+  <tr>
+    <th style="text-align: center; white-space: nowrap;">PSNR ↑</th>
+    <th style="text-align: center; white-space: nowrap;">SSIM ↑</th>
+    <th style="text-align: center; white-space: nowrap;">LPIPS ↓</th>
+    <th style="text-align: center; white-space: nowrap;">PSNR ↑</th>
+    <th style="text-align: center; white-space: nowrap;">SSIM ↑</th>
+    <th style="text-align: center; white-space: nowrap;">LPIPS ↓</th>
+  </tr>
+  <tr>
+    <td style="text-align: center;">SILO</td>
+    <td style="text-align: center;">26.53</td>
+    <td style="text-align: center;">0.745</td>
+    <td style="text-align: center;">0.317</td>
+    <td style="text-align: center;">26.79</td>
+    <td style="text-align: center;">0.761</td>
+    <td style="text-align: center;">0.297</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">Ours</td>
+    <td style="text-align: center;">29.99</td>
+    <td style="text-align: center;">0.821</td>
+    <td style="text-align: center;">0.175</td>
+    <td style="text-align: center;">31.88</td>
+    <td style="text-align: center;">0.890</td>
+    <td style="text-align: center;">0.090</td>
+  </tr>
+</table>
+
+## Table 10. Parameters Config of Our Method
 <table>
   <tr>
     <th style="text-align: center;">Parameter</th>
