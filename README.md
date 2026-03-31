@@ -17,12 +17,12 @@
   </tr>
   <tr>
     <td style="text-align: center;">High-pass</td>
-    <td style="text-align: center;">10.82</td>
-    <td style="text-align: center;">0.533</td>
-    <td style="text-align: center;">0.492</td>
-    <td style="text-align: center;">24.26</td>
-    <td style="text-align: center;">0.856</td>
-    <td style="text-align: center;">0.142</td>
+    <td style="text-align: center;">11.20</td>
+    <td style="text-align: center;">0.556</td>
+    <td style="text-align: center;">0.430</td>
+    <td style="text-align: center;"></td>
+    <td style="text-align: center;"></td>
+    <td style="text-align: center;"></td>
   </tr>
 
   <tr>
@@ -341,6 +341,153 @@
 </table>
 * indicates that, for this experiment, we compare only with methods that are more efficient and provide publicly available official code for this task. We further set N=9 and T=90 to ensure a matched time budget.
 
+## Table 6. Quantitative Results Under The Same Computational Budget* (Motion_deblurring On FFHQ)
+<table>
+  <tr>
+    <th rowspan="2" style="text-align: center;">Method</th>
+    <th colspan="3" style="text-align: center; white-space: nowrap;">FFHQ</th>
+    <th rowspan="2" style="text-align: center; white-space: nowrap;">Runtime (s/img)</th>
+  </tr>
+  <tr>
+    <th style="text-align: center; white-space: nowrap;">PSNR ↑</th>
+    <th style="text-align: center; white-space: nowrap;">SSIM ↑</th>
+    <th style="text-align: center; white-space: nowrap;">LPIPS ↓</th>
+  </tr>
+  <tr>
+    <td style="text-align: center;">FlowDPS</td>
+    <td style="text-align: center;">22.16</td>
+    <td style="text-align: center;">0.655</td>
+    <td style="text-align: center;">0.424</td>
+    <td style="text-align: center;">~4</td>
+  <tr>
+  <tr>
+    <td style="text-align: center;">DCDP</td>
+    <td style="text-align: center;">25.08</td>
+    <td style="text-align: center;">0.512</td>
+    <td style="text-align: center;">0.364</td>
+    <td style="text-align: center;">~2</td>
+  <tr>
+    <td style="text-align: center;">Ours</td>
+    <td style="text-align: center;">27.31</td>
+    <td style="text-align: center;">0.603</td>
+    <td style="text-align: center;">0.264</td>
+    <td style="text-align: center;">~2</td>
+  </tr>
+</table>
+
+## Table 7. Quantitative Results of Box-inpainting
+<table>
+  <tr>
+    <th rowspan="2" style="text-align: center;">Method</th>
+    <th colspan="3" style="text-align: center; white-space: nowrap;">FFHQ</th>
+    <th colspan="3" style="text-align: center; white-space: nowrap;">ImageNet</th>
+  </tr>
+  <tr>
+    <th style="text-align: center; white-space: nowrap;">PSNR ↑</th>
+    <th style="text-align: center; white-space: nowrap;">SSIM ↑</th>
+    <th style="text-align: center; white-space: nowrap;">LPIPS ↓</th>
+    <th style="text-align: center; white-space: nowrap;">PSNR ↑</th>
+    <th style="text-align: center; white-space: nowrap;">SSIM ↑</th>
+    <th style="text-align: center; white-space: nowrap;">LPIPS ↓</th>
+  </tr>
+
+  <tr>
+    <td style="text-align: center;">DAPS</td>
+    <td style="text-align: center;">24.07</td>
+    <td style="text-align: center;">0.814</td>
+    <td style="text-align: center;">0.133</td>
+    <td style="text-align: center;">21.43</td>
+    <td style="text-align: center;">0.725</td>
+    <td style="text-align: center;">0.214</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">DPS</td>
+    <td style="text-align: center;">22.51</td>
+    <td style="text-align: center;">0.792</td>
+    <td style="text-align: center;">0.209</td>
+    <td style="text-align: center;">18.94</td>
+    <td style="text-align: center;">0.722</td>
+    <td style="text-align: center;">0.257</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">DDRM</td>
+    <td style="text-align: center;">22.26</td>
+    <td style="text-align: center;">0.801</td>
+    <td style="text-align: center;">0.207</td>
+    <td style="text-align: center;">18.63</td>
+    <td style="text-align: center;">0.733</td>
+    <td style="text-align: center;">0.254</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">DDNM</td>
+    <td style="text-align: center;">24.47</td>
+    <td style="text-align: center;">0.837</td>
+    <td style="text-align: center;">0.235</td>
+    <td style="text-align: center;">21.64</td>
+    <td style="text-align: center;">0.748</td>
+    <td style="text-align: center;">0.319</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">DCDP</td>
+    <td style="text-align: center;">23.89</td>
+    <td style="text-align: center;">0.760</td>
+    <td style="text-align: center;">0.163</td>
+    <td style="text-align: center;">-</td>
+    <td style="text-align: center;">-</td>
+    <td style="text-align: center;">-</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">FPS-SMC</td>
+    <td style="text-align: center;">24.86</td>
+    <td style="text-align: center;">0.823</td>
+    <td style="text-align: center;">0.146</td>
+    <td style="text-align: center;">22.16</td>
+    <td style="text-align: center;">0.726</td>
+    <td style="text-align: center;">0.208</td>
+  </tr>
+
+  <tr>
+    <td style="text-align: center;">LatentDAPS(ours)</td>
+    <td style="text-align: center;">23.99</td>
+    <td style="text-align: center;">0.802</td>
+    <td style="text-align: center;">0.194</td>
+    <td style="text-align: center;">17.19</td>
+    <td style="text-align: center;">0.624</td>
+    <td style="text-align: center;">0.340</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">PSLD</td>
+    <td style="text-align: center;">24.22</td>
+    <td style="text-align: center;">0.813</td>
+    <td style="text-align: center;">0.158</td>
+    <td style="text-align: center;">20.10</td>
+    <td style="text-align: center;">0.694</td>
+    <td style="text-align: center;">0.465</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">ReSample</td>
+    <td style="text-align: center;">20.06</td>
+    <td style="text-align: center;">0.749</td>
+    <td style="text-align: center;">0.184</td>
+    <td style="text-align: center;">18.29</td>
+    <td style="text-align: center;">0.631</td>
+    <td style="text-align: center;">0.262</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">Ours</td>
+    <td style="text-align: center;">24.57</td>
+    <td style="text-align: center;">0.838</td>
+    <td style="text-align: center;">0.126</td>
+    <td style="text-align: center;">21.58</td>
+    <td style="text-align: center;">0.739</td>
+    <td style="text-align: center;">0.207</td>
+  </tr>
+</table>
+
+
+
+
+
 ## Table 6. Ablation Studies of Noise Schedule (N) (Motion_deblurring On FFHQ)
 <table>
   <tr>
@@ -517,7 +664,7 @@
 
 ![silo](figures/silo.png)
 
-## Table 10. Quantitative Comparison Between SILO and Ours on FFHQ
+## Table 10. Quantitative Comparison Between SILO and Ours on FFHQ*
 <table>
   <tr>
     <th rowspan="2" style="text-align: center;">Methods</th>
@@ -551,6 +698,8 @@
     <td style="text-align: center;">0.090</td>
   </tr>
 </table>
+
+* indicates that, based on the publicly available SILO codebase, only Gaussian deblurring and super-resolution on the FFHQ dataset are supported. 
 
 ## Table 11. Parameters Config of Our Method
 <table>
