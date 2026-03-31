@@ -80,7 +80,7 @@
   </tr>
 </table>
 
-## Figure 1. Qualitative results for Different Wavelets (Motion_deblurring)
+## Figure 1. Qualitative Results for Different Wavelets (Motion_deblurring)
 
 ![wave_1](figures/wave_1.png)
 ![wave_2](figures/wave_2.png)
@@ -234,7 +234,7 @@
 ![real_1](figures/real_1.png)
 ![real_2](figures/real_2.png)
 
-## Table 5. Qualitative results for Real-world Blur According to BlindDPS (Motion_deblurring)
+## Table 5. Qualitative Results for Real-world Blur According to BlindDPS (Motion_deblurring)
 <table>
   <tr>
     <th rowspan="2" style="text-align: center;">Method</th>
