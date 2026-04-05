@@ -1,7 +1,7 @@
 # Rebuttal_figures_tabs
 
 
-## Table 1. Quantitative Results for High-pass Operator (Motion_deblurring, for Reviewer kDyZ)  
+## Table 1. Quantitative Results for High-pass Operator (Motion_deblurring)  
 <table>
   <tr>
     <th rowspan="2" style="text-align: center;">Operator</th>
@@ -38,7 +38,7 @@
 </table>
 Table 1 shows that our method (NFC) does not produce satisfactory results when high-frequency information is preserved in the measurements (e.g., under a high-pass filter), which represents one failure mode of NFC.
 
-## Table 2. Ablation Studies for Different Wavelets (Motion_deblurring, for Reviewer sLBM, ZYag)
+## Table 2. Ablation Studies for Different Wavelets (Motion_deblurring)
 <table>
   <tr>
     <th rowspan="2" style="text-align: center;">Wavelet</th>
