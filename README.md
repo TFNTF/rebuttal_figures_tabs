@@ -307,7 +307,7 @@
     <td style="text-align: center;">0.672</td>
   </tr>
   <tr>
-    <td style="text-align: center;">Ours</td>
+    <td style="text-align: center;">Ours (kernel size 61 & intensity 0.50)</td>
     <td style="text-align: center;">27.31</td>
     <td style="text-align: center;">0.603</td>
     <td style="text-align: center;">0.264</td>
