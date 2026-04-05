@@ -81,6 +81,7 @@ Table 1 shows that our method (NFC) does not produce satisfactory results when h
     <td style="text-align: center;">0.155</td>
   </tr>
 </table>
+Table 2 shows that Haar achieves better performance in our method than the other two selected wavelet bases, supporting the effectiveness of our design choice.
 
 ## Figure 1. Qualitative Results for Different Wavelets (Motion_deblurring)
 
