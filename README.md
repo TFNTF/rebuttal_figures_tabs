@@ -17,7 +17,7 @@
     <th style="text-align: center; white-space: nowrap;">LPIPS ↓</th>
   </tr>
   <tr>
-    <td style="text-align: center;">High-pass</td>
+    <td style="text-align: center;">High-pass  (start bound of cutoff-frequency schedule is 0.8)</td>
     <td style="text-align: center;">11.20</td>
     <td style="text-align: center;">0.556</td>
     <td style="text-align: center;">0.430</td>
@@ -346,7 +346,7 @@ Table 6 shows that NFC cannot produce satisfactory results under operator mismat
     <td style="text-align: center;">0.163</td>
   </tr>
   <tr>
-    <td style="text-align: center;">Ours (used)</td>
+    <td style="text-align: center;">Ours (Freq. & Haar)</td>
     <td style="text-align: center;">31.88</td>
     <td style="text-align: center;">0.890</td>
     <td style="text-align: center;">0.090</td>
@@ -494,7 +494,7 @@ Table 8 reports the quantitative comparison between our method and the baselines
     <th style="text-align: center; white-space: nowrap;">LPIPS ↓</th>
   </tr>
   <tr>
-    <td style="text-align: center;">Ours</td>
+    <td style="text-align: center;">Ours (w/o. Haar & Measurement-consistency Updates with Different Strengths Across Frequency Components)</td>
     <td style="text-align: center;">14.88</td>
     <td style="text-align: center;">0.179</td>
     <td style="text-align: center;">0.583</td>
@@ -502,10 +502,20 @@ Table 8 reports the quantitative comparison between our method and the baselines
     <td style="text-align: center;">0.244</td>
     <td style="text-align: center;">0.482</td>
   </tr>
+  <tr>
+    <td style="text-align: center;">Ours (Full: Haar & Freq.)</td>
+    <td style="text-align: center;">36.69</td>
+    <td style="text-align: center;">0.940</td>
+    <td style="text-align: center;">0.054</td>
+    <td style="text-align: center;">34.70</td>
+    <td style="text-align: center;">0.935</td>
+  <td style="text-align: center;">0.155</td>
+  </tr>
 </table>
 
+Table 9 demonstrates the effectiveness of Haar. The results show that it cannot be replaced by measurement-consistency updates with different strengths across frequency components.
 
-## Table 10. Ablation Studies of Noise Schedule (N) (Motion_deblurring On FFHQ)
+## Table 10. Quantitative Comparison of Different Noise Schedule (N) (Motion_deblurring On FFHQ)
 <table>
   <tr>
     <th rowspan="2" style="text-align: center;">N (Diffusion Steps in Line 2 of Alg.1)</th>
@@ -549,7 +559,7 @@ Table 8 reports the quantitative comparison between our method and the baselines
   </tr>
 </table>
 
-## Table 11. Ablation Studies of Optimization Steps (T) (Motion_deblurring On FFHQ)
+## Table 11. Quantitative Comparison of Different Optimization Steps (T) (Motion_deblurring On FFHQ)
 <table>
   <tr>
     <th rowspan="2" style="text-align: center;">T (Optimization Steps in Line 8 of Alg.1)</th>
@@ -593,7 +603,7 @@ Table 8 reports the quantitative comparison between our method and the baselines
   </tr>
 </table>
 
-## Table 12. Ablation Studies of $\sigma$ of Eq.(5) (Motion_deblurring On FFHQ)
+## Table 12. Quantitative Comparison of Different $\sigma$ of Eq.(5) (Motion_deblurring On FFHQ)
 <table>
   <tr>
     <th rowspan="2" style="text-align: center;">$\sigma$</th>
@@ -632,7 +642,7 @@ Table 8 reports the quantitative comparison between our method and the baselines
   </tr>
 </table>
 
-## Table 13. Ablation Studies of Other Parameters (Motion_deblurring On FFHQ)
+## Table 13. Quantitative Results of Other Parameters (Motion_deblurring On FFHQ)
 <table>
   <tr>
     <th rowspan="2" style="text-align: center;">Parameters</th>
