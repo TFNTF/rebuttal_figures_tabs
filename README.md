@@ -811,6 +811,50 @@ We vary the remaining parameters as shown in Table 15 to verify the effectivenes
   </tr>
 </table>
 
+## Table 16. Quantitative Comparison of Different Noise Schedule (N) and Optimization Steps (T) (Motion_deblurring On FFHQ)
+<table>
+  <tr>
+    <th rowspan="2" style="text-align: center;">N (Diffusion Steps in Line 2 of Alg.1)</th>
+    <th colspan="3" style="text-align: center; white-space: nowrap;">FFHQ</th>
+    <th rowspan="2" style="text-align: center; white-space: nowrap;">Efficiency (/s)</th>
+  </tr>
+  <tr>
+    <th style="text-align: center; white-space: nowrap;">PSNR ↑</th>
+    <th style="text-align: center; white-space: nowrap;">SSIM ↑</th>
+    <th style="text-align: center; white-space: nowrap;">LPIPS ↓</th>
+  </tr>
+  <tr>
+    <td style="text-align: center;">50</td>
+    <td style="text-align: center;">35.82</td>
+    <td style="text-align: center;">0.924</td>
+    <td style="text-align: center;">0.069</td>
+    <td style="text-align: center;">~35</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">100</td>
+    <td style="text-align: center;">36.28</td>
+    <td style="text-align: center;">0.935</td>
+    <td style="text-align: center;">0.055</td>
+    <td style="text-align: center;">~65</td>
+  </tr>
+
+  <tr>
+    <td style="text-align: center;">300</td>
+    <td style="text-align: center;">37.08</td>
+    <td style="text-align: center;">0.953</td>
+    <td style="text-align: center;">0.039</td>
+    <td style="text-align: center;">~195</td>
+  </tr>
+
+  <tr>
+    <td style="text-align: center;">Ours (200)</td>
+    <td style="text-align: center;">36.69</td>
+    <td style="text-align: center;">0.940</td>
+    <td style="text-align: center;">0.054</td>
+    <td style="text-align: center;">~130</td>
+  </tr>
+</table>
+
 
 **Discretization Formula (EDM Scheduler):**
 
