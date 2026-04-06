@@ -273,7 +273,9 @@ Table 4 shows that, under the same compute budget (i.e., time cost), our method 
   </tr>
 </table>
 
-Table 5 demonstrates our method’s ability to handle real-world blur, and shows that NFC outperforms the corresponding baseline on motion deblurring task.
+For real-world blur, we follow BlindDPS [1]. Table 5 demonstrates our method’s ability to handle real-world blur. On real-world motion blur, our method still substantially outperforms BlindDPS on both FFHQ and ImageNet, indicating that its effectiveness extends beyond matched synthetic settings.
+
+[1] Chung, Hyungjin, et al. Parallel diffusion models of operator and image for blind inverse problems. CVPR, 2023.
 
 ## Table 6. Quantitative Results for Operator Mismatch (Motion_deblurring On FFHQ)
 <table>
