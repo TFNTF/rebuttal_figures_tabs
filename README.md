@@ -908,6 +908,13 @@ We vary the remaining parameters as shown in Table 15 to verify the effectivenes
     <td style="text-align: center;">~225</td>
   </tr>
   <tr>
+    <td style="text-align: center;">(400, 400)</td>
+    <td style="text-align: center;">36.80</td>
+    <td style="text-align: center;">0.940</td>
+    <td style="text-align: center;">0.054</td>
+    <td style="text-align: center;">~320</td>
+  </tr>
+  <tr>
     <td style="text-align: center;">Ours (200, 200)</td>
     <td style="text-align: center;">36.69</td>
     <td style="text-align: center;">0.940</td>
