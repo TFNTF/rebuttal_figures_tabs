@@ -838,13 +838,6 @@ We vary the remaining parameters as shown in Table 15 to verify the effectivenes
     <td style="text-align: center;">~65</td>
   </tr>
   <tr>
-    <td style="text-align: center;">Ours (200, 200)</td>
-    <td style="text-align: center;">36.69</td>
-    <td style="text-align: center;">0.940</td>
-    <td style="text-align: center;">0.054</td>
-    <td style="text-align: center;">~130</td>
-  </tr>
-  <tr>
     <td style="text-align: center;">(300, 200)</td>
     <td style="text-align: center;">37.08</td>
     <td style="text-align: center;">0.953</td>
@@ -881,10 +874,17 @@ We vary the remaining parameters as shown in Table 15 to verify the effectivenes
   </tr>
   <tr>
     <td style="text-align: center;">(200, 500)</td>
-    <td style="text-align: center;">36.95</td>
-    <td style="text-align: center;">0.950</td>
-    <td style="text-align: center;">0.041</td>
+    <td style="text-align: center;">35.80</td>
+    <td style="text-align: center;">0.913</td>
+    <td style="text-align: center;">0.075</td>
     <td style="text-align: center;">~215</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">(300, 100)</td>
+    <td style="text-align: center;">35.34</td>
+    <td style="text-align: center;">0.938</td>
+    <td style="text-align: center;">0.053</td>
+    <td style="text-align: center;">~175</td>
   </tr>
   <tr>
     <td style="text-align: center;">(400, 50)</td>
@@ -894,14 +894,26 @@ We vary the remaining parameters as shown in Table 15 to verify the effectivenes
     <td style="text-align: center;">~200</td>
   </tr>
   <tr>
+    <td style="text-align: center;">(500, 25)</td>
+    <td style="text-align: center;">36.40</td>
+    <td style="text-align: center;">0.950</td>
+    <td style="text-align: center;">0.040</td>
+    <td style="text-align: center;">~240</td>
+  </tr>
+  <tr>
     <td style="text-align: center;">(300, 300)</td>
     <td style="text-align: center;">36.97</td>
     <td style="text-align: center;">0.948</td>
     <td style="text-align: center;">0.047</td>
     <td style="text-align: center;">~225</td>
   </tr>
-
-  
+  <tr>
+    <td style="text-align: center;">Ours (200, 200)</td>
+    <td style="text-align: center;">36.69</td>
+    <td style="text-align: center;">0.940</td>
+    <td style="text-align: center;">0.054</td>
+    <td style="text-align: center;">~130</td>
+  </tr>
 
 
 </table>
