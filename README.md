@@ -916,9 +916,11 @@ We vary the remaining parameters as shown in Table 15 to verify the effectivenes
   </tr>
 </table>
 
-## Figure 7. Qualitative Comparison Between DPS (strength=1 (i.e., step size in Appendix C)) and Ours
+## Figure 7. Qualitative Comparison Between DPS (strength=1 (i.e., step size in Appendix C of DPS [2])) and Ours
 
 ![s1](figures/s1.png)
+
+[2] Chung, Hyungjin, et al. Diffusion posterior sampling for general noisy inverse problems. ICLR, 2023.
 
 **Discretization Formula (EDM Scheduler):**
 
