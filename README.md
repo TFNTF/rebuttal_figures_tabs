@@ -230,9 +230,7 @@ Table 2 shows that Haar achieves better performance in our method than the other
 </table>
 * indicates that, for this experiment, we compare only with methods that are more efficient and provide publicly available official code for this task. We further set N=9 and T=90 to ensure a matched time budget.
 
-Table 4 shows that, under the same compute budget, our method outperforms the two fastest baseline methods.
-
-
+Table 4 shows that, under the same compute budget (i.e., time cost), our method outperforms the two fastest baseline methods. Moreover, even when compared with FlowDPS, which is built on a base model trained with flow matching, our method still achieves better performance.
 
 ## Figure 2. Qualitative Results for Real-world Blur According to BlindDPS (Motion_deblurring)
 
