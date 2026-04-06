@@ -72,7 +72,7 @@ Table 1 shows that our method (NFC) does not produce satisfactory results when h
     <td style="text-align: center;">0.186</td>
   </tr>
   <tr>
-    <td style="text-align: center;">Ours (used)</td>
+    <td style="text-align: center;">Ours (Haar)</td>
     <td style="text-align: center;">36.69</td>
     <td style="text-align: center;">0.940</td>
     <td style="text-align: center;">0.054</td>
@@ -559,6 +559,8 @@ Table 9 demonstrates the effectiveness of Haar. The results show that it cannot 
   </tr>
 </table>
 
+Table 10 shows how the quantitative performance varies with the number of noise-schedule steps N. The results indicate that our method continues to benefit from increasing N, although this also incurs higher time cost. We therefore choose N=200 as a trade-off between efficiency and generation quality.
+
 ## Table 11. Quantitative Comparison of Different Optimization Steps (T) (Motion_deblurring On FFHQ)
 <table>
   <tr>
@@ -603,6 +605,8 @@ Table 9 demonstrates the effectiveness of Haar. The results show that it cannot 
   </tr>
 </table>
 
+Table 11 shows how the quantitative performance varies with the number of optimization steps T. The results indicate that our method continues to benefit from increasing T, although this also leads to higher time cost. We therefore choose T=200 as a trade-off between efficiency and generation quality.
+
 ## Table 12. Quantitative Comparison of Different $\sigma$ of Eq.(5) (Motion_deblurring On FFHQ)
 <table>
   <tr>
@@ -641,6 +645,8 @@ Table 9 demonstrates the effectiveness of Haar. The results show that it cannot 
     <td style="text-align: center;">0.054</td>
   </tr>
 </table>
+
+Table 12 reflects how the quantitative performance varies with the value of $\sigma$. To maintain fair competition, $\sigma$ is set to 0.05 in our method.
 
 ## Table 13. Quantitative Results of Other Parameters (Motion_deblurring On FFHQ)
 <table>
@@ -681,6 +687,7 @@ Table 9 demonstrates the effectiveness of Haar. The results show that it cannot 
   </tr>
 </table>
 
+We vary the remaining parameters as shown in Table 15 to verify the effectiveness of the adopted settings. The results show that the default configuration of Table 15 achieves the best performance.
 
 ## Figure 5. Qualitative Comparison Between DPS (1000 Steps) and Ours
 
