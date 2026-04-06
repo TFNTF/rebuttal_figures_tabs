@@ -358,7 +358,7 @@ Table 6 shows that NFC cannot produce satisfactory results under operator mismat
   </tr>
 </table>
 
-Table 7 reflects the effectivess of the design of our Haar fusion, where it can not be substituted by measurement-consistency updates with different strengths across frequency components. 
+Table 7 presents the quantitative comparison between our full method and its variants without Haar or without frequency continuation, demonstrating the effectiveness of our design.
 
 ## Figure 3. Qualitative Results for Ablation Studies
 
@@ -472,6 +472,8 @@ Table 7 reflects the effectivess of the design of our Haar fusion, where it can 
     <td style="text-align: center;">0.207</td>
   </tr>
 </table>
+
+Table 8 reports the quantitative comparison between our method and the baselines. For box inpainting, the gain of our method is expected to be smaller than in deblurring or super-resolution. Under a contiguous box mask, the measurement only constrains the visible context, while the masked operator mixes frequencies in Fourier space; as a result, the low-pass residual mainly regularizes visible-region consistency and boundary compatibility, rather than revealing the true structure of the missing region. In this regime, Haar Fusion cannot create missing semantics and can only prevent premature commitment to unreliable details. Nevertheless, NFC still maintains competitive performance.
 
 ## Figure 4. Qualitative Results for Box-inpainting
 
