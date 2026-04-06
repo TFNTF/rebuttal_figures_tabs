@@ -816,7 +816,7 @@ We vary the remaining parameters as shown in Table 15 to verify the effectivenes
   <tr>
     <th rowspan="2" style="text-align: center;">Values of N and T: (N, T)</th>
     <th colspan="3" style="text-align: center; white-space: nowrap;">FFHQ</th>
-    <th rowspan="2" style="text-align: center; white-space: nowrap;">Efficiency (/s)</th>
+    <th rowspan="2" style="text-align: center; white-space: nowrap;">Efficiency (s/img)</th>
   </tr>
   <tr>
     <th style="text-align: center; white-space: nowrap;">PSNR ↑</th>
