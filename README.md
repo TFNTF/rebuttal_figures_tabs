@@ -891,7 +891,14 @@ We vary the remaining parameters as shown in Table 15 to verify the effectivenes
     <td style="text-align: center;">35.84</td>
     <td style="text-align: center;">0.943</td>
     <td style="text-align: center;">0.046</td>
-    <td style="text-align: center;">~135</td>
+    <td style="text-align: center;">~200</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">(300, 300)</td>
+    <td style="text-align: center;">36.97</td>
+    <td style="text-align: center;">0.948</td>
+    <td style="text-align: center;">0.047</td>
+    <td style="text-align: center;">~225</td>
   </tr>
 
   
