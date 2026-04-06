@@ -914,10 +914,11 @@ We vary the remaining parameters as shown in Table 15 to verify the effectivenes
     <td style="text-align: center;">0.054</td>
     <td style="text-align: center;">~130</td>
   </tr>
-
-
 </table>
 
+## Figure 7. Qualitative Comparison Between DPS (strength=1 (i.e., step size in Appendix C)) and Ours
+
+![s1](figures/s1.png)
 
 **Discretization Formula (EDM Scheduler):**
 
