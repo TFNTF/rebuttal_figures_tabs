@@ -814,7 +814,7 @@ We vary the remaining parameters as shown in Table 15 to verify the effectivenes
 ## Table 16. Quantitative Comparison of Different Noise Schedule (N) and Optimization Steps (T) (Motion_deblurring On FFHQ)
 <table>
   <tr>
-    <th rowspan="2" style="text-align: center;">N (Diffusion Steps in Line 2 of Alg.1)</th>
+    <th rowspan="2" style="text-align: center;">Values of N and T: (N, T)</th>
     <th colspan="3" style="text-align: center; white-space: nowrap;">FFHQ</th>
     <th rowspan="2" style="text-align: center; white-space: nowrap;">Efficiency (/s)</th>
   </tr>
@@ -824,35 +824,79 @@ We vary the remaining parameters as shown in Table 15 to verify the effectivenes
     <th style="text-align: center; white-space: nowrap;">LPIPS ↓</th>
   </tr>
   <tr>
-    <td style="text-align: center;">50</td>
+    <td style="text-align: center;">(50, 200)</td>
     <td style="text-align: center;">35.82</td>
     <td style="text-align: center;">0.924</td>
     <td style="text-align: center;">0.069</td>
     <td style="text-align: center;">~35</td>
   </tr>
   <tr>
-    <td style="text-align: center;">100</td>
+    <td style="text-align: center;">(100, 200)</td>
     <td style="text-align: center;">36.28</td>
     <td style="text-align: center;">0.935</td>
     <td style="text-align: center;">0.055</td>
     <td style="text-align: center;">~65</td>
   </tr>
-
   <tr>
-    <td style="text-align: center;">300</td>
-    <td style="text-align: center;">37.08</td>
-    <td style="text-align: center;">0.953</td>
-    <td style="text-align: center;">0.039</td>
-    <td style="text-align: center;">~195</td>
-  </tr>
-
-  <tr>
-    <td style="text-align: center;">Ours (200)</td>
+    <td style="text-align: center;">Ours (200, 200)</td>
     <td style="text-align: center;">36.69</td>
     <td style="text-align: center;">0.940</td>
     <td style="text-align: center;">0.054</td>
     <td style="text-align: center;">~130</td>
   </tr>
+  <tr>
+    <td style="text-align: center;">(300, 200)</td>
+    <td style="text-align: center;">37.08</td>
+    <td style="text-align: center;">0.953</td>
+    <td style="text-align: center;">0.039</td>
+    <td style="text-align: center;">~195</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">(500, 200)</td>
+    <td style="text-align: center;">37.04</td>
+    <td style="text-align: center;">0.949</td>
+    <td style="text-align: center;">0.046</td>
+    <td style="text-align: center;">~280</td>
+  </tr>
+   <tr>
+    <td style="text-align: center;">(200, 50)</td>
+    <td style="text-align: center;">35.81</td>
+    <td style="text-align: center;">0.943</td>
+    <td style="text-align: center;">0.047</td>
+    <td style="text-align: center;">~70</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">(200, 100)</td>
+    <td style="text-align: center;">36.86</td>
+    <td style="text-align: center;">0.945</td>
+    <td style="text-align: center;">0.050</td>
+    <td style="text-align: center;">~110</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">(200, 300)</td>
+    <td style="text-align: center;">36.95</td>
+    <td style="text-align: center;">0.950</td>
+    <td style="text-align: center;">0.041</td>
+    <td style="text-align: center;">~160</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">(200, 500)</td>
+    <td style="text-align: center;">36.95</td>
+    <td style="text-align: center;">0.950</td>
+    <td style="text-align: center;">0.041</td>
+    <td style="text-align: center;">~215</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">(400, 50)</td>
+    <td style="text-align: center;">35.84</td>
+    <td style="text-align: center;">0.943</td>
+    <td style="text-align: center;">0.046</td>
+    <td style="text-align: center;">~135</td>
+  </tr>
+
+  
+
+
 </table>
 
 
