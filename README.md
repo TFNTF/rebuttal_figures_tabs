@@ -221,7 +221,7 @@ Table 2 shows that Haar achieves better performance in our method than the other
     <td style="text-align: center;">0.364</td>
     <td style="text-align: center;">~2</td>
   <tr>
-    <td style="text-align: center;">Ours</td>
+    <td style="text-align: center;">Ours (N=9 & T=90)</td>
     <td style="text-align: center;">27.31</td>
     <td style="text-align: center;">0.603</td>
     <td style="text-align: center;">0.264</td>
@@ -275,6 +275,7 @@ Table 4 shows that, under the same compute budget, our method outperforms the tw
   </tr>
 </table>
 
+Table 5 demonstrates our method’s ability to handle real-world blur, and shows that NFC outperforms the corresponding baseline on motion deblurring task.
 
 ## Table 6. Quantitative Results for Operator Mismatch (Motion_deblurring On FFHQ)
 <table>
@@ -319,6 +320,8 @@ Table 4 shows that, under the same compute budget, our method outperforms the tw
   </tr>
 </table>
 
+Table 6 shows that NFC cannot produce satisfactory results under operator mismatch, where the estimated and ground-truth images are evaluated using different forward operators A.
+
 ## Table 7. Abaltion Studies of Full-band Strategy (FFHQ)
 <table>
   <tr>
@@ -354,6 +357,8 @@ Table 4 shows that, under the same compute budget, our method outperforms the tw
     <td style="text-align: center;">0.054</td>
   </tr>
 </table>
+
+Table 7 reflects the effectivess of the design of our Haar fusion, where it can not be substituted by measurement-consistency updates with different strengths across frequency components. 
 
 ## Figure 3. Qualitative Results for Ablation Studies
 
