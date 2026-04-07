@@ -1121,11 +1121,6 @@ We have list the quantitative results on FFHQ 256*256 for different combinations
     <td style="text-align: center;">Number of optimization steps.</td>
   </tr>
   <tr>
-    <td style="text-align: center;">lr</td>
-    <td style="text-align: center;">1e-4</td>
-    <td style="text-align: center;">Step size of the inner HMC updates.</td>
-  </tr>
-  <tr>
     <td style="text-align: center;">$\sigma$ shown in Eq.(5)</td>
     <td style="text-align: center;">0.02</td>
     <td style="text-align: center;">Measurement noise level.</td>
@@ -1147,27 +1142,27 @@ We have list the quantitative results on FFHQ 256*256 for different combinations
     <td style="text-align: center;">Frequency-exposure schedule in the SD sampler, with start and end bounds set to 0.25 and 1.0, respectively.</td>
   </tr>
   <tr>
-    <td style="text-align: center;">$\lambda_k$</td>
+    <td style="text-align: center;">$\lambda_k$ shown in Eq.17</td>
     <td style="text-align: center;">Cosine schedule</td>
     <td style="text-align: center;">Blending weight schedule for frequency guidance, starting from 0.6 and decaying to 0.</td>
   </tr>
   <tr>
-    <td style="text-align: center;">$w_{k,L}$</td>
+    <td style="text-align: center;">$w_{k,L}$ show in Eq.(16)</td>
     <td style="text-align: center;">1.0</td>
-    <td style="text-align: center;">Weight for the low-low Haar subband in the wavelet fusion module.</td>
+    <td style="text-align: center;">Weight for the low-frequency approximation subband, where a value of 1.0 means the refinement result is fully adopted.</td>
   </tr>
   <tr>
-    <td style="text-align: center;">$w_{k,H}$</td>
+    <td style="text-align: center;">$w_{k,H}$ show in Eq.(16)</td>
     <td style="text-align: center;">0.12</td>
-    <td style="text-align: center;">Weight for the high-high Haar subband.</td>
+    <td style="text-align: center;">Base weight for the high-frequency subband.</td>
   </tr>
   <tr>
-    <td style="text-align: center;">$d_s$</td>
+    <td style="text-align: center;">$d_s$ show in Eq.(16)</td>
     <td style="text-align: center;">0.0</td>
     <td style="text-align: center;">Initial value of detail unlocking in the wavelet fusion module.</td>
   </tr>
   <tr>
-    <td style="text-align: center;">$d_e$</td>
+    <td style="text-align: center;">$d_e$ show in Eq.(16)</td>
     <td style="text-align: center;">1.0</td>
     <td style="text-align: center;">Final value of detail unlocking in the wavelet fusion module.</td>
   </tr>
