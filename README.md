@@ -1085,7 +1085,7 @@ Table 17 shows that our method consistently achieves the best performance across
 
 * indicates that, based on the publicly available SILO codebase, only Gaussian deblurring and super-resolution on the FFHQ dataset are supported. 
 
-Table 18 reports the quantitative comparison between SILO and our method under the same resolution setting, both based on Stable Diffusion v1.5. Compared with the quantitative results in pixel space, we believe that Langevin sampling in latent space is more susceptible to the combined effects of posterior geometry, decoder distortion, representation bottlenecks, and text conditioning. We will explore alternative optimization strategies in future work to further improve the performance of our method. For box inpainting, the gain of our method is expected to be smaller than in deblurring or super-resolution. Under a contiguous box mask, the measurement only constrains the visible context, while the masked operator mixes frequencies in Fourier space; as a result, the low-pass residual mainly regularizes visible-region consistency and boundary compatibility, rather than revealing the true structure of the missing region. In this regime, Haar Fusion cannot create missing semantics and can only prevent premature commitment to unreliable details. Nevertheless, NFC still maintains competitive performance.
+Table 18 reports the quantitative comparison between SILO and our method under the same resolution setting, both based on Stable Diffusion v1.5. Compared with the quantitative results in pixel space, we believe that Langevin sampling in latent space is more susceptible to the combined effects of posterior geometry, decoder distortion, representation bottlenecks, and text conditioning. We will explore alternative optimization strategies in future work to further improve the performance of our method. For box inpainting, the gain of our method is expected to be smaller than in deblurring or super-resolution. Under a contiguous box mask, the measurement only constrains the visible context, while the masked operator mixes frequencies in Fourier space; as a result, the low-pass residual mainly regularizes visible-region consistency and boundary compatibility, rather than revealing the true structure of the missing region. In this regime, Haar Fusion cannot create missing semantics and can only prevent premature commitment to unreliable details. Nevertheless, our method still maintains competitive performance.
 
 ## Figure 8. Qualitative Comparison Between SILO and Ours on FFHQ 512 * 512
 
@@ -1156,7 +1156,7 @@ Table 18 reports the quantitative comparison between SILO and our method under t
     <td style="text-align: center;">Frequency-exposure schedule in the SD sampler, with start and end bounds set to 0.25 and 1.0, respectively.</td>
   </tr>
   <tr>
-    <td style="text-align: center;">$\lambda_k$ shown in Eq.17</td>
+    <td style="text-align: center;">$\lambda_k$ shown in Eq.(17)</td>
     <td style="text-align: center;">Cosine schedule</td>
     <td style="text-align: center;">Blending weight schedule for frequency guidance, starting from 0.6 and decaying to 0.</td>
   </tr>
