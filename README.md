@@ -1059,15 +1059,15 @@ We have list the quantitative results on FFHQ 256*256 for different combinations
   </tr>
   <tr>
     <td style="text-align: center;">Ours (512 * 512)</td>
-    <td style="text-align: center;">27.69</td>
+    <td style="text-align: center;">27.29</td>
     <td style="text-align: center;">0.762</td>
-    <td style="text-align: center;">0.262</td>
+    <td style="text-align: center;">0.232</td>
     <td style="text-align: center;">28.04</td>
     <td style="text-align: center;">0.793</td>
     <td style="text-align: center;">0.177</td>
-    <td style="text-align: center;"></td>
-    <td style="text-align: center;"></td>
-    <td style="text-align: center;"></td>
+    <td style="text-align: center;">22.62</td>
+    <td style="text-align: center;">0.785</td>
+    <td style="text-align: center;">0.232</td>
   </tr>
 </table>
 
