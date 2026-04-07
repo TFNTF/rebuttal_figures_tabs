@@ -1101,7 +1101,7 @@ Table 18 reports the quantitative comparison between SILO and our method under t
   <tr>
     <td style="text-align: center;">N</td>
     <td style="text-align: center;">100</td>
-    <td style="text-align: center;">Number of noise schedule.</td>
+    <td style="text-align: center;">Number of noise schedule of line 2 in Alg.1.</td>
   </tr>
   <tr>
     <td style="text-align: center;">$\sigma_{\max}$</td>
@@ -1132,7 +1132,7 @@ Table 18 reports the quantitative comparison between SILO and our method under t
   <tr>
     <td style="text-align: center;">T</td>
     <td style="text-align: center;">130</td>
-    <td style="text-align: center;">Number of optimization steps.</td>
+    <td style="text-align: center;">Number of optimization steps of line 8 in Alg.1.</td>
   </tr>
   <tr>
     <td style="text-align: center;">$\sigma$ shown in Eq.(5)</td>
