@@ -1,7 +1,7 @@
 # Rebuttal_figures_tabs
 
 
-## Table 1. Quantitative Results for High-pass Operator (Motion_deblurring, 256*256)  
+## Table 1. Quantitative Results for High-pass Operator (Motion_deblurring, 256 * 256)  
 <table>
   <tr>
     <th rowspan="2" style="text-align: center;">Operator</th>
@@ -38,7 +38,7 @@
 </table>
 Table 1 shows that our method (NFC) does not produce satisfactory results when high-frequency information is preserved in the measurements (e.g., under a high-pass filter), which represents one failure mode of NFC.
 
-## Table 2. Ablation Studies for Different Wavelets (Motion_deblurring, 256*256)
+## Table 2. Ablation Studies for Different Wavelets (Motion_deblurring, 256 * 256)
 <table>
   <tr>
     <th rowspan="2" style="text-align: center;">Wavelet</th>
@@ -83,12 +83,12 @@ Table 1 shows that our method (NFC) does not produce satisfactory results when h
 </table>
 Table 2 shows that Haar achieves better performance in our method than the other two selected wavelet bases, supporting the effectiveness of our design choice.
 
-## Figure 1. Qualitative Results for Different Wavelets (Motion_deblurring, 256*256)
+## Figure 1. Qualitative Results for Different Wavelets (Motion_deblurring, 256 * 256)
 
 ![wave_1](figures/wave_1.png)
 ![wave_2](figures/wave_2.png)
 
-## Table 3. Computational Cost for Compared Methods (Motion_deblurring, 256*256)
+## Table 3. Computational Cost for Compared Methods (Motion_deblurring, 256 * 256)
 <table>
   <tr>
     <th rowspan="2" style="text-align: center; white-space: nowrap;">Method</th>
@@ -195,7 +195,7 @@ Table 2 shows that Haar achieves better performance in our method than the other
 
 † indicates that the reported efficiency partly benefits from using a foundation model trained with Flow Matching, whereas the checkpoints for the other methods are based on DDPM training.
 
-## Table 4. Quantitative Results Under The Same Computational Budget* (Motion_deblurring On FFHQ, 256*256)
+## Table 4. Quantitative Results Under The Same Computational Budget* (Motion_deblurring On FFHQ, 256 * 256)
 <table>
   <tr>
     <th rowspan="2" style="text-align: center;">Method</th>
@@ -237,7 +237,7 @@ Table 4 shows that, under the same compute budget (i.e., time cost), our method 
 ![real_1](figures/real_1.png)
 ![real_2](figures/real_2.png)
 
-## Table 5. Qualitative Results for Real-world Blur According to BlindDPS (Motion_deblurring, 256*256)
+## Table 5. Qualitative Results for Real-world Blur According to BlindDPS (Motion_deblurring, 256 * 256)
 <table>
   <tr>
     <th rowspan="2" style="text-align: center;">Method</th>
@@ -277,7 +277,7 @@ For real-world blur, we follow BlindDPS [1]. Table 5 demonstrates our method’s
 
 [1] Chung, Hyungjin, et al. Parallel diffusion models of operator and image for blind inverse problems. CVPR, 2023.
 
-## Table 6. Quantitative Results for Operator Mismatch (Motion_deblurring On FFHQ 256*256)
+## Table 6. Quantitative Results for Operator Mismatch (Motion_deblurring On FFHQ 256 * 256)
 <table>
   <tr>
     <th rowspan="2" style="text-align: center;">Description</th>
@@ -360,7 +360,7 @@ Table 6 shows that NFC cannot produce satisfactory results under operator mismat
 
 Table 7 presents the quantitative comparison between our full method and its variants without Haar or without frequency continuation, demonstrating the effectiveness of our design.
 
-## Figure 3. Qualitative Results for Ablation Studies (256*256)
+## Figure 3. Qualitative Results for Ablation Studies (256 * 256)
 
 ![abl_1](figures/ablation.png)
 
@@ -368,8 +368,8 @@ Table 7 presents the quantitative comparison between our full method and its var
 <table>
   <tr>
     <th rowspan="2" style="text-align: center;">Method</th>
-    <th colspan="3" style="text-align: center; white-space: nowrap;">FFHQ 256*256</th>
-    <th colspan="3" style="text-align: center; white-space: nowrap;">ImageNet 256*256</th>
+    <th colspan="3" style="text-align: center; white-space: nowrap;">FFHQ</th>
+    <th colspan="3" style="text-align: center; white-space: nowrap;">ImageNet</th>
   </tr>
   <tr>
     <th style="text-align: center; white-space: nowrap;">PSNR ↑</th>
@@ -475,17 +475,17 @@ Table 7 presents the quantitative comparison between our full method and its var
 
 Table 8 reports the quantitative comparison between our method and the baselines. For box inpainting, the gain of our method is expected to be smaller than in deblurring or super-resolution. Under a contiguous box mask, the measurement only constrains the visible context, while the masked operator mixes frequencies in Fourier space; as a result, the low-pass residual mainly regularizes visible-region consistency and boundary compatibility, rather than revealing the true structure of the missing region. In this regime, Haar Fusion cannot create missing semantics and can only prevent premature commitment to unreliable details. Nevertheless, NFC still maintains competitive performance.
 
-## Figure 4. Qualitative Results for Box-inpainting (256*256)
+## Figure 4. Qualitative Results for Box-inpainting (256 * 256)
 
 ![box_1](figures/box_1.png)
 ![box_2](figures/box_2.png)
 
-## Table 9. Ablation Studies of Measurement-consistency Updates with Different Strengths Across Frequency Components (Motion_deblurring)
+## Table 9. Ablation Studies of Measurement-consistency Updates with Different Strengths Across Frequency Components (Motion_deblurring, 256 * 256)
 <table>
   <tr>
     <th rowspan="2" style="text-align: center;">Method</th>
-    <th colspan="3" style="text-align: center; white-space: nowrap;">FFHQ 256*256</th>
-    <th colspan="3" style="text-align: center; white-space: nowrap;">ImageNet 256*256</th>
+    <th colspan="3" style="text-align: center; white-space: nowrap;">FFHQ</th>
+    <th colspan="3" style="text-align: center; white-space: nowrap;">ImageNet</th>
   </tr>
   <tr>
     <th style="text-align: center; white-space: nowrap;">PSNR ↑</th>
@@ -517,7 +517,7 @@ Table 8 reports the quantitative comparison between our method and the baselines
 
 Table 9 demonstrates the effectiveness of Haar. The results show that it cannot be replaced by measurement-consistency updates with different strengths across frequency components.
 
-## Table 10. Quantitative Comparison of Different Noise Schedule (N) (Motion_deblurring On FFHQ 256*256)
+## Table 10. Quantitative Comparison of Different Noise Schedule (N) (Motion_deblurring On FFHQ 256 * 256)
 <table>
   <tr>
     <th rowspan="2" style="text-align: center;">N (Diffusion Steps in Line 2 of Alg.1)</th>
@@ -563,7 +563,7 @@ Table 9 demonstrates the effectiveness of Haar. The results show that it cannot 
 
 Table 10 shows how the quantitative performance varies with the number of noise-schedule steps N. The results indicate that our method continues to benefit from increasing N, although this also incurs higher time cost. We therefore choose N=200 as a trade-off between efficiency and generation quality.
 
-## Table 11. Quantitative Comparison of Different Optimization Steps (T) (Motion_deblurring On FFHQ 256*256)
+## Table 11. Quantitative Comparison of Different Optimization Steps (T) (Motion_deblurring On FFHQ 256 * 256)
 <table>
   <tr>
     <th rowspan="2" style="text-align: center;">T (Optimization Steps in Line 8 of Alg.1)</th>
@@ -609,7 +609,7 @@ Table 10 shows how the quantitative performance varies with the number of noise-
 
 Table 11 shows how the quantitative performance varies with the number of optimization steps T. The results indicate that our method continues to benefit from increasing T, although this also leads to higher time cost. We therefore choose T=200 as a trade-off between efficiency and generation quality.
 
-## Table 12. Quantitative Comparison of Different $\sigma$ of Eq.(5) (Motion_deblurring On FFHQ 256*256)
+## Table 12. Quantitative Comparison of Different $\sigma$ of Eq.(5) (Motion_deblurring On FFHQ 256 * 256)
 <table>
   <tr>
     <th rowspan="2" style="text-align: center;">$\sigma$</th>
@@ -650,7 +650,7 @@ Table 11 shows how the quantitative performance varies with the number of optimi
 
 Table 12 reflects how the quantitative performance varies with the value of $\sigma$. To maintain fair competition, $\sigma$ is set to 0.05 in our method.
 
-## Table 13. Quantitative Results of Other Parameters (Motion_deblurring On FFHQ 256*256)
+## Table 13. Quantitative Results of Other Parameters (Motion_deblurring On FFHQ 256 * 256)
 <table>
   <tr>
     <th rowspan="2" style="text-align: center;">Parameters</th>
@@ -691,12 +691,12 @@ Table 12 reflects how the quantitative performance varies with the value of $\si
 
 We vary the remaining parameters as shown in Table 15 to verify the effectiveness of the adopted settings. The results show that the default configuration of Table 15 achieves the best performance.
 
-## Figure 5. Qualitative Comparison Between DPS (1000 Steps) and Ours on FFHQ 256*256
+## Figure 5. Qualitative Comparison Between DPS (1000 Steps) and Ours on FFHQ 256 * 256
 
 ![dps_1](figures/comp_dps_1.png)
 ![dps_2](figures/comp_dps_2.png)
 
-## Figure 6. Qualitative Comparison Between SILO and Ours on FFHQ 
+## Figure 6. Qualitative Comparison Between SILO (512 * 512) and Ours (256 * 256) on FFHQ 
 
 ![silo](figures/silo.png)
 
@@ -811,7 +811,7 @@ We vary the remaining parameters as shown in Table 15 to verify the effectivenes
   </tr>
 </table>
 
-## Table 16. Quantitative Comparison of Different Noise Schedule (N) and Optimization Steps (T) (Motion_deblurring On FFHQ 256*256)
+## Table 16. Quantitative Comparison of Different Noise Schedule (N) and Optimization Steps (T) (Motion_deblurring On FFHQ 256 * 256)
 <table>
   <tr>
     <th rowspan="2" style="text-align: center;">Values of N and T: (N, T)</th>
@@ -1019,14 +1019,14 @@ We have list the quantitative results on FFHQ 256*256 for different combinations
   </tr>
 </table>
 
-## Figure 7. Qualitative Comparison Between DPS (strength=1 (i.e., step size in Appendix C of DPS [2])) and Ours on FFHQ 256*256
+## Figure 7. Qualitative Comparison Between DPS (strength=1 (i.e., step size in Appendix C of DPS [2])) and Ours on FFHQ 256 * 256
 
 ![s1](figures/s1.png)
 
 [2] Chung, Hyungjin, et al. Diffusion posterior sampling for general noisy inverse problems. ICLR, 2023.
 
 
-## Table 14. Quantitative Comparison Between SILO and Ours on FFHQ* (512*512)
+## Table 14. Quantitative Comparison Between SILO and Ours on FFHQ* (512 * 512)
 <table>
   <tr>
     <th rowspan="2" style="text-align: center;">Methods</th>
@@ -1042,7 +1042,7 @@ We have list the quantitative results on FFHQ 256*256 for different combinations
     <th style="text-align: center; white-space: nowrap;">LPIPS ↓</th>
   </tr>
   <tr>
-    <td style="text-align: center;">SILO (512*512)</td>
+    <td style="text-align: center;">SILO (512 * 512)</td>
     <td style="text-align: center;">26.53</td>
     <td style="text-align: center;">0.745</td>
     <td style="text-align: center;">0.317</td>
@@ -1051,7 +1051,7 @@ We have list the quantitative results on FFHQ 256*256 for different combinations
     <td style="text-align: center;">0.297</td>
   </tr>
   <tr>
-    <td style="text-align: center;">Ours (512*512)</td>
+    <td style="text-align: center;">Ours (512 * 512)</td>
     <td style="text-align: center;"></td>
     <td style="text-align: center;"></td>
     <td style="text-align: center;"></td>
