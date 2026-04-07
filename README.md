@@ -1095,17 +1095,17 @@ We have list the quantitative results on FFHQ 256*256 for different combinations
   <tr>
     <td style="text-align: center;">n</td>
     <td style="text-align: center;">5</td>
-    <td style="text-align: center;">Number of PF-ODE / diffusion steps in the SD reverse process.</td>
+    <td style="text-align: center;">Number of PF-ODE / diffusion steps in the diffusion reverse process.</td>
   </tr>
   <tr>
     <td style="text-align: center;">timestep (diffusion)</td>
     <td style="text-align: center;">poly-7</td>
-    <td style="text-align: center;">Time-step discretization scheme of the SD diffusion scheduler.</td>
+    <td style="text-align: center;">Time-step discretization scheme of the diffusion scheduler.</td>
   </tr>
   <tr>
     <td style="text-align: center;">T</td>
     <td style="text-align: center;">100</td>
-    <td style="text-align: center;">Number of inner MCMC updates in each outer stage of the SD route.</td>
+    <td style="text-align: center;">Number of optimization steps.</td>
   </tr>
   <tr>
     <td style="text-align: center;">lr</td>
@@ -1113,19 +1113,9 @@ We have list the quantitative results on FFHQ 256*256 for different combinations
     <td style="text-align: center;">Step size of the inner HMC updates.</td>
   </tr>
   <tr>
-    <td style="text-align: center;">$\tau$</td>
-    <td style="text-align: center;">0.01</td>
-    <td style="text-align: center;">Temperature / scaling factor used in the data-consistency gradient term.</td>
-  </tr>
-  <tr>
-    <td style="text-align: center;">lr_min_ratio</td>
-    <td style="text-align: center;">1.0</td>
-    <td style="text-align: center;">Minimum learning-rate ratio for the inner HMC updates.</td>
-  </tr>
-  <tr>
     <td style="text-align: center;">$\sigma$ shown in Eq.(5)</td>
     <td style="text-align: center;">0.02</td>
-    <td style="text-align: center;">Measurement noise level used by the SD down-sampling operator.</td>
+    <td style="text-align: center;">Measurement noise level.</td>
   </tr>
   <tr>
     <td style="text-align: center;">Guidance scale</td>
