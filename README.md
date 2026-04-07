@@ -83,7 +83,7 @@ Table 1 shows that our method (NFC) does not produce satisfactory results when h
 </table>
 Table 2 shows that Haar achieves better performance in our method than the other two selected wavelet bases, supporting the effectiveness of our design choice.
 
-## Figure 1. Qualitative Results for Different Wavelets (Motion_deblurring)
+## Figure 1. Qualitative Results for Different Wavelets (Motion_deblurring, 256*256)
 
 ![wave_1](figures/wave_1.png)
 ![wave_2](figures/wave_2.png)
@@ -232,7 +232,7 @@ Table 2 shows that Haar achieves better performance in our method than the other
 
 Table 4 shows that, under the same compute budget (i.e., time cost), our method outperforms the two fastest baseline methods. Moreover, even when compared with FlowDPS, which is built on a base model trained with flow matching, our method still achieves better performance.
 
-## Figure 2. Qualitative Results for Real-world Blur According to BlindDPS (Motion_deblurring)
+## Figure 2. Qualitative Results for Real-world Blur According to BlindDPS (Motion_deblurring, 256*256)
 
 ![real_1](figures/real_1.png)
 ![real_2](figures/real_2.png)
@@ -360,7 +360,7 @@ Table 6 shows that NFC cannot produce satisfactory results under operator mismat
 
 Table 7 presents the quantitative comparison between our full method and its variants without Haar or without frequency continuation, demonstrating the effectiveness of our design.
 
-## Figure 3. Qualitative Results for Ablation Studies
+## Figure 3. Qualitative Results for Ablation Studies (256*256)
 
 ![abl_1](figures/ablation.png)
 
@@ -475,7 +475,7 @@ Table 7 presents the quantitative comparison between our full method and its var
 
 Table 8 reports the quantitative comparison between our method and the baselines. For box inpainting, the gain of our method is expected to be smaller than in deblurring or super-resolution. Under a contiguous box mask, the measurement only constrains the visible context, while the masked operator mixes frequencies in Fourier space; as a result, the low-pass residual mainly regularizes visible-region consistency and boundary compatibility, rather than revealing the true structure of the missing region. In this regime, Haar Fusion cannot create missing semantics and can only prevent premature commitment to unreliable details. Nevertheless, NFC still maintains competitive performance.
 
-## Figure 4. Qualitative Results for Box-inpainting
+## Figure 4. Qualitative Results for Box-inpainting (256*256)
 
 ![box_1](figures/box_1.png)
 ![box_2](figures/box_2.png)
@@ -691,12 +691,12 @@ Table 12 reflects how the quantitative performance varies with the value of $\si
 
 We vary the remaining parameters as shown in Table 15 to verify the effectiveness of the adopted settings. The results show that the default configuration of Table 15 achieves the best performance.
 
-## Figure 5. Qualitative Comparison Between DPS (1000 Steps) and Ours
+## Figure 5. Qualitative Comparison Between DPS (1000 Steps) and Ours on FFHQ 256*256
 
 ![dps_1](figures/comp_dps_1.png)
 ![dps_2](figures/comp_dps_2.png)
 
-## Figure 6. Qualitative Comparison Between SILO and Ours
+## Figure 6. Qualitative Comparison Between SILO (512*512) and Ours (256*256) on FFHQ 
 
 ![silo](figures/silo.png)
 
@@ -1019,7 +1019,7 @@ We have list the quantitative results on FFHQ 256*256 for different combinations
   </tr>
 </table>
 
-## Figure 7. Qualitative Comparison Between DPS (strength=1 (i.e., step size in Appendix C of DPS [2])) and Ours
+## Figure 7. Qualitative Comparison Between DPS (strength=1 (i.e., step size in Appendix C of DPS [2])) and Ours on FFHQ 256*256
 
 ![s1](figures/s1.png)
 
