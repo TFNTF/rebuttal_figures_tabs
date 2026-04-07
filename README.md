@@ -716,7 +716,7 @@ We vary the remaining parameters as shown in Table 15 to verify the effectivenes
     <th style="text-align: center; white-space: nowrap;">LPIPS ↓</th>
   </tr>
   <tr>
-    <td style="text-align: center;">SILO (512*512)</td>
+    <td style="text-align: center;">SILO (512 * 512)</td>
     <td style="text-align: center;">26.53</td>
     <td style="text-align: center;">0.745</td>
     <td style="text-align: center;">0.317</td>
@@ -725,7 +725,7 @@ We vary the remaining parameters as shown in Table 15 to verify the effectivenes
     <td style="text-align: center;">0.297</td>
   </tr>
   <tr>
-    <td style="text-align: center;">Ours (256*256)</td>
+    <td style="text-align: center;">Ours (256 * 256)</td>
     <td style="text-align: center;">29.99</td>
     <td style="text-align: center;">0.821</td>
     <td style="text-align: center;">0.175</td>
@@ -944,39 +944,39 @@ We have list the quantitative results on FFHQ 256*256 for different combinations
     <th style="text-align: center; white-space: nowrap;">LPIPS ↓</th>
   </tr>
   <tr>
-    <td style="text-align: center;">Ours (0)</td>
-    <td style="text-align: center;">38.53</td>
-    <td style="text-align: center;">0.971</td>
-    <td style="text-align: center;">0.034</td>
+    <td style="text-align: center;">Ours (0, 256 * 256)</td>
+    <td style="text-align: center;">32.55</td>
+    <td style="text-align: center;">0.876</td>
+    <td style="text-align: center;">0.163</td>
   </tr>
   <tr>
-    <td style="text-align: center;">Ours (0.03)</td>
+    <td style="text-align: center;">Ours (0.03, 256 * 256)</td>
     <td style="text-align: center;">30.62</td>
     <td style="text-align: center;">0.843</td>
-    <td style="text-align: center;">0.157</td>
+    <td style="text-align: center;">0.172</td>
   </tr>
 
   <tr>
-    <td style="text-align: center;">Ours (0.05)</td>
+    <td style="text-align: center;">Ours (0.05, 256 * 256)</td>
     <td style="text-align: center;">29.99</td>
     <td style="text-align: center;">0.821</td>
     <td style="text-align: center;">0.175</td>
   </tr>
 
   <tr>
-    <td style="text-align: center;">Ours (0.07)</td>
-    <td style="text-align: center;">34.95</td>
-    <td style="text-align: center;">0.935</td>
-    <td style="text-align: center;">0.082</td>
+    <td style="text-align: center;">Ours (0.07, 256 * 256)</td>
+    <td style="text-align: center;">29.02</td>
+    <td style="text-align: center;">0.817</td>
+    <td style="text-align: center;">0.175</td>
   </tr>
   <tr>
-    <td style="text-align: center;">SILO (0)</td>
+    <td style="text-align: center;">SILO (0, 512 * 512)</td>
     <td style="text-align: center;">26.59</td>
     <td style="text-align: center;">0.825</td>
     <td style="text-align: center;">0.311</td>
   </tr>
   <tr>
-    <td style="text-align: center;">SILO (0.03)</td>
+    <td style="text-align: center;">SILO (0.03, 512 * 512)</td>
     <td style="text-align: center;">26.59</td>
     <td style="text-align: center;">0.825</td>
     <td style="text-align: center;">0.311</td>
@@ -988,31 +988,31 @@ We have list the quantitative results on FFHQ 256*256 for different combinations
     <td style="text-align: center;">0.311</td>
   </tr>
   <tr>
-    <td style="text-align: center;">SILO (0.07)</td>
+    <td style="text-align: center;">SILO (0.07, 512 * 512)</td>
     <td style="text-align: center;">26.57</td>
     <td style="text-align: center;">0.824</td>
     <td style="text-align: center;">0.312</td>
   </tr>
   <tr>
-    <td style="text-align: center;">Resample (0)</td>
+    <td style="text-align: center;">Resample (0, 256 * 256)</td>
     <td style="text-align: center;">27.26</td>
     <td style="text-align: center;">0.751</td>
     <td style="text-align: center;">0.250</td>
   </tr>
   <tr>
-    <td style="text-align: center;">Resample (0.03)</td>
+    <td style="text-align: center;">Resample (0.03, 256 * 256)</td>
     <td style="text-align: center;">25.98</td>
     <td style="text-align: center;">0.661</td>
     <td style="text-align: center;">0.301</td>
   </tr>
   <tr>
-    <td style="text-align: center;">Resample (0.05)</td>
+    <td style="text-align: center;">Resample (0.05, 256 * 256)</td>
     <td style="text-align: center;">25.33</td>
     <td style="text-align: center;">0.611</td>
     <td style="text-align: center;">0.332</td>
   </tr>
   <tr>
-    <td style="text-align: center;">Resample (0.07)</td>
+    <td style="text-align: center;">Resample (0.07, 256 * 256)</td>
     <td style="text-align: center;">24.57</td>
     <td style="text-align: center;">0.552</td>
     <td style="text-align: center;">0.375</td>
