@@ -982,7 +982,7 @@ We have list the quantitative results on FFHQ 256*256 for different combinations
     <td style="text-align: center;">0.311</td>
   </tr>
   <tr>
-    <td style="text-align: center;">SILO (0.05)</td>
+    <td style="text-align: center;">SILO (0.05, 512 * 512)</td>
     <td style="text-align: center;">26.58</td>
     <td style="text-align: center;">0.825</td>
     <td style="text-align: center;">0.311</td>
