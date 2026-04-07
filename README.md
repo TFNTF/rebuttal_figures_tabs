@@ -1073,6 +1073,9 @@ We have list the quantitative results on FFHQ 256*256 for different combinations
 
 * indicates that, based on the publicly available SILO codebase, only Gaussian deblurring and super-resolution on the FFHQ dataset are supported. 
 
+## Figure 8. Qualitative Comparison Between SILO and Ours on FFHQ 512 * 512
+
+![silo1](figures/silo_1.png)
 
 ## Table 19. Parameters Config of Our Method Based on Stable-diffusion-v1.5 (512 * 512)
 <table>
