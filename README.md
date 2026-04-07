@@ -1117,7 +1117,7 @@ We have list the quantitative results on FFHQ 256*256 for different combinations
   </tr>
   <tr>
     <td style="text-align: center;">T</td>
-    <td style="text-align: center;">100</td>
+    <td style="text-align: center;">130</td>
     <td style="text-align: center;">Number of optimization steps.</td>
   </tr>
   <tr>
