@@ -5,8 +5,8 @@
 <table>
   <tr>
     <th rowspan="2" style="text-align: center;">Operator</th>
-    <th colspan="3" style="text-align: center; white-space: nowrap;">FFHQ</th>
-    <th colspan="3" style="text-align: center; white-space: nowrap;">ImageNet</th>
+    <th colspan="3" style="text-align: center; white-space: nowrap;">FFHQ 256*256</th>
+    <th colspan="3" style="text-align: center; white-space: nowrap;">ImageNet 256*256</th>
   </tr>
   <tr>
     <th style="text-align: center; white-space: nowrap;">PSNR ↑</th>
@@ -42,8 +42,8 @@ Table 1 shows that our method (NFC) does not produce satisfactory results when h
 <table>
   <tr>
     <th rowspan="2" style="text-align: center;">Wavelet</th>
-    <th colspan="3" style="text-align: center; white-space: nowrap;">FFHQ</th>
-    <th colspan="3" style="text-align: center; white-space: nowrap;">ImageNet</th>
+    <th colspan="3" style="text-align: center; white-space: nowrap;">FFHQ 256*256</th>
+    <th colspan="3" style="text-align: center; white-space: nowrap;">ImageNet 256*256</th>
   </tr>
   <tr>
     <th style="text-align: center; white-space: nowrap;">PSNR ↑</th>
@@ -92,8 +92,8 @@ Table 2 shows that Haar achieves better performance in our method than the other
 <table>
   <tr>
     <th rowspan="2" style="text-align: center; white-space: nowrap;">Method</th>
-    <th colspan="2" style="text-align: center; white-space: nowrap;">FFHQ</th>
-    <th colspan="2" style="text-align: center; white-space: nowrap;">ImageNet</th>
+    <th colspan="2" style="text-align: center; white-space: nowrap;">FFHQ 256*256</th>
+    <th colspan="2" style="text-align: center; white-space: nowrap;">ImageNet 256*256</th>
     <th rowspan="2" style="text-align: center; white-space: nowrap;">Diffusion NFE</th>
   </tr>
   <tr>
@@ -195,7 +195,7 @@ Table 2 shows that Haar achieves better performance in our method than the other
 
 † indicates that the reported efficiency partly benefits from using a foundation model trained with Flow Matching, whereas the checkpoints for the other methods are based on DDPM training.
 
-## Table 4. Quantitative Results Under The Same Computational Budget* (Motion_deblurring On FFHQ)
+## Table 4. Quantitative Results Under The Same Computational Budget* (Motion_deblurring On FFHQ 256*256)
 <table>
   <tr>
     <th rowspan="2" style="text-align: center;">Method</th>
@@ -241,8 +241,8 @@ Table 4 shows that, under the same compute budget (i.e., time cost), our method 
 <table>
   <tr>
     <th rowspan="2" style="text-align: center;">Method</th>
-    <th colspan="3" style="text-align: center; white-space: nowrap;">FFHQ</th>
-    <th colspan="3" style="text-align: center; white-space: nowrap;">ImageNet</th>
+    <th colspan="3" style="text-align: center; white-space: nowrap;">FFHQ 256*256</th>
+    <th colspan="3" style="text-align: center; white-space: nowrap;">ImageNet 256*256</th>
   </tr>
   <tr>
     <th style="text-align: center; white-space: nowrap;">PSNR ↑</th>
@@ -277,7 +277,7 @@ For real-world blur, we follow BlindDPS [1]. Table 5 demonstrates our method’s
 
 [1] Chung, Hyungjin, et al. Parallel diffusion models of operator and image for blind inverse problems. CVPR, 2023.
 
-## Table 6. Quantitative Results for Operator Mismatch (Motion_deblurring On FFHQ)
+## Table 6. Quantitative Results for Operator Mismatch (Motion_deblurring On FFHQ 256*256)
 <table>
   <tr>
     <th rowspan="2" style="text-align: center;">Description</th>
@@ -322,7 +322,7 @@ For real-world blur, we follow BlindDPS [1]. Table 5 demonstrates our method’s
 
 Table 6 shows that NFC cannot produce satisfactory results under operator mismatch, where the estimated and ground-truth images are evaluated using different forward operators A.
 
-## Table 7. Abaltion Studies of Full-band Strategy (FFHQ)
+## Table 7. Abaltion Studies of Full-band Strategy (FFHQ 256*256)
 <table>
   <tr>
     <th rowspan="2" style="text-align: center;">Strategy</th>
@@ -368,8 +368,8 @@ Table 7 presents the quantitative comparison between our full method and its var
 <table>
   <tr>
     <th rowspan="2" style="text-align: center;">Method</th>
-    <th colspan="3" style="text-align: center; white-space: nowrap;">FFHQ</th>
-    <th colspan="3" style="text-align: center; white-space: nowrap;">ImageNet</th>
+    <th colspan="3" style="text-align: center; white-space: nowrap;">FFHQ 256*256</th>
+    <th colspan="3" style="text-align: center; white-space: nowrap;">ImageNet 256*256</th>
   </tr>
   <tr>
     <th style="text-align: center; white-space: nowrap;">PSNR ↑</th>
@@ -484,8 +484,8 @@ Table 8 reports the quantitative comparison between our method and the baselines
 <table>
   <tr>
     <th rowspan="2" style="text-align: center;">Method</th>
-    <th colspan="3" style="text-align: center; white-space: nowrap;">FFHQ</th>
-    <th colspan="3" style="text-align: center; white-space: nowrap;">ImageNet</th>
+    <th colspan="3" style="text-align: center; white-space: nowrap;">FFHQ 256*256</th>
+    <th colspan="3" style="text-align: center; white-space: nowrap;">ImageNet 256*256</th>
   </tr>
   <tr>
     <th style="text-align: center; white-space: nowrap;">PSNR ↑</th>
@@ -517,7 +517,7 @@ Table 8 reports the quantitative comparison between our method and the baselines
 
 Table 9 demonstrates the effectiveness of Haar. The results show that it cannot be replaced by measurement-consistency updates with different strengths across frequency components.
 
-## Table 10. Quantitative Comparison of Different Noise Schedule (N) (Motion_deblurring On FFHQ)
+## Table 10. Quantitative Comparison of Different Noise Schedule (N) (Motion_deblurring On FFHQ 256*256)
 <table>
   <tr>
     <th rowspan="2" style="text-align: center;">N (Diffusion Steps in Line 2 of Alg.1)</th>
@@ -563,7 +563,7 @@ Table 9 demonstrates the effectiveness of Haar. The results show that it cannot 
 
 Table 10 shows how the quantitative performance varies with the number of noise-schedule steps N. The results indicate that our method continues to benefit from increasing N, although this also incurs higher time cost. We therefore choose N=200 as a trade-off between efficiency and generation quality.
 
-## Table 11. Quantitative Comparison of Different Optimization Steps (T) (Motion_deblurring On FFHQ)
+## Table 11. Quantitative Comparison of Different Optimization Steps (T) (Motion_deblurring On FFHQ 256*256)
 <table>
   <tr>
     <th rowspan="2" style="text-align: center;">T (Optimization Steps in Line 8 of Alg.1)</th>
@@ -609,7 +609,7 @@ Table 10 shows how the quantitative performance varies with the number of noise-
 
 Table 11 shows how the quantitative performance varies with the number of optimization steps T. The results indicate that our method continues to benefit from increasing T, although this also leads to higher time cost. We therefore choose T=200 as a trade-off between efficiency and generation quality.
 
-## Table 12. Quantitative Comparison of Different $\sigma$ of Eq.(5) (Motion_deblurring On FFHQ)
+## Table 12. Quantitative Comparison of Different $\sigma$ of Eq.(5) (Motion_deblurring On FFHQ 256*256)
 <table>
   <tr>
     <th rowspan="2" style="text-align: center;">$\sigma$</th>
@@ -650,7 +650,7 @@ Table 11 shows how the quantitative performance varies with the number of optimi
 
 Table 12 reflects how the quantitative performance varies with the value of $\sigma$. To maintain fair competition, $\sigma$ is set to 0.05 in our method.
 
-## Table 13. Quantitative Results of Other Parameters (Motion_deblurring On FFHQ)
+## Table 13. Quantitative Results of Other Parameters (Motion_deblurring On FFHQ 256*256)
 <table>
   <tr>
     <th rowspan="2" style="text-align: center;">Parameters</th>
@@ -716,7 +716,7 @@ We vary the remaining parameters as shown in Table 15 to verify the effectivenes
     <th style="text-align: center; white-space: nowrap;">LPIPS ↓</th>
   </tr>
   <tr>
-    <td style="text-align: center;">SILO</td>
+    <td style="text-align: center;">SILO (512*512)</td>
     <td style="text-align: center;">26.53</td>
     <td style="text-align: center;">0.745</td>
     <td style="text-align: center;">0.317</td>
@@ -725,7 +725,7 @@ We vary the remaining parameters as shown in Table 15 to verify the effectivenes
     <td style="text-align: center;">0.297</td>
   </tr>
   <tr>
-    <td style="text-align: center;">Ours</td>
+    <td style="text-align: center;">Ours (256*256)</td>
     <td style="text-align: center;">29.99</td>
     <td style="text-align: center;">0.821</td>
     <td style="text-align: center;">0.175</td>
@@ -811,7 +811,7 @@ We vary the remaining parameters as shown in Table 15 to verify the effectivenes
   </tr>
 </table>
 
-## Table 16. Quantitative Comparison of Different Noise Schedule (N) and Optimization Steps (T) (Motion_deblurring On FFHQ)
+## Table 16. Quantitative Comparison of Different Noise Schedule (N) and Optimization Steps (T) (Motion_deblurring On FFHQ 256*256)
 <table>
   <tr>
     <th rowspan="2" style="text-align: center;">Values of N and T: (N, T)</th>
@@ -1024,6 +1024,45 @@ We have list the quantitative results on FFHQ 256*256 for different combinations
 ![s1](figures/s1.png)
 
 [2] Chung, Hyungjin, et al. Diffusion posterior sampling for general noisy inverse problems. ICLR, 2023.
+
+
+## Table 14. Quantitative Comparison Between SILO and Ours on FFHQ* (512*512)
+<table>
+  <tr>
+    <th rowspan="2" style="text-align: center;">Methods</th>
+    <th colspan="3" style="text-align: center; white-space: nowrap;">Gaussian Deblurring</th>
+    <th colspan="3" style="text-align: center; white-space: nowrap;">Super-resolution</th>
+  </tr>
+  <tr>
+    <th style="text-align: center; white-space: nowrap;">PSNR ↑</th>
+    <th style="text-align: center; white-space: nowrap;">SSIM ↑</th>
+    <th style="text-align: center; white-space: nowrap;">LPIPS ↓</th>
+    <th style="text-align: center; white-space: nowrap;">PSNR ↑</th>
+    <th style="text-align: center; white-space: nowrap;">SSIM ↑</th>
+    <th style="text-align: center; white-space: nowrap;">LPIPS ↓</th>
+  </tr>
+  <tr>
+    <td style="text-align: center;">SILO (512*512)</td>
+    <td style="text-align: center;">26.53</td>
+    <td style="text-align: center;">0.745</td>
+    <td style="text-align: center;">0.317</td>
+    <td style="text-align: center;">26.79</td>
+    <td style="text-align: center;">0.761</td>
+    <td style="text-align: center;">0.297</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">Ours (512*512)</td>
+    <td style="text-align: center;"></td>
+    <td style="text-align: center;"></td>
+    <td style="text-align: center;"></td>
+    <td style="text-align: center;"></td>
+    <td style="text-align: center;"></td>
+    <td style="text-align: center;"></td>
+  </tr>
+</table>
+
+* indicates that, based on the publicly available SILO codebase, only Gaussian deblurring and super-resolution on the FFHQ dataset are supported. 
+
 
 **Discretization Formula (EDM Scheduler):**
 
