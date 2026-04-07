@@ -1026,7 +1026,7 @@ We have list the quantitative results on FFHQ 256*256 for different combinations
 [2] Chung, Hyungjin, et al. Diffusion posterior sampling for general noisy inverse problems. ICLR, 2023.
 
 
-## Table 14. Quantitative Comparison Between SILO and Ours on FFHQ* (512 * 512)
+## Table 18. Quantitative Comparison Between SILO and Ours on FFHQ* (512 * 512)
 <table>
   <tr>
     <th rowspan="2" style="text-align: center;">Methods</th>
@@ -1073,23 +1073,23 @@ We have list the quantitative results on FFHQ 256*256 for different combinations
   </tr>
   <tr>
     <td style="text-align: center;">N</td>
-    <td style="text-align: center;">50</td>
-    <td style="text-align: center;">Number of outer annealing steps in <code>sd_edm_daps</code>.</td>
+    <td style="text-align: center;">100</td>
+    <td style="text-align: center;">Number of noise schedule.</td>
   </tr>
   <tr>
     <td style="text-align: center;">$\sigma_{\max}$</td>
     <td style="text-align: center;">10</td>
-    <td style="text-align: center;">Initial noise level of the annealing scheduler.</td>
+    <td style="text-align: center;">Initial noise level of the noise scheduler.</td>
   </tr>
   <tr>
     <td style="text-align: center;">$\sigma_{\min}$</td>
     <td style="text-align: center;">0.001</td>
-    <td style="text-align: center;">Final noise level of the annealing scheduler.</td>
+    <td style="text-align: center;">Final noise level of the noise scheduler.</td>
   </tr>
   <tr>
     <td style="text-align: center;">timestep</td>
     <td style="text-align: center;">poly-7</td>
-    <td style="text-align: center;">Time-step discretization scheme of the annealing scheduler.</td>
+    <td style="text-align: center;">Time-step discretization scheme of the noise scheduler.</td>
   </tr>
 
   <tr>
