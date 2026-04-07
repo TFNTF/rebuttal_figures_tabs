@@ -1032,8 +1032,12 @@ We have list the quantitative results on FFHQ 256*256 for different combinations
     <th rowspan="2" style="text-align: center;">Methods</th>
     <th colspan="3" style="text-align: center; white-space: nowrap;">Gaussian Deblurring</th>
     <th colspan="3" style="text-align: center; white-space: nowrap;">Super-resolution</th>
+    <th colspan="3" style="text-align: center; white-space: nowrap;">Box Inpainting</th>
   </tr>
   <tr>
+    <th style="text-align: center; white-space: nowrap;">PSNR ↑</th>
+    <th style="text-align: center; white-space: nowrap;">SSIM ↑</th>
+    <th style="text-align: center; white-space: nowrap;">LPIPS ↓</th>
     <th style="text-align: center; white-space: nowrap;">PSNR ↑</th>
     <th style="text-align: center; white-space: nowrap;">SSIM ↑</th>
     <th style="text-align: center; white-space: nowrap;">LPIPS ↓</th>
@@ -1049,12 +1053,18 @@ We have list the quantitative results on FFHQ 256*256 for different combinations
     <td style="text-align: center;">26.79</td>
     <td style="text-align: center;">0.761</td>
     <td style="text-align: center;">0.297</td>
+    <td style="text-align: center;">22.73</td>
+    <td style="text-align: center;">0.782</td>
+    <td style="text-align: center;">0.237</td>
   </tr>
   <tr>
     <td style="text-align: center;">Ours (512 * 512)</td>
-    <td style="text-align: center;"></td>
-    <td style="text-align: center;"></td>
-    <td style="text-align: center;"></td>
+    <td style="text-align: center;">27.69</td>
+    <td style="text-align: center;">0.762</td>
+    <td style="text-align: center;">0.262</td>
+    <td style="text-align: center;">28.04</td>
+    <td style="text-align: center;">0.793</td>
+    <td style="text-align: center;">0.177</td>
     <td style="text-align: center;"></td>
     <td style="text-align: center;"></td>
     <td style="text-align: center;"></td>
