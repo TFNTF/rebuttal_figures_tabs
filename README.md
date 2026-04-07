@@ -296,7 +296,7 @@ For real-world blur, we follow BlindDPS [1]. Table 5 demonstrates our method’s
   </tr>
   <tr>
     <td style="text-align: center;">kernel size 71 & intensity 0.05</td>
-    <td style="text-align: center;">15.203</td>
+    <td style="text-align: center;">15.20</td>
     <td style="text-align: center;">0.286</td>
     <td style="text-align: center;">0.526</td>
   </tr>
@@ -314,9 +314,9 @@ For real-world blur, we follow BlindDPS [1]. Table 5 demonstrates our method’s
   </tr>
   <tr>
     <td style="text-align: center;">Ours (kernel size 61 & intensity 0.50)</td>
-    <td style="text-align: center;">27.31</td>
-    <td style="text-align: center;">0.603</td>
-    <td style="text-align: center;">0.264</td>
+    <td style="text-align: center;">36.69</td>
+    <td style="text-align: center;">0.940</td>
+    <td style="text-align: center;">0.054</td>
   </tr>
 </table>
 
