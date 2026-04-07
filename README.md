@@ -1063,7 +1063,7 @@ We have list the quantitative results on FFHQ 256*256 for different combinations
     <td style="text-align: center;">0.762</td>
     <td style="text-align: center;">0.232</td>
     <td style="text-align: center;">28.04</td>
-    <td style="text-align: center;">0.793</td>
+    <td style="text-align: center;">0.803</td>
     <td style="text-align: center;">0.177</td>
     <td style="text-align: center;">22.62</td>
     <td style="text-align: center;">0.785</td>
@@ -1075,7 +1075,7 @@ We have list the quantitative results on FFHQ 256*256 for different combinations
 
 ## Figure 8. Qualitative Comparison Between SILO and Ours on FFHQ 512 * 512
 
-![silo1](figures/silo_1.png)
+![silo2](figures/silo_2.png)
 
 ## Table 19. Parameters Config of Our Method Based on Stable-diffusion-v1.5 (512 * 512)
 <table>
