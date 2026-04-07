@@ -1064,6 +1064,112 @@ We have list the quantitative results on FFHQ 256*256 for different combinations
 * indicates that, based on the publicly available SILO codebase, only Gaussian deblurring and super-resolution on the FFHQ dataset are supported. 
 
 
+## Table 19. Parameters Config of Our Method Based on Stable-diffusion-v1.5 (512 * 512)
+<table>
+  <tr>
+    <th style="text-align: center;">Parameter</th>
+    <th style="text-align: center; white-space: nowrap;">Default</th>
+    <th style="text-align: center;">Description</th>
+  </tr>
+  <tr>
+    <td style="text-align: center;">N</td>
+    <td style="text-align: center;">50</td>
+    <td style="text-align: center;">Number of outer annealing steps in <code>sd_edm_daps</code>.</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">$\sigma_{\max}$</td>
+    <td style="text-align: center;">10</td>
+    <td style="text-align: center;">Initial noise level of the annealing scheduler.</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">$\sigma_{\min}$</td>
+    <td style="text-align: center;">0.001</td>
+    <td style="text-align: center;">Final noise level of the annealing scheduler.</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">timestep</td>
+    <td style="text-align: center;">poly-7</td>
+    <td style="text-align: center;">Time-step discretization scheme of the annealing scheduler.</td>
+  </tr>
+
+  <tr>
+    <td style="text-align: center;">n</td>
+    <td style="text-align: center;">5</td>
+    <td style="text-align: center;">Number of PF-ODE / diffusion steps in the SD reverse process.</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">timestep (diffusion)</td>
+    <td style="text-align: center;">poly-7</td>
+    <td style="text-align: center;">Time-step discretization scheme of the SD diffusion scheduler.</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">T</td>
+    <td style="text-align: center;">100</td>
+    <td style="text-align: center;">Number of inner MCMC updates in each outer stage of the SD route.</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">lr</td>
+    <td style="text-align: center;">1e-4</td>
+    <td style="text-align: center;">Step size of the inner HMC updates.</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">$\tau$</td>
+    <td style="text-align: center;">0.01</td>
+    <td style="text-align: center;">Temperature / scaling factor used in the data-consistency gradient term.</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">lr_min_ratio</td>
+    <td style="text-align: center;">1.0</td>
+    <td style="text-align: center;">Minimum learning-rate ratio for the inner HMC updates.</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">$\sigma$ shown in Eq.(5)</td>
+    <td style="text-align: center;">0.02</td>
+    <td style="text-align: center;">Measurement noise level used by the SD down-sampling operator.</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">Guidance scale</td>
+    <td style="text-align: center;">7.5</td>
+    <td style="text-align: center;">Classifier-free guidance scale of Stable Diffusion.</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">Prompt</td>
+    <td style="text-align: center;">a natural looking image</td>
+    <td style="text-align: center;">Text prompt used by the Stable Diffusion prior.</td>
+  </tr>
+
+  <tr>
+    <td style="text-align: center;">Cutoff-frequency schedule</td>
+    <td style="text-align: center;">linear</td>
+    <td style="text-align: center;">Frequency-exposure schedule in the SD sampler, with start and end bounds set to 0.25 and 1.0, respectively.</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">$\lambda_k$</td>
+    <td style="text-align: center;">Cosine schedule</td>
+    <td style="text-align: center;">Blending weight schedule for frequency guidance, starting from 0.6 and decaying to 0.</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">$w_{k,L}$</td>
+    <td style="text-align: center;">1.0</td>
+    <td style="text-align: center;">Weight for the low-low Haar subband in the wavelet fusion module.</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">$w_{k,H}$</td>
+    <td style="text-align: center;">0.12</td>
+    <td style="text-align: center;">Weight for the high-high Haar subband.</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">$d_s$</td>
+    <td style="text-align: center;">0.0</td>
+    <td style="text-align: center;">Initial value of detail unlocking in the wavelet fusion module.</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">$d_e$</td>
+    <td style="text-align: center;">1.0</td>
+    <td style="text-align: center;">Final value of detail unlocking in the wavelet fusion module.</td>
+  </tr>
+</table>
+
 **Discretization Formula (EDM Scheduler):**
 
 $\[
