@@ -930,6 +930,95 @@ We vary the remaining parameters as shown in Table 15 to verify the effectivenes
   </tr>
 </table>
 
+We have list the quantitative results on FFHQ 256*256 for different combinations of N and T. And the other parameters settings are the same with those of Table 15.
+
+## Table 17. Quantitative Comparison of Different $\sigma$ of Eq.(5) (Gaussian_deblurring On FFHQ)
+<table>
+  <tr>
+    <th rowspan="2" style="text-align: center;">$\sigma$</th>
+    <th colspan="3" style="text-align: center; white-space: nowrap;">FFHQ</th>
+  </tr>
+  <tr>
+    <th style="text-align: center; white-space: nowrap;">PSNR ↑</th>
+    <th style="text-align: center; white-space: nowrap;">SSIM ↑</th>
+    <th style="text-align: center; white-space: nowrap;">LPIPS ↓</th>
+  </tr>
+  <tr>
+    <td style="text-align: center;">Ours (0)</td>
+    <td style="text-align: center;">38.53</td>
+    <td style="text-align: center;">0.971</td>
+    <td style="text-align: center;">0.034</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">Ours (0.03)</td>
+    <td style="text-align: center;">30.62</td>
+    <td style="text-align: center;">0.843</td>
+    <td style="text-align: center;">0.157</td>
+  </tr>
+
+  <tr>
+    <td style="text-align: center;">Ours (0.05)</td>
+    <td style="text-align: center;">29.99</td>
+    <td style="text-align: center;">0.821</td>
+    <td style="text-align: center;">0.175</td>
+  </tr>
+
+  <tr>
+    <td style="text-align: center;">Ours (0.07)</td>
+    <td style="text-align: center;">34.95</td>
+    <td style="text-align: center;">0.935</td>
+    <td style="text-align: center;">0.082</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">SILO (0)</td>
+    <td style="text-align: center;">26.59</td>
+    <td style="text-align: center;">0.825</td>
+    <td style="text-align: center;">0.311</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">SILO (0.03)</td>
+    <td style="text-align: center;">26.59</td>
+    <td style="text-align: center;">0.825</td>
+    <td style="text-align: center;">0.311</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">SILO (0.05)</td>
+    <td style="text-align: center;">26.58</td>
+    <td style="text-align: center;">0.825</td>
+    <td style="text-align: center;">0.311</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">SILO (0.07)</td>
+    <td style="text-align: center;">26.57</td>
+    <td style="text-align: center;">0.824</td>
+    <td style="text-align: center;">0.312</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">Resample (0)</td>
+    <td style="text-align: center;">27.26</td>
+    <td style="text-align: center;">0.751</td>
+    <td style="text-align: center;">0.250</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">Resample (0.03)</td>
+    <td style="text-align: center;">25.98</td>
+    <td style="text-align: center;">0.661</td>
+    <td style="text-align: center;">0.301</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">Resample (0.05)</td>
+    <td style="text-align: center;">25.33</td>
+    <td style="text-align: center;">0.611</td>
+    <td style="text-align: center;">0.332</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">Resample (0.07)</td>
+    <td style="text-align: center;">24.57</td>
+    <td style="text-align: center;">0.552</td>
+    <td style="text-align: center;">0.375</td>
+  </tr>
+</table>
+
 ## Figure 7. Qualitative Comparison Between DPS (strength=1 (i.e., step size in Appendix C of DPS [2])) and Ours
 
 ![s1](figures/s1.png)
