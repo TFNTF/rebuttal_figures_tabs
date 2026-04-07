@@ -1,12 +1,12 @@
 # Rebuttal_figures_tabs
 
 
-## Table 1. Quantitative Results for High-pass Operator (Motion_deblurring)  
+## Table 1. Quantitative Results for High-pass Operator (Motion_deblurring, 256*256)  
 <table>
   <tr>
     <th rowspan="2" style="text-align: center;">Operator</th>
-    <th colspan="3" style="text-align: center; white-space: nowrap;">FFHQ 256*256</th>
-    <th colspan="3" style="text-align: center; white-space: nowrap;">ImageNet 256*256</th>
+    <th colspan="3" style="text-align: center; white-space: nowrap;">FFHQ</th>
+    <th colspan="3" style="text-align: center; white-space: nowrap;">ImageNet</th>
   </tr>
   <tr>
     <th style="text-align: center; white-space: nowrap;">PSNR ↑</th>
@@ -38,12 +38,12 @@
 </table>
 Table 1 shows that our method (NFC) does not produce satisfactory results when high-frequency information is preserved in the measurements (e.g., under a high-pass filter), which represents one failure mode of NFC.
 
-## Table 2. Ablation Studies for Different Wavelets (Motion_deblurring)
+## Table 2. Ablation Studies for Different Wavelets (Motion_deblurring, 256*256)
 <table>
   <tr>
     <th rowspan="2" style="text-align: center;">Wavelet</th>
-    <th colspan="3" style="text-align: center; white-space: nowrap;">FFHQ 256*256</th>
-    <th colspan="3" style="text-align: center; white-space: nowrap;">ImageNet 256*256</th>
+    <th colspan="3" style="text-align: center; white-space: nowrap;">FFHQ</th>
+    <th colspan="3" style="text-align: center; white-space: nowrap;">ImageNet</th>
   </tr>
   <tr>
     <th style="text-align: center; white-space: nowrap;">PSNR ↑</th>
@@ -88,12 +88,12 @@ Table 2 shows that Haar achieves better performance in our method than the other
 ![wave_1](figures/wave_1.png)
 ![wave_2](figures/wave_2.png)
 
-## Table 3. Computational Cost for Compared Methods (Motion_deblurring)
+## Table 3. Computational Cost for Compared Methods (Motion_deblurring, 256*256)
 <table>
   <tr>
     <th rowspan="2" style="text-align: center; white-space: nowrap;">Method</th>
-    <th colspan="2" style="text-align: center; white-space: nowrap;">FFHQ 256*256</th>
-    <th colspan="2" style="text-align: center; white-space: nowrap;">ImageNet 256*256</th>
+    <th colspan="2" style="text-align: center; white-space: nowrap;">FFHQ</th>
+    <th colspan="2" style="text-align: center; white-space: nowrap;">ImageNet</th>
     <th rowspan="2" style="text-align: center; white-space: nowrap;">Diffusion NFE</th>
   </tr>
   <tr>
@@ -195,7 +195,7 @@ Table 2 shows that Haar achieves better performance in our method than the other
 
 † indicates that the reported efficiency partly benefits from using a foundation model trained with Flow Matching, whereas the checkpoints for the other methods are based on DDPM training.
 
-## Table 4. Quantitative Results Under The Same Computational Budget* (Motion_deblurring On FFHQ 256*256)
+## Table 4. Quantitative Results Under The Same Computational Budget* (Motion_deblurring On FFHQ, 256*256)
 <table>
   <tr>
     <th rowspan="2" style="text-align: center;">Method</th>
@@ -237,12 +237,12 @@ Table 4 shows that, under the same compute budget (i.e., time cost), our method 
 ![real_1](figures/real_1.png)
 ![real_2](figures/real_2.png)
 
-## Table 5. Qualitative Results for Real-world Blur According to BlindDPS (Motion_deblurring)
+## Table 5. Qualitative Results for Real-world Blur According to BlindDPS (Motion_deblurring, 256*256)
 <table>
   <tr>
     <th rowspan="2" style="text-align: center;">Method</th>
-    <th colspan="3" style="text-align: center; white-space: nowrap;">FFHQ 256*256</th>
-    <th colspan="3" style="text-align: center; white-space: nowrap;">ImageNet 256*256</th>
+    <th colspan="3" style="text-align: center; white-space: nowrap;">FFHQ</th>
+    <th colspan="3" style="text-align: center; white-space: nowrap;">ImageNet</th>
   </tr>
   <tr>
     <th style="text-align: center; white-space: nowrap;">PSNR ↑</th>
@@ -696,7 +696,7 @@ We vary the remaining parameters as shown in Table 15 to verify the effectivenes
 ![dps_1](figures/comp_dps_1.png)
 ![dps_2](figures/comp_dps_2.png)
 
-## Figure 6. Qualitative Comparison Between SILO (512*512) and Ours (256*256) on FFHQ 
+## Figure 6. Qualitative Comparison Between SILO and Ours on FFHQ 
 
 ![silo](figures/silo.png)
 
